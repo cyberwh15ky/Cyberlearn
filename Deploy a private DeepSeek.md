@@ -1,3 +1,6 @@
+# Nas 黑群晖与白群晖的区别（黑群与白群差异）
+https://zhuanlan.zhihu.com/p/377729145
+
 # 如何利用deepseek开展网络安全攻防对抗，从零基础到精通，收藏这篇就够了！
 https://blog.csdn.net/Libra1313/article/details/145482654
 
