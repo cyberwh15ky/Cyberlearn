@@ -1,3 +1,6 @@
+# CSDN的安全白帽大佬 白帽學習路線
+https://www.eet-china.com/mp/a169261.html
+
 # Nas 黑群晖与白群晖的区别（黑群与白群差异）
 https://zhuanlan.zhihu.com/p/377729145
 
