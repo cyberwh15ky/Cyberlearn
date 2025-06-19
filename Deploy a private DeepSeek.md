@@ -1,9 +1,6 @@
 # CSDN的安全白帽大佬 白帽學習路線
 https://www.eet-china.com/mp/a169261.html
 
-# 滲透測試-釣魚網站
-https://blog.csdn.net/qq_65150735/article/details/140895385
-
 # Nas 黑群晖与白群晖的区别（黑群与白群差异）
 https://zhuanlan.zhihu.com/p/377729145
 
