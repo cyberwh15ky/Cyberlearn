@@ -8,7 +8,11 @@ PS C:\Users\home01> Get-CimInstance Win32_PhysicalMemory | Select-Object @{Name=
        8 0000         CL16-16-16 D4-2400    2400
        8 Kingston     99U5702-094.A00G      2400
 
-ASROCK X570 PHANTOM GAMING 4
+
+C:\Users\home01>wmic path win32_VideoController get Name
+Name
+NVIDIA GeForce GTX 1650 SUPER
+NVIDIA GeForce GTX 1060 3GB
 
 
 # 🟥 ASRock X570 Phantom Gaming 4 (AMD 5 3600)
