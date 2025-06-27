@@ -16,11 +16,20 @@
 > Case Closed in Google Admin Alert Center.
 > FYI:
 
+## Change Password Case 屬於 User forgot password 可以使用一下回應。
+> This is support case. User xxxxx forgot their password, and IT assisted with resetting it.
+> FYI:
 
+> Case Closed in Google Admin Alert Center.
+> FYI:
 
 ## Suspended Case 屬於 suspension 範圍 可以使用一下回應。
 > Response:  
 
 > These are test accounts associated with the JumpCloud project.  
 > They have been suspended due to prolonged inactivity.  
-> FYI:  
+> FYI:
+>
+> Case Closed in Google Admin Alert Center.
+> FYI:
+
