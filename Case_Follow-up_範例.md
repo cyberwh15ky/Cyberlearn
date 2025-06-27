@@ -6,19 +6,19 @@
 > Analysis：如果是進行技術性的細節檢查，會用這個字。例如 "malware analysis"。
 
 
-## New user added Case
-> Response: 
+## New user added Case  
+> Response:  
 > 
-> The user will be onboarding on June 29, 2025; therefore, an account is being created.
+> The user will be onboarding on June 29, 2025; therefore, an account is being created.  
 > FYI: 
 
-## Change Password Case 屬於 suspension 範圍 可以使用一下回應。
+## Change Password Case 屬於 suspension 範圍 可以使用一下回應。  
 
-> Response: 
+> Response:  
 
 > This falls within the scope of account suspension. The user has already offboarded.  
 > Therefore, a random password has been set, and we will not retain any record of the random password.  
-> FYI: 
+> FYI:  
 
 > Case Closed in Google Admin Alert Center.  
 > FYI:  
