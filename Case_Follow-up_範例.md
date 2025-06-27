@@ -10,6 +10,7 @@
 > Response: 
 > 
 > The user will be onboarding on June 29, 2025; therefore, an account is being created.
+> FYI: 
 
 ## Change Password Case 屬於 suspension 範圍 可以使用一下回應。
 
