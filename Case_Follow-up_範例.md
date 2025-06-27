@@ -3,7 +3,7 @@
 > Response: 
 
 > This falls within the scope of account suspension. The user has already offboarded.  
-> Therefore, a random password has been set, and we will not retain any record of the random password.
+> Therefore, a random password has been set, and we will not retain any record of the random password.  
 > FYI: 
 
 > Case Closed in Google Admin Alert Center.
