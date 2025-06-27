@@ -5,6 +5,12 @@
 > Response：用來描述實際採取的行動，例如 incident response。
 > Analysis：如果是進行技術性的細節檢查，會用這個字。例如 "malware analysis"。
 
+
+## New user added Case
+> Response: 
+> 
+> The user will be onboarding on June 29, 2025; therefore, an account is being created.
+
 ## Change Password Case 屬於 suspension 範圍 可以使用一下回應。
 
 > Response: 
