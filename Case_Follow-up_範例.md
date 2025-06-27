@@ -21,7 +21,13 @@
 > FYI:  
 
 > Case Closed in Google Admin Alert Center.  
-> FYI:  
+> FYI:
+
+## Change PAssword Case 屬於 向user 獲取準確 請求
+> Hi xxxx nice to meet you this is Vincent form IT Team (Security)
+
+> Sorry to bother you—I just wanted to check if you ever forgot your Animoca Brands Google account password
+> and requested the IT team to reset it, sometime around June 23rd to 24th. 
 
 ## Suspended Case 屬於 suspension 範圍 可以使用一下回應。  
 > Response:  
@@ -32,4 +38,6 @@
 >
 > Case Closed in Google Admin Alert Center.
 > FYI:
+
+
 
