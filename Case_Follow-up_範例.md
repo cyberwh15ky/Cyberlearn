@@ -4,3 +4,9 @@
 >    
 > This falls within the scope of account suspension.  
 > Therefore, a random password has been set, and we will not retain any record of the random password.  
+
+> Follow-up：這是最常見的說法，用來指後續的調查、處置或行動。例如："Follow-up on this alert is required."
+> Investigation：當還在了解 alert 背後的情況時，可說是 "under investigation" 或 "requires investigation."
+> Triage：這個用於初步分類和判定 alert 嚴重程度與優先順序。
+> Response：用來描述實際採取的行動，例如 incident response。
+> Analysis：如果是進行技術性的細節檢查，會用這個字。例如 "malware analysis"。
