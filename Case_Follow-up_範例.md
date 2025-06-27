@@ -8,9 +8,10 @@
 
 ## New user added Case  
 > Response:  
-> 
+
 > The user will be onboarding on June 29, 2025; therefore, an account is being created.  
-> FYI: 
+
+> FYI:  
 
 ## Change Password Case 屬於 suspension 範圍 可以使用一下回應。  
 
@@ -18,33 +19,44 @@
 
 > This falls within the scope of account suspension. The user has already offboarded.  
 > Therefore, a random password has been set, and we will not retain any record of the random password.  
+
 > FYI:  
 
 > Case Closed in Google Admin Alert Center.  
+
 > FYI:  
 
 ## Change Password Case 屬於 User forgot password 可以使用一下回應。  
+
+> Response:  
+
 > This is support case. User xxxxx forgot their password, and IT assisted with resetting it.  
+
 > FYI:  
 
 > Case Closed in Google Admin Alert Center.  
-> FYI:
 
-## Change PAssword Case 屬於 向user 獲取準確 請求
-> Hi xxxx nice to meet you this is Vincent form IT Team (Security)
+> FYI:  
 
-> Sorry to bother you—I just wanted to check if you ever forgot your Animoca Brands Google account password
-> and requested the IT team to reset it, sometime around June 23rd to 24th. 
+## Change PAssword Case 屬於 向user 獲取準確 請求  
+> Response:  
+
+> Hi xxxx nice to meet you this is Vincent form IT Team (Security)  
+
+> Sorry to bother you—I just wanted to check if you ever forgot your Animoca Brands Google account password  
+> and requested the IT team to reset it, sometime around June 23rd to 24th.  
 
 ## Suspended Case 屬於 suspension 範圍 可以使用一下回應。  
 > Response:  
 
 > These are test accounts associated with the JumpCloud project.  
 > They have been suspended due to prolonged inactivity.  
-> FYI:
->
-> Case Closed in Google Admin Alert Center.
-> FYI:
+
+> FYI:  
+
+> Case Closed in Google Admin Alert Center.  
+
+> FYI:  
 
 
 
