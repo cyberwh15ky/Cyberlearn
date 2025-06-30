@@ -28,7 +28,7 @@
 
 > Response:  
 
-> This falls within the scope of account suspension. The user has already offboarded.  
+> This falls within the scope of account suspension. The user has already offboarded on xx June,2025.
 > Therefore, a random password has been set, and we will not retain any record of the random password.  
 
 > FYI:  
