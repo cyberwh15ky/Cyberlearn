@@ -6,10 +6,21 @@
 > Analysis：如果是進行技術性的細節檢查，會用這個字。例如 "malware analysis"。
 
 
-## New user added Case  
+## On-Boarding user added Case  
 > Response:  
 
 > The user will be onboarding on June 29, 2025; therefore, an account is being created.  
+
+> FYI:
+
+## Off-Boarding user added Case  
+> Response:  
+
+> This falls within the scope of account suspension. The user has already offboarded on xx June,2025.  
+
+> FYI:  
+
+> Case Closed in Google Admin Alert Center.  
 
 > FYI:  
 
