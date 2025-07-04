@@ -70,4 +70,17 @@
 > FYI:  
 
 
+## Spike in user-reported spam 無風險, 特例屬於安全“IP: 209.85.220.41”
+> Response:
+  
+> After checking the sender and SMTP server IP, no suspicious IP source was found.  
+
+> FYI, SMTP server IP: 209.85.220.41 = netblocks.google.com, which belongs to Google and is considered a safe IP.
+
+> FYI:  
+
+> Case Closed in Google Admin Alert Center.  
+
+> FYI: 
+
 
