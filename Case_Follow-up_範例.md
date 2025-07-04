@@ -11,7 +11,22 @@
 
 > The user will be onboarding on June 29, 2025; therefore, an account is being created.  
 
-> FYI:
+> FYI:  
+
+> Case Closed in Google Admin Alert Center.  
+
+> FYI:  
+
+## On-Boarding user added Case  
+> Response:  
+
+> The user will be onboarding on July 1, 2025 (contractor converting to full-time). Therefore, we will update the email alias to include @animocabrands.com in @mocaverse.xyz google account.  
+
+> FYI:  
+
+> Case Closed in Google Admin Alert Center.  
+
+> FYI:  
 
 ## Off-Boarding user added Case  
 > Response:  
