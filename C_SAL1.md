@@ -6,3 +6,6 @@ https://blog.csdn.net/weixin_51725318/article/details/143108226
 
 ## 了解网络安全领域的不同职业
 https://www.cnblogs.com/Hekeats-L/p/17231743.html
+
+## TOTP 與 HTOP 區別
+https://www.engagelab.com/zh_TW/blog/otp-hotp-totp
