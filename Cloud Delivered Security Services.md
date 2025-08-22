@@ -45,3 +45,15 @@
 
 #### Anti-Spyware 的strict 與 alert-and-capture 區別是什麽來 主要用途
 >https://poe.com/s/sw2EDZIFPd7KMoE0Z3VY
+
+
+
+### Claimable_nx domain
+A Claimable_nx domain is one where attackers scan for frequently queried non-resolvable domains from
+an organization. They will then register the domain and use a DNS response to redirect to a host that has
+malicious content.
+
+### Misconfig_dangling domain
+A Misconfig_dangling domain refers to a situation where a DNS record continues to point to a resource
+that no longer exists or is no longer associated with that domain name. This can be a domain that is
+abandoned and can then be claimed by an attacker.
