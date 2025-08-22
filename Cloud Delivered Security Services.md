@@ -47,7 +47,7 @@
 >https://poe.com/s/sw2EDZIFPd7KMoE0Z3VY
 
 
-
+## The Threat Category indicates these domains have been detected as adns-dnsmisconfig.
 ### Claimable_nx domain
 A Claimable_nx domain is one where attackers scan for frequently queried non-resolvable domains from
 an organization. They will then register the domain and use a DNS response to redirect to a host that has
@@ -57,3 +57,11 @@ malicious content.
 A Misconfig_dangling domain refers to a situation where a DNS record continues to point to a resource
 that no longer exists or is no longer associated with that domain name. This can be a domain that is
 abandoned and can then be claimed by an attacker.
+
+## The Threat Category indicates these domains have been detected as adns-hijacking.
+### DNS hijacking is a type of attack where an attacker manipulates the DNS resolution process to redirect
+users to a malicious or unauthorized website instead of the intended legitimate website.
+### In a DNS hijacking attack, the attacker exploits vulnerabilities in DNS servers, routers, or other network
+devices to intercept and modify DNS queries and responses. This allows the attacker to map a domain
+name to an IP address of their choice, essentially hijacking the DNS resolution process.
+
