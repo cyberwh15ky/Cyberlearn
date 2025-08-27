@@ -21,8 +21,3 @@
 ##### System Logs  
 > System logs document activities related to the functioning of the operating system and hardware, including error messages, system startup and shutdown events, and hardware failures. 
 > System logs help administrators maintain system health and troubleshoot problems.
-
-
-# test
-@test
-*** test
