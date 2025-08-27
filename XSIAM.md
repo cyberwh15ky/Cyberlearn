@@ -2,7 +2,7 @@
 #### PII
 
 ###### Logging
-|Application Logs  
+| Application Logs  
 Application logs record information about the behavior and performance of specific software applications. They can include error messages, user interactions, and transaction records.  
 Application logs are valuable for diagnosing application issues and optimizing performance.  
 
