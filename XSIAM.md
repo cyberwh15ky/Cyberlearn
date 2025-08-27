@@ -12,8 +12,7 @@
 
 ### Logging
 ##### Application Logs  
-> **Application logs** record information about the behavior and performance of specific software applications.  
-> They can include error messages, user interactions, and transaction records.  
+> **Application logs** record information about the behavior and performance of specific software applications. They can include error messages, user interactions, and transaction records.  
 > **Application logs** are valuable for diagnosing application issues and optimizing performance.  
 
 ##### Audit Logs  
@@ -29,6 +28,5 @@
 > **Security logs** are essential for detecting and responding to security incidents and breaches.  
 
 ##### System Logs  
-> **System logs** document activities related to the functioning of the operating system and hardware,
-> including error messages, system startup and shutdown events, and hardware failures. 
+> **System logs** document activities related to the functioning of the operating system and hardware, including error messages, system startup and shutdown events, and hardware failures. 
 > **System logs** help administrators maintain system health and troubleshoot problems.
