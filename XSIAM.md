@@ -2,6 +2,18 @@
 #### PII
 
 
+## Logs and Retention - Assessment Question 
+### Which storage is commonly used but requires an Internet connection?
+A: Cloud storage
+### Which logs capture actions taken by users or administrators?
+A: Audit Log
+### What recent technology is used to store logs in a decentralized and tamper-resistant manner?
+A: Blockchain
+### What may happen if local logs are not captured remotely?
+A: Events may be overwritten by log rotation
+### Which log retention best practice organizes logs based on their sensitivity and relevance to security investigations?
+A: Data classification
+
 ### Logging
 > A log is a record or entry created by a computer system, software application, network device, or other technology component to capture events,  
 > activities, and interactions. Logging refers to the collection of these entries.  
