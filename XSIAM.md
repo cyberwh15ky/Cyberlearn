@@ -1,7 +1,14 @@
 #### IoC
 #### PII
 
-##### Logging
+
+
+#### Logging
+> A log is a record or entry created by a computer system, software application, network device, or other technology component to capture events, activities, and interactions. Logging refers to the collection of these entries.  
+#### Retention
+> The retention of logs refers to storing log data for a specified period. Retention policies dictate how long logs are retained before they are archived or deleted.
+
+#### Logging
 ##### Application Logs  
 > Application logs record information about the behavior and performance of specific software applications. They can include error messages, user interactions, and transaction records.  
 > Application logs are valuable for diagnosing application issues and optimizing performance.  
