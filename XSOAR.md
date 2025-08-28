@@ -7,16 +7,19 @@ Settings > Integrations > Instances > Mail Listener v2 > Settting
 
 <img width="754" height="449" alt="image" src="https://github.com/user-attachments/assets/65d911c7-4dda-4606-b426-7a501d108f64" />
 
-a) Incident type: The value is currently set to Phishing. This means that the incidents that are created by
-this instance are classified as Phishing and in response to Phishing incident type, relevant automations
-are run by XSOAR
-b) Mail Server Hostname/IP address: This is the IP address of our self hosted mail server in the lab.
-c) IMAP port: This value indicates the IMAP port of our self hosted mail server in lab
-d) username/password: Credentials for our mailbox.
-e) Incoming mail folder: This is the folder within the student email account (student). This indicates that
-any emails that end up in the Phishing folder are monitored by XSOAR and a corresponding incident is
-created for each email in the Phishing folder.
-f) First Fetch Time: This corresponds to the oldest email that will be fetched. For example, if it’s set to 1
-year, all emails within the past year from the current date, will be fetched.
-g) Incidents Fetch Interval: The frequency at which XSOAR queries the configured mailbox and folder for
-emails.
+Click Test to validate that the tests are successful. Click Save & Exit.  
+
+#####FYI
+a) Incident type: The value is currently set to Phishing. This means that the incidents that are created by this instance are classified as Phishing and in response to Phishing incident type, relevant automations are run by XSOAR  
+
+b) Mail Server Hostname/IP address: This is the IP address of our self hosted mail server in the lab.  
+
+c) IMAP port: This value indicates the IMAP port of our self hosted mail server in lab  
+
+d) username/password: Credentials for our mailbox.  
+
+e) Incoming mail folder: This is the folder within the student email account (student). This indicates that any emails that end up in the Phishing folder are monitored by XSOAR and a corresponding incident is created for each email in the Phishing folder.  
+
+f) First Fetch Time: This corresponds to the oldest email that will be fetched. For example, if it’s set to 1 year, all emails within the past year from the current date, will be fetched.  
+
+g) Incidents Fetch Interval: The frequency at which XSOAR queries the configured mailbox and folder for emails.  
