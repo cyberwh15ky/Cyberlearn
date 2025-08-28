@@ -1,4 +1,4 @@
-Settings > Integrations > Instances > Mail Listener v2 > Settting
+##### Settings > Integrations > Instances > Mail Listener v2 > Settting
 <img width="869" height="425" alt="{5D46C937-070F-4113-AC10-B2A3A98E6FAA}" src="https://github.com/user-attachments/assets/abfe3285-016b-4faa-9b74-d131d6782ac7" />
 
 <img width="754" height="446" alt="{98F74753-4BA2-4735-8D2D-A6A15939D509}" src="https://github.com/user-attachments/assets/f2f5831d-3e0f-4ca5-bd8b-c9fd0f5da2bf" />
@@ -7,9 +7,16 @@ Settings > Integrations > Instances > Mail Listener v2 > Settting
 
 <img width="754" height="449" alt="image" src="https://github.com/user-attachments/assets/65d911c7-4dda-4606-b426-7a501d108f64" />
 
-Click Test to validate that the tests are successful. Click Save & Exit.  
 
-#####FYI
+##### Click Test to validate that the tests are successful. Click Save & Exit.  
+<img width="755" height="451" alt="{E364D7C6-A6AE-42BC-8AE6-ED13B4F4AA4F}" src="https://github.com/user-attachments/assets/5dfcd0ee-6638-4a52-8d53-386fdb7127e4" />
+<img width="422" height="118" alt="{33E36140-EA47-4E00-9BB2-825E3A860DD1}" src="https://github.com/user-attachments/assets/c61cd25f-f46b-4eae-b59e-42f2197a0e1a" />
+<img width="894" height="317" alt="{204FA046-4D62-4214-A167-9B6D5FFBD288}" src="https://github.com/user-attachments/assets/8a4bb18e-b23a-4340-aec3-73f22016ce67" />
+
+
+
+
+##### FYI
 a) Incident type: The value is currently set to Phishing. This means that the incidents that are created by this instance are classified as Phishing and in response to Phishing incident type, relevant automations are run by XSOAR  
 
 b) Mail Server Hostname/IP address: This is the IP address of our self hosted mail server in the lab.  
