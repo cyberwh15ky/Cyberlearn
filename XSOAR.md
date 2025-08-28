@@ -45,3 +45,6 @@ g) Incidents Fetch Interval: The frequency at which XSOAR queries the configured
 ### Work Plan
 **Playbook for check the phishing**
 <img width="904" height="480" alt="{12A5807A-0E2B-4677-AA6E-967D980A0889}" src="https://github.com/user-attachments/assets/831553a4-71ad-4d00-aa2f-12f06f418e44" />
+
+**Playbook Coloer**
+<img width="874" height="223" alt="{A093457B-ECBF-474F-97B4-BC31DBCA310B}" src="https://github.com/user-attachments/assets/5f3ddb09-df82-4dc9-b88c-bc84671032d1" />
