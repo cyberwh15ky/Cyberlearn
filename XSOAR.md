@@ -48,3 +48,9 @@ g) Incidents Fetch Interval: The frequency at which XSOAR queries the configured
 
 **Playbook Coloer**
 <img width="874" height="223" alt="{A093457B-ECBF-474F-97B4-BC31DBCA310B}" src="https://github.com/user-attachments/assets/5f3ddb09-df82-4dc9-b88c-bc84671032d1" />
+
+
+
+# Page 75
+![Uploading {4151719B-A6F4-44FC-9099-F16E1E86EB27}.png…]()
+
