@@ -30,3 +30,18 @@ e) Incoming mail folder: This is the folder within the student email account (st
 f) First Fetch Time: This corresponds to the oldest email that will be fetched. For example, if it’s set to 1 year, all emails within the past year from the current date, will be fetched.  
 
 g) Incidents Fetch Interval: The frequency at which XSOAR queries the configured mailbox and folder for emails.  
+
+
+
+
+### Case info 
+<img width="895" height="486" alt="{CB66A189-8289-4AB4-8E39-B0427D0FBE50}" src="https://github.com/user-attachments/assets/0afc2e81-4732-4c14-9709-7cb34532973c" />
+
+### Investigation
+<img width="911" height="489" alt="{A5A2CEF1-564F-465B-8416-6A2A4AA7B55E}" src="https://github.com/user-attachments/assets/07c18473-7bb5-4649-a25d-ce18b4c85810" />
+<img width="906" height="441" alt="{3C6DD0B4-7599-4C59-95CA-0654AECFEB46}" src="https://github.com/user-attachments/assets/c128d952-3271-4f39-a643-cf4dd49db2eb" />
+<img width="911" height="490" alt="{5936D221-6A79-49D7-92F0-CF00AADBCDDA}" src="https://github.com/user-attachments/assets/88a5d007-c7a0-42ab-9e43-5ee7a8d23ff1" />
+
+### Work Plan
+**Playbook for check the phishing**
+<img width="904" height="480" alt="{12A5807A-0E2B-4677-AA6E-967D980A0889}" src="https://github.com/user-attachments/assets/831553a4-71ad-4d00-aa2f-12f06f418e44" />
