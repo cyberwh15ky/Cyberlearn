@@ -89,7 +89,8 @@ The SecOps UTD lab environment consists of the following tabs:
 #### VM-Series Firewall
 Name: student
 Password: utd135
-<img width="1785" height="590" alt="image" src="https://github.com/user-attachments/assets/5a2b0843-e2f7-4a68-b1c0-05f345b5a848" />
+<img width="1785" height="590" alt="image" src="https://github.com/user-attachments/assets/46c5a1f8-58b5-45c8-bf6a-999ebe9cf14b" />
+
 
 <img width="1771" height="868" alt="image" src="https://github.com/user-attachments/assets/5b7b99c9-dc2c-42c9-901e-e655898062f1" />
 
