@@ -1,4 +1,4 @@
-<img width="1895" height="804" alt="image" src="https://github.com/user-attachments/assets/fc7516fb-061e-42f6-b814-b4275f912f65" /><img width="1895" height="804" alt="image" src="https://github.com/user-attachments/assets/8c8c8617-394c-44e3-9d5a-958ecaa86ed3" />## SecOps Platform  
+## SecOps Platform  
 https://drive.google.com/file/d/15eBgU0Meq_a5Cf-RNiEcA-nrVbiu0rCi/view?usp=sharing  
 ### ULTIMATE TEST DRIVE  
 
@@ -86,7 +86,7 @@ The SecOps UTD lab environment consists of the following tabs:
 <img width="1895" height="804" alt="image" src="https://github.com/user-attachments/assets/923b0952-83f3-42e7-a5a4-c4c19e3ed4e9" />
 
 <img width="1060" height="609" alt="image" src="https://github.com/user-attachments/assets/0571845c-22ec-48cb-af61-96f05ae49a4c" />
-###### VM-Series Firewall
+##### VM-Series Firewall
 Name: student
 Password: utd135
 
