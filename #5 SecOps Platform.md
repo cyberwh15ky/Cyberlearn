@@ -1,6 +1,6 @@
 https://drive.google.com/file/d/15eBgU0Meq_a5Cf-RNiEcA-nrVbiu0rCi/view?usp=sharing
 
-## SecOps Platform.md
+## SecOps Platform
 ### ULTIMATE TEST DRIVE
 
 #### Table of Contents
