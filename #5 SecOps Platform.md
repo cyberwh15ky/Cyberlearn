@@ -4,7 +4,7 @@ https://drive.google.com/file/d/15eBgU0Meq_a5Cf-RNiEcA-nrVbiu0rCi/view?usp=shari
 
 #### Table of Contents
 
-##### Purpose of This Workshop Guide      <span style="float: right;">4</span>
+##### Purpose of This Workshop Guide <span style="float: right;">4</span>
 ##### Activity 0: Log in to the UTD Workshop      <div align="right">5</div>
 Task 1 - Log in to Your Ultimate Test Drive Class Environment      <div align="right">5</div>
 Task 2 - Understand UTD Components      <div align="right">7</div>
