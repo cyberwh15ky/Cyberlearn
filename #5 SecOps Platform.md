@@ -39,22 +39,20 @@ Task 3 - Investigate Credential Harvesting 95
 Task 4 - Investigate Lateral Movement and DNS Tunneling 103
 Activity 7: Better Together - Cortex XSOAR and Strata NGFW EDL Integration 110
 Task 1 - Add a Cortex XSOAR Feed Integration 110
-Task 2 - Configure the Generic Export Indicators Service 115
-Task 3 - Configure EDL in VM-Series Firewall 117
-Task 4 - Add address to PAN-OS using the XSOAR Integration 119
-Activity 8: Better Together - Cortex XSOAR with Prisma Cloud Compute 126
-Task 1 - XSOAR Alert Profile in Prisma Cloud Compute 126
-UTD-SecOps-1.1 ©2025 Palo Alto Networks, Inc. | Confidential and Proprietary 2
-Task 2 - Add Prisma Cloud Compute Instance in Cortex XSOAR             128
-Task 3 - Run Command Injection Attack                                  133
-Task 4 - Cortex XSOAR Incidents and Alerts                             136
-Activity 9: Feedback on Ultimate Test Drive                            149
-Task 1: Take the online survey                                         149
-Troubleshooting Page                                                   150
-Task 1 - General Troubleshooting                                       150
-Task 2 - Mailbox Redeployment                                          153
-Task 3 - XSIAM                                                         154
+Task 2 - Configure the Generic Export Indicators Service  <div align="right">115</div>
+Task 3 - Configure EDL in VM-Series Firewall      <div align="right">117</div>
+Task 4 - Add address to PAN-OS using the XSOAR Integration      <div align="right">119</div>
+Activity 8: Better Together - Cortex XSOAR with Prisma Cloud Compute      <div align="right">126</div>
+Task 1 - XSOAR Alert Profile in Prisma Cloud Compute      <div align="right">126</div>
+UTD-SecOps-1.1 ©2025 Palo Alto Networks, Inc. | Confidential and Proprietary      <div align="right">2</div>
+Task 2 - Add Prisma Cloud Compute Instance in Cortex XSOAR      <div align="right">128</div>
+Task 3 - Run Command Injection Attack      <div align="right">133</div>
+Task 4 - Cortex XSOAR Incidents and Alerts      <div align="right">136</div>
+Activity 9: Feedback on Ultimate Test Drive      <div align="right">149</div>
+Task 1: Take the online survey      <div align="right">149</div>
+Troubleshooting Page      <div align="right">150</div>
+Task 1 - General Troubleshooting      <div align="right">150</div>
+Task 2 - Mailbox Redeployment      <div align="right">153</div>
+Task 3 - XSIAM      <div align="right">154</div>
 
-<div align="right">
-這段文字會靠右顯示。
-</div>
+<div align="right"> </div>
