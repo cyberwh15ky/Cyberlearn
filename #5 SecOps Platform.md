@@ -1,4 +1,4 @@
-## SecOps Platform  
+<img width="1385" height="753" alt="image" src="https://github.com/user-attachments/assets/3e3e5c34-9457-48b9-b696-b0673711922d" />## SecOps Platform  
 https://drive.google.com/file/d/15eBgU0Meq_a5Cf-RNiEcA-nrVbiu0rCi/view?usp=sharing  
 ### ULTIMATE TEST DRIVE  
 
@@ -95,4 +95,27 @@ Password: utd135
 <img width="1830" height="747" alt="image" src="https://github.com/user-attachments/assets/38c373c9-b140-4ecc-ad43-e59df7bc0dcc" />
 <img width="1796" height="937" alt="image" src="https://github.com/user-attachments/assets/4ce76032-2498-4bf5-bcec-401391792edd" />
 
+
+#### Windows Client
+Install Cortex agent in Windows
+> cd C:\Users\root\Desktop
+> ./Install-Cortex-XDR.ps1
+<img width="1620" height="759" alt="image" src="https://github.com/user-attachments/assets/eca272f6-2c52-4d28-be0c-e0034e05268b" />
+<img width="1114" height="750" alt="image" src="https://github.com/user-attachments/assets/1fad8b60-93c9-43ed-bbe6-c7ef753143a0" />
+<img width="1145" height="728" alt="image" src="https://github.com/user-attachments/assets/0ddce1c7-8858-4ca7-8895-1bbd47e869f7" />
+<img width="1047" height="615" alt="image" src="https://github.com/user-attachments/assets/6d6e0332-699b-4be5-bd93-90921c33c01e" />
+如果Enable失敗 就可以 在cmd 輸入command，command完成后請Restart 機器  
+> cd C:\Users\root\Desktop  
+> ./xdr-checkin.ps1  
+
+<img width="1213" height="672" alt="image" src="https://github.com/user-attachments/assets/7ac3ffec-69fe-4eb0-8763-c742f592c78a" />
+> hostname
+
+#### Linux Client
+Install Cortex agent in Linux
+> bash install-cortex-xdr.sh
+<img width="1385" height="753" alt="image" src="https://github.com/user-attachments/assets/f7b40ff3-04be-4354-89a4-b71a15a7bc97" />
+
+
+<img width="1424" height="738" alt="image" src="https://github.com/user-attachments/assets/ff08bf27-4fe9-4c5d-a79e-b7b5871b78d9" />
 
