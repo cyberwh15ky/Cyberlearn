@@ -83,10 +83,11 @@ The SecOps UTD lab environment consists of the following tabs:
 11. **Docker Workstation**: This is a VM that hosts Prisma Cloud Compute Edition and other workloads.
 
 #### Application Portal (kasm_user/p@lo@lto)
-<img width="1895" height="804" alt="image" src="https://github.com/user-attachments/assets/923b0952-83f3-42e7-a5a4-c4c19e3ed4e9" />
+<img width="1895" height="804" alt="image" src="https://github.com/user-attachments/assets/923b0952-83f3-42e7-a5a4-c4c19e3ed4e9" />  
+<img width="1060" height="609" alt="image" src="https://github.com/user-attachments/assets/0571845c-22ec-48cb-af61-96f05ae49a4c" />  
 
-<img width="1060" height="609" alt="image" src="https://github.com/user-attachments/assets/0571845c-22ec-48cb-af61-96f05ae49a4c" />
 ##### VM-Series Firewall
 Name: student
 Password: utd135
+<img width="1785" height="590" alt="image" src="https://github.com/user-attachments/assets/5a2b0843-e2f7-4a68-b1c0-05f345b5a848" />
 
