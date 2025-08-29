@@ -1,4 +1,4 @@
-## SecOps Platform  
+<img width="1895" height="804" alt="image" src="https://github.com/user-attachments/assets/fc7516fb-061e-42f6-b814-b4275f912f65" /><img width="1895" height="804" alt="image" src="https://github.com/user-attachments/assets/8c8c8617-394c-44e3-9d5a-958ecaa86ed3" />## SecOps Platform  
 https://drive.google.com/file/d/15eBgU0Meq_a5Cf-RNiEcA-nrVbiu0rCi/view?usp=sharing  
 ### ULTIMATE TEST DRIVE  
 
@@ -81,3 +81,8 @@ The SecOps UTD lab environment consists of the following tabs:
 9. **Windows Client (VM)**: This is a Windows® 10 virtual machine.
 10. **Linux Client (VM)**: Ubuntu Virtual Machine.
 11. **Docker Workstation**: This is a VM that hosts Prisma Cloud Compute Edition and other workloads.
+
+#### Application Portal (kasm_user/p@lo@lto)
+<img width="1895" height="804" alt="image" src="https://github.com/user-attachments/assets/923b0952-83f3-42e7-a5a4-c4c19e3ed4e9" />
+
+
