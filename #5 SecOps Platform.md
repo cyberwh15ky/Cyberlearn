@@ -5,7 +5,7 @@ https://drive.google.com/file/d/15eBgU0Meq_a5Cf-RNiEcA-nrVbiu0rCi/view?usp=shari
 #### Table of Contents
 
 ##### Purpose of This Workshop Guide                                                    4
-##### Activity 0: Log in to the UTD Workshop                                            5
+**Activity 0: Log in to the UTD Workshop                                            5**
 Task 1 - Log in to Your Ultimate Test Drive Class Environment                           5
 Task 2 - Understand UTD Components                                                      7
 Task 3 - Application Portal Overview                                                    7
