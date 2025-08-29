@@ -1,9 +1,8 @@
-https://drive.google.com/file/d/15eBgU0Meq_a5Cf-RNiEcA-nrVbiu0rCi/view?usp=sharing
+## SecOps Platform  
+https://drive.google.com/file/d/15eBgU0Meq_a5Cf-RNiEcA-nrVbiu0rCi/view?usp=sharing  
+### ULTIMATE TEST DRIVE  
 
-## SecOps Platform
-### ULTIMATE TEST DRIVE
-
-#### Table of Contents
+#### Table of Contents  
 
 **Purpose of This Workshop Guide**  
 **Activity 0: Log in to the UTD Workshop**  
