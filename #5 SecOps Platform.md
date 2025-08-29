@@ -64,3 +64,20 @@ Task 1: Take the online survey
 Task 1 - General Troubleshooting  
 Task 2 - Mailbox Redeployment  
 Task 3 - XSIAM  
+
+
+
+#### Overview
+Ultimate Test Drive - SecOps Platform Workshop
+The SecOps UTD lab environment consists of the following tabs:
+1. Overview: A quick overview of lab environment and lab activities
+2. Workshop Guide: Click this tab to open the lab guide
+3. Survey: A short survey to get your feedback
+4. Cortex XSOAR (GUI): This is a self hosted version of Cortex XSOAR (creds: admin/P@lo@lto@123)
+5. Cortex XDR (GUI): This is the Palo Alto Networks Cortex XDR tenant.
+6. Cortex XSIAM (GUI): This is the Palo Alto Networks Cortex XSIAM tenant.
+7. Application Portal (GUI): Through this page, you can access VM-Series NGFW, Cortex XSOAR and other applications (creds: kasm_user/p@lo@lto)
+8. Attacker (VM): This is a Kali Linux system virtual machine used for penetration testing. 
+9. Windows Client (VM): This is a Windows® 10 virtual machine.
+10. Linux Client (VM): Ubuntu Virtual Machine.
+11. Docker Workstation: This is a VM that hosts Prisma Cloud Compute Edition and other workloads.
