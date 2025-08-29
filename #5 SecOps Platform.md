@@ -107,7 +107,7 @@ Install Cortex agent in Windows
 如果Enable失敗 就可以 在cmd 輸入command，command完成后請Restart 機器  
 > cd C:\Users\root\Desktop  
 > ./xdr-checkin.ps1  
-
+1
 <img width="1213" height="672" alt="image" src="https://github.com/user-attachments/assets/7ac3ffec-69fe-4eb0-8763-c742f592c78a" />
 > hostname
 
@@ -115,7 +115,7 @@ Install Cortex agent in Windows
 Install Cortex agent in Linux
 > bash install-cortex-xdr.sh
 <img width="1385" height="753" alt="image" src="https://github.com/user-attachments/assets/f7b40ff3-04be-4354-89a4-b71a15a7bc97" />
-
-
 <img width="1424" height="738" alt="image" src="https://github.com/user-attachments/assets/ff08bf27-4fe9-4c5d-a79e-b7b5871b78d9" />
 
+#### Cortex XDR
+<img width="1198" height="739" alt="image" src="https://github.com/user-attachments/assets/dae2605d-707b-44f9-8c62-57c5715993c4" />
