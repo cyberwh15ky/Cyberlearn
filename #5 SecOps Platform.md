@@ -106,8 +106,8 @@ Install Cortex agent in Windows
 <img width="1145" height="728" alt="image" src="https://github.com/user-attachments/assets/0ddce1c7-8858-4ca7-8895-1bbd47e869f7" />
 <img width="1047" height="615" alt="image" src="https://github.com/user-attachments/assets/6d6e0332-699b-4be5-bd93-90921c33c01e" />
 如果Enable失敗 就可以 在cmd 輸入command，command完成后請Restart 機器  
->cd C:\Users\root\Desktop  
->./xdr-checkin.ps1  
+> cd C:\Users\root\Desktop  
+> ./xdr-checkin.ps1  
 
 <img width="1213" height="672" alt="image" src="https://github.com/user-attachments/assets/7ac3ffec-69fe-4eb0-8763-c742f592c78a" />
 > hostname
