@@ -82,8 +82,7 @@ The SecOps UTD lab environment consists of the following tabs:
 10. **Linux Client (VM)**: Ubuntu Virtual Machine.
 11. **Docker Workstation**: This is a VM that hosts Prisma Cloud Compute Edition and other workloads.
 
-## Part 1
-
+## Activity 1: Overview of the Cortex Product Family
 #### Application Portal (kasm_user/p@lo@lto)
 <img width="1895" height="804" alt="image" src="https://github.com/user-attachments/assets/923b0952-83f3-42e7-a5a4-c4c19e3ed4e9" />  
 <img width="1060" height="609" alt="image" src="https://github.com/user-attachments/assets/0571845c-22ec-48cb-af61-96f05ae49a4c" />  
@@ -97,7 +96,7 @@ Password: utd135
 <img width="1830" height="747" alt="image" src="https://github.com/user-attachments/assets/38c373c9-b140-4ecc-ad43-e59df7bc0dcc" />
 <img width="1796" height="937" alt="image" src="https://github.com/user-attachments/assets/4ce76032-2498-4bf5-bcec-401391792edd" />
 
-
+## Activity 2: Cortex XDR - Phishing Case Study
 #### Windows Client
 Install Cortex agent in Windows
 > cd C:\Users\root\Desktop
@@ -152,3 +151,18 @@ Install Cortex agent in Linux
 
 #### Cortex XDR
 <img width="1866" height="862" alt="image" src="https://github.com/user-attachments/assets/3d060ea3-6828-47c5-be08-f6db3e9e0f18" />
+<img width="1861" height="1030" alt="image" src="https://github.com/user-attachments/assets/78d3f435-9710-4650-885c-b0eba1b1fcdc" />
+
+<img width="1917" height="1191" alt="image" src="https://github.com/user-attachments/assets/f27a0d8c-507e-4381-8204-61ae78053fad" />
+<img width="1913" height="918" alt="image" src="https://github.com/user-attachments/assets/96e8a47e-cb31-48ce-bd5e-ba042ee7be7a" />
+<img width="1910" height="914" alt="image" src="https://github.com/user-attachments/assets/4d203e64-9be3-4153-a344-3a879f9edbef" />
+
+## Activity 3: Cortex XDR - Remote Code Exploit Case Study
+#### Windows Client
+<img width="1451" height="616" alt="image" src="https://github.com/user-attachments/assets/f7f8e376-4bbb-4f35-ab20-ac1e3e1d474b" />
+<img width="1723" height="893" alt="image" src="https://github.com/user-attachments/assets/6d933ad6-c283-4f5c-9016-4c112182b0c8" />
+
+#### Attacker
+> msfconsole -r 02-activemq-exploit.rc
+<img width="1309" height="572" alt="image" src="https://github.com/user-attachments/assets/0ac4296c-ace6-48c8-b72f-993c8b2e613e" />
+
