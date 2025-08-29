@@ -1,4 +1,4 @@
-## SecOps Platform  
+<img width="1396" height="719" alt="image" src="https://github.com/user-attachments/assets/1261b3c7-4b65-442e-966d-6563ce164d63" />## SecOps Platform  
 https://drive.google.com/file/d/15eBgU0Meq_a5Cf-RNiEcA-nrVbiu0rCi/view?usp=sharing  
 ### ULTIMATE TEST DRIVE  
 
@@ -158,11 +158,45 @@ Install Cortex agent in Linux
 <img width="1910" height="914" alt="image" src="https://github.com/user-attachments/assets/4d203e64-9be3-4153-a344-3a879f9edbef" />
 
 ## Activity 3: Cortex XDR - Remote Code Exploit Case Study
-#### Windows Client
+#### Windows Client Part 1
 <img width="1451" height="616" alt="image" src="https://github.com/user-attachments/assets/f7f8e376-4bbb-4f35-ab20-ac1e3e1d474b" />
 <img width="1723" height="893" alt="image" src="https://github.com/user-attachments/assets/6d933ad6-c283-4f5c-9016-4c112182b0c8" />
 
-#### Attacker
+#### Attacker Part 1
 > msfconsole -r 02-activemq-exploit.rc
 <img width="1309" height="572" alt="image" src="https://github.com/user-attachments/assets/0ac4296c-ace6-48c8-b72f-993c8b2e613e" />
+<img width="1396" height="719" alt="image" src="https://github.com/user-attachments/assets/a945b811-5c3e-4c6a-befb-20ca584bb42f" />
+
+#### Windows Client Part 2
+<img width="1727" height="914" alt="image" src="https://github.com/user-attachments/assets/aa35d52c-d538-4c2a-a3bd-6792c1196a4d" />
+<img width="1575" height="891" alt="image" src="https://github.com/user-attachments/assets/77735bba-e810-42dd-8e42-de74e2b8be33" />
+
+#### Cortex XDR 1
+### Task 1 - ActivePwn: Windows Remote Code Exploit
+<img width="1908" height="1194" alt="image" src="https://github.com/user-attachments/assets/1e50f072-c65c-4b85-bb0a-10372977d3db" />
+<img width="1908" height="1194" alt="image" src="https://github.com/user-attachments/assets/23f57e15-cbfd-4aff-9799-92ea09a63727" />
+<img width="1912" height="1192" alt="image" src="https://github.com/user-attachments/assets/e471464c-139f-4601-8750-545cce0625c6" />
+<img width="1915" height="1191" alt="image" src="https://github.com/user-attachments/assets/1fd85ba9-3d34-4ecb-b636-459505d10d89" />
+<img width="1916" height="1180" alt="image" src="https://github.com/user-attachments/assets/a980c55b-6e09-4a7a-bdd1-57f2e2304a87" />
+<img width="1919" height="1180" alt="image" src="https://github.com/user-attachments/assets/f736d18c-db3d-4166-a739-462ee2ff7303" />
+<img width="1301" height="847" alt="image" src="https://github.com/user-attachments/assets/40066fea-d12e-4770-8132-5a5f35f15983" />
+
+### Task 2 - Windows Privilege Escalation and Post Exploitation
+#### Attacker Part 2
+> resource 03-priv-escalation.rc
+<img width="1392" height="699" alt="image" src="https://github.com/user-attachments/assets/e58bd2b6-8902-4794-b334-4be42ce3fde9" />
+
+> resource 04-post-exploitation.rc
+<img width="1394" height="710" alt="image" src="https://github.com/user-attachments/assets/514d6849-1221-4c6b-920f-4b1c2e454cb4" />
+
+> nc -l -p 1337
+<img width="1396" height="719" alt="image" src="https://github.com/user-attachments/assets/46d460ee-7690-43e9-b038-3c115bafb822" />
+
+#### Cortex XDR Part 2
+<img width="1912" height="1191" alt="image" src="https://github.com/user-attachments/assets/b8600779-6947-43b7-b953-0565270e765d" />
+<img width="1915" height="1197" alt="image" src="https://github.com/user-attachments/assets/9ff96aa1-d57d-44f7-b3fe-0dcb404af426" />
+<img width="1917" height="1199" alt="image" src="https://github.com/user-attachments/assets/56d95fb8-2c06-4a02-8789-9a5a9fb30b86" />
+<img width="1917" height="1199" alt="image" src="https://github.com/user-attachments/assets/86b30ceb-c50b-45a4-aff7-6329ffe26322" />
+<img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/c5cf01d7-f37d-4d0b-96d5-807944530fee" />
+
 
