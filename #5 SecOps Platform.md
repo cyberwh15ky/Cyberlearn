@@ -1,4 +1,4 @@
-<img width="1385" height="753" alt="image" src="https://github.com/user-attachments/assets/3e3e5c34-9457-48b9-b696-b0673711922d" />## SecOps Platform  
+## SecOps Platform  
 https://drive.google.com/file/d/15eBgU0Meq_a5Cf-RNiEcA-nrVbiu0rCi/view?usp=sharing  
 ### ULTIMATE TEST DRIVE  
 
