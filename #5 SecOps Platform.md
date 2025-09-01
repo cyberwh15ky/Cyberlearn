@@ -216,6 +216,8 @@ Install Cortex agent in Linux
 #### Attacker Part 3
 <img width="1286" height="735" alt="image" src="https://github.com/user-attachments/assets/746e5b4c-4da3-43d7-89f9-e0d697810266" />
 
+> resource 02-post-exploitation.rc
+
 #### Cortex XDR Part 4
 <img width="1913" height="895" alt="image" src="https://github.com/user-attachments/assets/72bf86b5-2072-4d20-abd1-fee0bdef6012" />
 
