@@ -1,4 +1,4 @@
-<img width="1396" height="719" alt="image" src="https://github.com/user-attachments/assets/1261b3c7-4b65-442e-966d-6563ce164d63" />## SecOps Platform  
+<img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/bd578106-2d71-4a98-8a7e-d29100e8862f" /><img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/83a2397d-0364-4152-8566-9fdb0163a66f" /><img width="1919" height="1037" alt="image" src="https://github.com/user-attachments/assets/742c2030-a8e4-45f3-bb07-8d206d1063b6" /><img width="1911" height="920" alt="image" src="https://github.com/user-attachments/assets/8677ffc0-2b6d-485f-963f-64c73ddd3553" /><img width="1396" height="719" alt="image" src="https://github.com/user-attachments/assets/1261b3c7-4b65-442e-966d-6563ce164d63" />## SecOps Platform  
 https://drive.google.com/file/d/15eBgU0Meq_a5Cf-RNiEcA-nrVbiu0rCi/view?usp=sharing  
 ### ULTIMATE TEST DRIVE  
 
@@ -214,10 +214,123 @@ Install Cortex agent in Linux
 <img width="1833" height="1171" alt="image" src="https://github.com/user-attachments/assets/bd0dc7b6-d09b-4f3d-913e-d3055052b40b" />
 
 #### Attacker Part 3
+> msfconsole -r 01-spring-exploit.rc
 <img width="1286" height="735" alt="image" src="https://github.com/user-attachments/assets/746e5b4c-4da3-43d7-89f9-e0d697810266" />
 
 > resource 02-post-exploitation.rc
+<img width="1209" height="659" alt="image" src="https://github.com/user-attachments/assets/f569d8e0-50a0-4026-8012-d86340f25598" />
 
 #### Cortex XDR Part 4
-<img width="1913" height="895" alt="image" src="https://github.com/user-attachments/assets/72bf86b5-2072-4d20-abd1-fee0bdef6012" />
+<img width="1911" height="920" alt="image" src="https://github.com/user-attachments/assets/969598dd-12dc-4105-a2dd-6c05570f8401" />
+<img width="1910" height="930" alt="image" src="https://github.com/user-attachments/assets/6b0ff006-63f1-44be-9362-cb3b784eaf76" />
+<img width="1919" height="1037" alt="image" src="https://github.com/user-attachments/assets/5aefec6b-b19d-4bb9-b9d5-c8d81759d741" />
+<img width="1916" height="930" alt="image" src="https://github.com/user-attachments/assets/04de68e5-a8da-4b2d-9315-12cc76474b89" />
+
+## Activity 4: Cortex XSOAR Phishing Email Case Study
+In this activity you will:
+● Review the setup - email client and phishing email
+● See how Cortex XSOAR can integrate with Mail clients.
+● Understand and work with Cortex XSOAR.
+● See Cortex XSOAR in action when it comes to Phishing emails and how it can help security
+team’s response times through powerful automation in the form of XSOAR playbooks.
+****
+
+### Task 1 - Review the Setup
+Cortex XSOAR Credentials: (admin/P@lo@lto@123)
+
+#### Application Portal Part1 
+<img width="1906" height="802" alt="image" src="https://github.com/user-attachments/assets/6bdd9374-daaf-4087-940b-8dd2db8d034a" />
+
+#### Windows Client Part1
+username: student
+password: password
+<img width="1553" height="946" alt="image" src="https://github.com/user-attachments/assets/b10f391e-7199-45ba-9dae-90d26183c8d6" />
+<img width="1325" height="941" alt="image" src="https://github.com/user-attachments/assets/393e02ea-0c90-49b8-9db5-00dc4d5b32b8" />
+
+#### Cortex XSOAR Part1
+username: admin
+password: P@lo@lto@123
+<img width="1474" height="763" alt="image" src="https://github.com/user-attachments/assets/90517476-b892-4993-abdf-26818789c1dc" />
+<img width="1486" height="771" alt="image" src="https://github.com/user-attachments/assets/47a1e3e1-2ad4-4366-acf8-50067d7751fb" />
+<img width="1489" height="776" alt="image" src="https://github.com/user-attachments/assets/1fe622b7-2952-485c-9cf4-e89b180de465" />
+<img width="1486" height="780" alt="image" src="https://github.com/user-attachments/assets/c0612ef0-d886-478f-acf0-9ec0e1edd914" />
+> a) Incident type: The value is currently set to Phishing. This means that the incidents that are created by this instance are classified as Phishing and in response to Phishing incident type, relevant automations are run by XSOAR  
+> b) Mail Server Hostname/IP address: This is the IP address of our self hosted mail server in the lab.  
+> c) IMAP port: This value indicates the IMAP port of our self hosted mail server in lab.  
+> d) username/password: Credentials for our mailbox.  
+> e) Incoming mail folder: This is the folder within the student email account (student). This indicates that any emails that end up in the Phishing folder are monitored by XSOAR and a corresponding incident is created for each email in the Phishing folder.  
+> f) First Fetch Time: This corresponds to the oldest email that will be fetched. For example, if it’s set to 1 year, all emails within the past year from the current date, will be fetched.  
+> g) Incidents Fetch Interval: The frequency at which XSOAR queries the configured mailbox and folder for emails.  
+
+<img width="1508" height="1041" alt="image" src="https://github.com/user-attachments/assets/bad9ffc7-74a9-4922-be4c-930addc3aadd" />
+<img width="1508" height="1045" alt="image" src="https://github.com/user-attachments/assets/2e0a0c38-978c-41a0-a2d1-3b43fcf46e4f" />
+<img width="1675" height="890" alt="image" src="https://github.com/user-attachments/assets/28d732dc-3c9b-4af1-ac7f-86b83b17c6f3" />
+<img width="1511" height="749" alt="image" src="https://github.com/user-attachments/assets/04c59ead-633a-4f76-b3a1-11f5ba2c3a5b" />
+<img width="1540" height="698" alt="image" src="https://github.com/user-attachments/assets/715b670b-bbb5-43ef-b4e0-2509f6ab3b62" />
+
+### Task 2 - Report Phishing Email and see Cortex XSOAR in action
+Complexity: Easy
+Product(s): Cortex XSOAR
+Scenario:
+● As an end user, you have determined that you have received a Phishing email and decided to report it
+as phishing.
+● Your organization has Cortex XSOAR that monitors phishing emails and immediately springs into action
+when a phishing email is reported and performs automation via Playbooks.
+● Understand the playbook that gets executed in response to the incident and the steps within that
+playbook.
+● Review the information and artifacts that it gathers from the email.
+Key takeaways:
+● Cortex XSOAR incidents via Mail Listener content pack
+● Cortex XSOAR Phishing playbook
+● Cortex XSOAR indicators, Artifacts and more.
+
+#### Windows Client Part2.1
+<img width="1326" height="949" alt="image" src="https://github.com/user-attachments/assets/9ff81bc0-e38d-4b77-a4eb-fd462657975a" />
+#### Cortex XSOAR Part2.1
+<img width="1913" height="955" alt="image" src="https://github.com/user-attachments/assets/c8e93de8-234d-44a1-aab1-5bd36cb0fc89" />
+#### Windows Client Part2.2
+<img width="1362" height="956" alt="image" src="https://github.com/user-attachments/assets/20c9dd15-e60b-45f5-81ba-ecf9a7572e05" />
+#### Cortex XSOAR Part2.2
+<img width="1908" height="949" alt="image" src="https://github.com/user-attachments/assets/575ee399-fb84-4f34-b100-4d1f8723f57e" />
+
+### Task 3 - Investigate a Phishing Incident in XSOAR - I
+Complexity: Easy
+Product(s): Cortex XSOAR
+Scenario:
+● Cortex XSOAR creates an incident. Understand the playbook that gets executed in response to the
+incident and the steps within that playbook.
+● Review the information and artifacts that it gathers from the email.
+Key takeaways:
+● Cortex XSOAR Phishing playbook
+● Cortex XSOAR indicators, Artifacts and more.
+
+<img width="1908" height="949" alt="image" src="https://github.com/user-attachments/assets/e4fd32c5-86aa-4397-99ce-28ed8962e265" />
+###### 1 Someone has your password - **Case info**
+<img width="1918" height="951" alt="image" src="https://github.com/user-attachments/assets/634cb9a1-3680-4cb6-a395-685cec0650d4" />
+
+###### 1 Someone has your password - **Investigation**
+<img width="1919" height="945" alt="image" src="https://github.com/user-attachments/assets/993881ae-9e07-44bc-9f46-6529a9746408" />
+<img width="1917" height="954" alt="image" src="https://github.com/user-attachments/assets/acfdc436-dc53-4b7d-abc0-0c0869bdd1a7" />
+<img width="1919" height="944" alt="image" src="https://github.com/user-attachments/assets/d729b0d6-380a-48a7-b278-34dc28807c19" />
+
+
+###### 1 Someone has your password - **Work Plan**
+<img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/c94935fa-eea0-4033-9d25-3d559e672d7e" />
+
+The graph may move around if the Playbook is still executing as we have selected the Follow checkbox. This will help you understand which specific step is currently being executed. Green cards indicate that a step has been successfully completed. The orange card indicates that a manual action is needed from the analyst. A bluecard with a gear icon indicates that a particular step is being executed.
+
+<img width="1372" height="167" alt="image" src="https://github.com/user-attachments/assets/162c08d1-479e-4f6f-85ff-93cc6b07ec95" />
+<img width="1918" height="949" alt="image" src="https://github.com/user-attachments/assets/b4f8aed3-3a24-421c-b4f1-6ea188e4dad9" />
+
+<img width="1918" height="949" alt="image" src="https://github.com/user-attachments/assets/ca13f10c-4893-4b4d-9a41-b095ce8e414c" />
+<img width="1919" height="950" alt="image" src="https://github.com/user-attachments/assets/fa4dd45a-3c50-495e-a7cb-e0114e02cf31" />
+<img width="1918" height="947" alt="image" src="https://github.com/user-attachments/assets/a5846b07-3319-41f4-b83e-10a9bad00245" />
+<img width="1919" height="950" alt="image" src="https://github.com/user-attachments/assets/b65e5b6e-26e6-46ee-b02e-af258e551968" />
+
+o Manually search and delete emails: Click on this box to review and select Mark Completed.
+o Which Indicators would you like to block: Here the user is prompted for specific indicators to block such as specific IPs, URL, Files, Emails and Domain. Select the following options and clicksubmit Answers
+<img width="1919" height="945" alt="image" src="https://github.com/user-attachments/assets/f1f9838b-1449-40ca-82fa-fd28f0682073" />
+
+<img width="1919" height="950" alt="image" src="https://github.com/user-attachments/assets/ed78645d-0cf5-4cc0-945b-8c4fcc06d776" />
+
 
