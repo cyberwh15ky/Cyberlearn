@@ -1,4 +1,4 @@
-## SecOps Platform  
+<img width="1273" height="882" alt="image" src="https://github.com/user-attachments/assets/0853602b-5ae5-4b28-b292-4240f83cc9bd" />## SecOps Platform  
 https://drive.google.com/file/d/15eBgU0Meq_a5Cf-RNiEcA-nrVbiu0rCi/view?usp=sharing  
 ### ULTIMATE TEST DRIVE  
 
@@ -307,12 +307,11 @@ Key takeaways:
 ● Cortex XSOAR indicators, Artifacts and more.  
 <img width="1908" height="949" alt="image" src="https://github.com/user-attachments/assets/e4fd32c5-86aa-4397-99ce-28ed8962e265" />
 
+#### Cortex XSOAR Part3
 ###### 1 Someone has your password - **Case info**
-
 <img width="1918" height="951" alt="image" src="https://github.com/user-attachments/assets/634cb9a1-3680-4cb6-a395-685cec0650d4" />
 
 ###### 1 Someone has your password - **Investigation**
-
 <img width="1919" height="945" alt="image" src="https://github.com/user-attachments/assets/993881ae-9e07-44bc-9f46-6529a9746408" />
 <img width="1917" height="954" alt="image" src="https://github.com/user-attachments/assets/acfdc436-dc53-4b7d-abc0-0c0869bdd1a7" />
 
@@ -341,3 +340,10 @@ o Which Indicators would you like to block: Here the user is prompted for specif
 <img width="1919" height="950" alt="image" src="https://github.com/user-attachments/assets/ed78645d-0cf5-4cc0-945b-8c4fcc06d776" />
 
 <img width="1919" height="944" alt="image" src="https://github.com/user-attachments/assets/d729b0d6-380a-48a7-b278-34dc28807c19" />
+
+#### Windows Client Part3
+<img width="1283" height="885" alt="image" src="https://github.com/user-attachments/assets/03c50e2c-4898-425a-8e21-35e0d49467c9" />
+<img width="1285" height="884" alt="image" src="https://github.com/user-attachments/assets/8b74081c-bfbf-4909-a3a6-549868de67bf" />
+<img width="1273" height="882" alt="image" src="https://github.com/user-attachments/assets/d277c175-d810-470c-9c62-8e0cde040008" />
+
+
