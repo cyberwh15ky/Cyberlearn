@@ -206,7 +206,7 @@ Install Cortex agent in Linux
 <img width="1580" height="768" alt="image" src="https://github.com/user-attachments/assets/9103f77b-956c-4132-8457-d56fe4c14355" />
 
 > hostname
-> <img width="1032" height="677" alt="image" src="https://github.com/user-attachments/assets/2acc34e9-d6aa-4124-a973-37c838b5866c" />
+<img width="1032" height="677" alt="image" src="https://github.com/user-attachments/assets/2acc34e9-d6aa-4124-a973-37c838b5866c" />
 
 #### Cortex XDR Part 3
 <img width="1915" height="1193" alt="image" src="https://github.com/user-attachments/assets/1aff8618-ce45-454f-b7b8-1b904f4bbc7b" />
