@@ -1,4 +1,4 @@
-<img width="1273" height="882" alt="image" src="https://github.com/user-attachments/assets/0853602b-5ae5-4b28-b292-4240f83cc9bd" />## SecOps Platform  
+<img width="1485" height="624" alt="image" src="https://github.com/user-attachments/assets/5c9d3073-80b6-4d15-b179-33150c7058fc" /><img width="1663" height="889" alt="image" src="https://github.com/user-attachments/assets/74822261-82ff-45eb-9abc-f1cbd9c8226d" /><img width="1919" height="1147" alt="image" src="https://github.com/user-attachments/assets/552cfe45-5d17-453f-97af-1ca43199f994" /><img width="1455" height="881" alt="image" src="https://github.com/user-attachments/assets/a0c2d79b-e1bb-41d3-a775-206f8b202551" />## SecOps Platform  
 https://drive.google.com/file/d/15eBgU0Meq_a5Cf-RNiEcA-nrVbiu0rCi/view?usp=sharing  
 ### ULTIMATE TEST DRIVE  
 
@@ -343,7 +343,119 @@ o Which Indicators would you like to block: Here the user is prompted for specif
 
 #### Windows Client Part3
 <img width="1283" height="885" alt="image" src="https://github.com/user-attachments/assets/03c50e2c-4898-425a-8e21-35e0d49467c9" />
-<img width="1285" height="884" alt="image" src="https://github.com/user-attachments/assets/8b74081c-bfbf-4909-a3a6-549868de67bf" />
-<img width="1273" height="882" alt="image" src="https://github.com/user-attachments/assets/d277c175-d810-470c-9c62-8e0cde040008" />
+
+Re: Phishing Investigation - Someone has your password  
+From Cortex XSOAR
+
+Hi student@greenmail.com,  
+We've concluded that the email you forwarded to us is malicious.  
+No further action is required on your part.  
+Good job on detecting and forwarding it to us!All the best,  
+Your security team  
+<img width="1285" height="884" alt="image" src="https://github.com/user-attachments/assets/15ae04aa-e83b-4b5b-9285-84715c97eccc" />  
+
+Re: Phishing Investigation - Someone has your password  
+From Cortex XSOAR  
+Hi student@greenmail.com,  
+We've received your email and are investigating.  
+Do not touch the email until further notice.  
+
+Cordially,  Your friendly neighborhood security team
+<img width="1273" height="882" alt="image" src="https://github.com/user-attachments/assets/d277c175-d810-470c-9c62-8e0cde040008" />  
+
+### Task 4 - Investigate a Phishing Incident in XSOAR - II
+Complexity: Easy  
+Product(s): Cortex XSOAR  
+Scenario:  
+● Simulate a user receiving a sales newsletter which looks suspicious at first glance and as best security practice, the user reports it as Phishing email  
+● Understand how XSOAR can help a SOC analyst easily determine if it’s a legitimate email or a Phishing incident with the help of XSOAR and the Phishing playbook  
+Key takeaways:  
+● Cortex XSOAR Phishing playbook  
+● Cortex XSOAR indicators, Artifacts and more.  
+
+#### Docker Workstation Part1
+> bash /home/sysadmin/apps/send-mail.sh
+<img width="1455" height="881" alt="image" src="https://github.com/user-attachments/assets/c37e638a-6108-4919-a043-7b4a2d200a2b" />  
+<img width="1743" height="856" alt="image" src="https://github.com/user-attachments/assets/95b4c011-63ae-4a44-9db5-23d59ac1fffa" />
+
+#### Windows Client Part4
+<img width="1502" height="942" alt="image" src="https://github.com/user-attachments/assets/03a5fdcc-6208-4e9c-99a9-9303aef47162" />
+<img width="1919" height="1147" alt="image" src="https://github.com/user-attachments/assets/6aa7014a-b4d5-4b4a-b5e7-9a5dfb967b94" />
+<img width="1919" height="1136" alt="image" src="https://github.com/user-attachments/assets/0f84ae7c-5905-48a0-b229-2c88ed7656ac" />
+#### Cortex XSOAR Part4
+<img width="1919" height="948" alt="image" src="https://github.com/user-attachments/assets/ac8ceb80-251f-4aed-8231-9b2d09ec57bd" />
+#### Windows Client Part5
+<img width="1919" height="1137" alt="image" src="https://github.com/user-attachments/assets/c6350393-3f52-4525-b94f-d3130a3eee29" />
+<img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/db42aee2-c062-4b35-aedd-4a527a2fb42f" />
+
+#### Cortex XSOAR Part5
+<img width="1919" height="999" alt="image" src="https://github.com/user-attachments/assets/f939b14b-93a3-49ad-b2cc-c2499d045603" />                                    
+                                          
+#2 Gear Up for Your Next Adventure | Spring Collection 2024 - **Case info**
+<img width="1919" height="1041" alt="image" src="https://github.com/user-attachments/assets/00fdab9f-77b7-4b6d-a1e2-5bd1d01ecfa6" />
+
+<img width="1919" height="1085" alt="image" src="https://github.com/user-attachments/assets/1af06959-fbca-430c-9f2c-ecfad5bddb90" />
+<img width="1919" height="1081" alt="image" src="https://github.com/user-attachments/assets/ddefc7fc-8d39-4b09-9805-c77fa9c8582b" />
 
 
+#### Application Portal Part2
+<img width="1663" height="889" alt="image" src="https://github.com/user-attachments/assets/8b29f553-e190-469c-aab7-4a3f8b316424" />
+<img width="1919" height="1150" alt="image" src="https://github.com/user-attachments/assets/45a37023-20ae-44bc-a2f8-cc1154b2f33e" />
+
+#### Cortex XSOAR Part6
+<img width="1919" height="929" alt="image" src="https://github.com/user-attachments/assets/4b4b796b-a014-4828-a0c3-ba293384a71f" />
+<img width="1919" height="939" alt="image" src="https://github.com/user-attachments/assets/2006f692-a73a-4432-9e97-7d34f7e3104a" />
+<img width="1919" height="950" alt="image" src="https://github.com/user-attachments/assets/70e8f7aa-5fb4-4e14-8edb-f5a0948583f8" />
+<img width="1919" height="1048" alt="image" src="https://github.com/user-attachments/assets/a3dfef07-fd15-4cbd-bae1-0e4f6643456d" />
+<img width="1919" height="1024" alt="image" src="https://github.com/user-attachments/assets/f75c0c82-47d8-481b-b0b4-0a7cef1b1c05" />
+<img width="1919" height="991" alt="image" src="https://github.com/user-attachments/assets/d9e2511e-287b-4871-b047-88d070230150" />
+
+<img width="1919" height="994" alt="image" src="https://github.com/user-attachments/assets/a61fae6a-9b05-4bc2-95f0-49421c71020a" />
+
+Re: Phishing Investigation - Gear Up for Your Next Adventure | Spring Collection 2024  
+From Cortex XSOAR  
+
+Hi student@greenmail.com,  
+We've received your email and are investigating.  
+Do not touch the email until further notice.  
+
+Cordially,  
+Your friendly neighborhood security team  
+<img width="1432" height="547" alt="image" src="https://github.com/user-attachments/assets/eb74aabd-07df-432e-99b2-a03ffcbc623c" />
+
+Re: Phishing Investigation - Gear Up for Your Next Adventure | Spring Collection 2024  
+From Cortex XSOAR  
+
+Hi student@greenmail.com,
+We've concluded that the email you forwarded to us is safe. In case you think the verdict is not accurate and the email is suspicious, please contact our SOC team.  
+Thank you for your alertness and your participation in keeping our organization secure.
+
+Cordially,  
+Your security team  
+<img width="1485" height="624" alt="image" src="https://github.com/user-attachments/assets/f8b84d29-dca7-48cd-a921-a1875c6ba1a1" />
+
+## Activity 5 - Introduction to Cortex XSIAM
+
+Cortex XSIAM (Extended Security Intelligence and Automation Management) is an AI-Driven Security Platform designed to help organizations manage their security posture by providing comprehensive visibility across all their data sources including network, cloud, and endpoint environments. In this lab, the user will have limited access (read-only) to an XSIAM cloud tenant. XSIAM is currently only available through the SAAS / Cloud model. 
+
+Key features of XSIAM include:  
+● Security Analytics - XSIAM uses AI and ML algorithms for behavioral analysis, identifying patterns and trends in large volumes of data that could indicate an emerging threat.  
+● Threat Intelligence - The platform applies ML algorithms to analyze threat intelligence data, which helps in identifying patterns and trends that may indicate an emerging threat.  
+● Automated Response - Cortex XSIAM uses AI-powered automation to respond to threats in real-time, reducing the need for human intervention.  
+● Predictive Analytics - Cortex XSIAM leverages ML algorithms to analyze historical data and predict potential threats, helping organizations proactively protect against future attacks.  
+● Continuous Learning - The machine learning algorithms in Cortex XSIAM continuously learn from new data and adjust their models, thereby improving the platform’s accuracy and effectiveness over time.  
+The Cortex XSIAM technology merges the following security products into a single cohesive experience. It can autonomously handle an enormous number of alerts and allows analysts to perform most of their work from within a single product.  
+● SOAR: The SOAR functionality of Cortex XSIAM helps analysts to automate processes and tedious tasks, perform first touch on alerts, and reduce false positives. It automatically remediates and unifies disparate tools into a single pane of glass.  
+● EDR: The EDR functionality of Cortex XSIAM helps analysts gain visibility into endpoints and other devices within a SOC. This functionality protects endpoints against malware, exploits, ransomware, and more. It also offers real-time ability to isolate infected hosts and perform telemetry to identify root causes.  
+● ASM: The ASM functionality of Cortex XSIAM offers real-time monitoring of attack surfaces.  
+● SIEM: The SIEM functionality of Cortex XSIAM helps analysts to ingest logs, normalize logs, create rules for detection, run rules against logs, stitch logs, and create alerts for third-party systems.  
+
+### Task 1 - Cortex XSIAM Command Center  
+Complexity: Easy  
+Scenario: Overview of the Command Center  
+Key Takeaways:  
+● The Command Center gives you a complete overview of security operations.  
+● From this screen, analysts can monitor ingested data sources, track security metrics and see how many alerts have resulted in security incidents.  
+● Analysts can also see how many incidents have been automatically resolved by XSIAM so they can focus on the ones that need attention.  
+
+#### Cortex XSIAM Part1
