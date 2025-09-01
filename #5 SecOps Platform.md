@@ -1,4 +1,4 @@
-<img width="1485" height="624" alt="image" src="https://github.com/user-attachments/assets/5c9d3073-80b6-4d15-b179-33150c7058fc" /><img width="1663" height="889" alt="image" src="https://github.com/user-attachments/assets/74822261-82ff-45eb-9abc-f1cbd9c8226d" /><img width="1919" height="1147" alt="image" src="https://github.com/user-attachments/assets/552cfe45-5d17-453f-97af-1ca43199f994" /><img width="1455" height="881" alt="image" src="https://github.com/user-attachments/assets/a0c2d79b-e1bb-41d3-a775-206f8b202551" />## SecOps Platform  
+## SecOps Platform  
 https://drive.google.com/file/d/15eBgU0Meq_a5Cf-RNiEcA-nrVbiu0rCi/view?usp=sharing  
 ### ULTIMATE TEST DRIVE  
 
@@ -459,3 +459,10 @@ Key Takeaways:
 ● Analysts can also see how many incidents have been automatically resolved by XSIAM so they can focus on the ones that need attention.  
 
 #### Cortex XSIAM Part1
+<img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/ca951dbe-c414-4082-8a57-8965afa321d0" />
+
+<img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/5d4066c4-a05b-4e74-837b-fef45aeaa383" />
+<img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/b10ab49c-c84e-4d35-8d34-46d95d3ff0ec" />
+
+
+
