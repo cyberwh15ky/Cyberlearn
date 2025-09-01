@@ -269,32 +269,35 @@ password: P@lo@lto@123
 <img width="1540" height="698" alt="image" src="https://github.com/user-attachments/assets/715b670b-bbb5-43ef-b4e0-2509f6ab3b62" />
 
 ### Task 2 - Report Phishing Email and see Cortex XSOAR in action
-Complexity: Easy
-Product(s): Cortex XSOAR
-Scenario:
+Complexity: Easy  
+Product(s): Cortex XSOAR  
+Scenario:  
 ● As an end user, you have determined that you have received a Phishing email and decided to report it
-as phishing.
+as phishing.  
 ● Your organization has Cortex XSOAR that monitors phishing emails and immediately springs into action
-when a phishing email is reported and performs automation via Playbooks.
+when a phishing email is reported and performs automation via Playbooks.  
 ● Understand the playbook that gets executed in response to the incident and the steps within that
-playbook.
+playbook.  
 ● Review the information and artifacts that it gathers from the email.
-Key takeaways:
-● Cortex XSOAR incidents via Mail Listener content pack
-● Cortex XSOAR Phishing playbook
-● Cortex XSOAR indicators, Artifacts and more.
+Key takeaways:  
+● Cortex XSOAR incidents via Mail Listener content pack  
+● Cortex XSOAR Phishing playbook  
+● Cortex XSOAR indicators, Artifacts and more.  
 
 #### Windows Client Part2.1
 <img width="1326" height="949" alt="image" src="https://github.com/user-attachments/assets/9ff81bc0-e38d-4b77-a4eb-fd462657975a" />
+
 #### Cortex XSOAR Part2.1
 <img width="1913" height="955" alt="image" src="https://github.com/user-attachments/assets/c8e93de8-234d-44a1-aab1-5bd36cb0fc89" />
+
 #### Windows Client Part2.2
 <img width="1362" height="956" alt="image" src="https://github.com/user-attachments/assets/20c9dd15-e60b-45f5-81ba-ecf9a7572e05" />
+
 #### Cortex XSOAR Part2.2
 <img width="1908" height="949" alt="image" src="https://github.com/user-attachments/assets/575ee399-fb84-4f34-b100-4d1f8723f57e" />
 
 ### Task 3 - Investigate a Phishing Incident in XSOAR - I
-Complexity: Easy
+Complexity: Easy  
 Product(s): Cortex XSOAR
 Scenario:
 ● Cortex XSOAR creates an incident. Understand the playbook that gets executed in response to the
