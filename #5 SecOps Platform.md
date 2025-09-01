@@ -1,4 +1,4 @@
-<img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/bd578106-2d71-4a98-8a7e-d29100e8862f" /><img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/83a2397d-0364-4152-8566-9fdb0163a66f" /><img width="1919" height="1037" alt="image" src="https://github.com/user-attachments/assets/742c2030-a8e4-45f3-bb07-8d206d1063b6" /><img width="1911" height="920" alt="image" src="https://github.com/user-attachments/assets/8677ffc0-2b6d-485f-963f-64c73ddd3553" /><img width="1396" height="719" alt="image" src="https://github.com/user-attachments/assets/1261b3c7-4b65-442e-966d-6563ce164d63" />## SecOps Platform  
+## SecOps Platform  
 https://drive.google.com/file/d/15eBgU0Meq_a5Cf-RNiEcA-nrVbiu0rCi/view?usp=sharing  
 ### ULTIMATE TEST DRIVE  
 
