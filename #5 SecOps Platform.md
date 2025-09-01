@@ -284,11 +284,11 @@ Key takeaways:
 ● Cortex XSOAR Phishing playbook  
 ● Cortex XSOAR indicators, Artifacts and more.  
 
-#### Windows Client Part2.1
-<img width="1326" height="949" alt="image" src="https://github.com/user-attachments/assets/9ff81bc0-e38d-4b77-a4eb-fd462657975a" />
-
 #### Cortex XSOAR Part2.1
 <img width="1913" height="955" alt="image" src="https://github.com/user-attachments/assets/c8e93de8-234d-44a1-aab1-5bd36cb0fc89" />
+
+#### Windows Client Part2.1
+<img width="1326" height="949" alt="image" src="https://github.com/user-attachments/assets/9ff81bc0-e38d-4b77-a4eb-fd462657975a" />
 
 #### Windows Client Part2.2
 <img width="1362" height="956" alt="image" src="https://github.com/user-attachments/assets/20c9dd15-e60b-45f5-81ba-ecf9a7572e05" />
@@ -298,29 +298,32 @@ Key takeaways:
 
 ### Task 3 - Investigate a Phishing Incident in XSOAR - I
 Complexity: Easy  
-Product(s): Cortex XSOAR
-Scenario:
-● Cortex XSOAR creates an incident. Understand the playbook that gets executed in response to the
-incident and the steps within that playbook.
-● Review the information and artifacts that it gathers from the email.
-Key takeaways:
-● Cortex XSOAR Phishing playbook
-● Cortex XSOAR indicators, Artifacts and more.
-
+Product(s): Cortex XSOAR  
+Scenario:  
+● Cortex XSOAR creates an incident. Understand the playbook that gets executed in response to the incident and the steps within that playbook.  
+● Review the information and artifacts that it gathers from the email.  
+Key takeaways:  
+● Cortex XSOAR Phishing playbook.  
+● Cortex XSOAR indicators, Artifacts and more.  
 <img width="1908" height="949" alt="image" src="https://github.com/user-attachments/assets/e4fd32c5-86aa-4397-99ce-28ed8962e265" />
+
 ###### 1 Someone has your password - **Case info**
+
 <img width="1918" height="951" alt="image" src="https://github.com/user-attachments/assets/634cb9a1-3680-4cb6-a395-685cec0650d4" />
 
 ###### 1 Someone has your password - **Investigation**
+
 <img width="1919" height="945" alt="image" src="https://github.com/user-attachments/assets/993881ae-9e07-44bc-9f46-6529a9746408" />
 <img width="1917" height="954" alt="image" src="https://github.com/user-attachments/assets/acfdc436-dc53-4b7d-abc0-0c0869bdd1a7" />
-<img width="1919" height="944" alt="image" src="https://github.com/user-attachments/assets/d729b0d6-380a-48a7-b278-34dc28807c19" />
-
 
 ###### 1 Someone has your password - **Work Plan**
 <img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/c94935fa-eea0-4033-9d25-3d559e672d7e" />
 
-The graph may move around if the Playbook is still executing as we have selected the Follow checkbox. This will help you understand which specific step is currently being executed. Green cards indicate that a step has been successfully completed. The orange card indicates that a manual action is needed from the analyst. A bluecard with a gear icon indicates that a particular step is being executed.
+The graph may move around if the Playbook is still executing as we have selected the Follow checkbox.  
+This will help you understand which specific step is currently being executed.  
+Green cards indicate that a step has been successfully completed.  
+The orange card indicates that a manual action is needed from the analyst.  
+A bluecard with a gear icon indicates that a particular step is being executed.  
 
 <img width="1372" height="167" alt="image" src="https://github.com/user-attachments/assets/162c08d1-479e-4f6f-85ff-93cc6b07ec95" />
 <img width="1918" height="949" alt="image" src="https://github.com/user-attachments/assets/b4f8aed3-3a24-421c-b4f1-6ea188e4dad9" />
@@ -330,10 +333,11 @@ The graph may move around if the Playbook is still executing as we have selected
 <img width="1918" height="947" alt="image" src="https://github.com/user-attachments/assets/a5846b07-3319-41f4-b83e-10a9bad00245" />
 <img width="1919" height="950" alt="image" src="https://github.com/user-attachments/assets/b65e5b6e-26e6-46ee-b02e-af258e551968" />
 
-o Manually search and delete emails: Click on this box to review and select Mark Completed.
-o Which Indicators would you like to block: Here the user is prompted for specific indicators to block such as specific IPs, URL, Files, Emails and Domain. Select the following options and clicksubmit Answers
+o Manually search and delete emails: Click on this box to review and select Mark Completed.  
+o Which Indicators would you like to block: Here the user is prompted for specific indicators to block such as specific IPs, URL, Files, Emails and Domain. Select the following options and clicksubmit Answers  
+
 <img width="1919" height="945" alt="image" src="https://github.com/user-attachments/assets/f1f9838b-1449-40ca-82fa-fd28f0682073" />
 
 <img width="1919" height="950" alt="image" src="https://github.com/user-attachments/assets/ed78645d-0cf5-4cc0-945b-8c4fcc06d776" />
 
-
+<img width="1919" height="944" alt="image" src="https://github.com/user-attachments/assets/d729b0d6-380a-48a7-b278-34dc28807c19" />
