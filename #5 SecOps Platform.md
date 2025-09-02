@@ -553,14 +553,14 @@ XDR Services are running.
 
 **Background:** At the beginning of our previous Cortex XDR activity, we witnessed in real-time the significant threats posed by phishing emails, which can deliver malicious content such as browser exploits and cause substantial damage. In this activity, we will delve into how Cortex XSOAR can enhance your organization's and employees' protection against phishing attacks.  
 
-Phishing emails are particularly hazardous as they not only deliver exploits but also direct users to malicious websites and distribute malware. Given these risks, it is crucial to implement robust measures to protect against phishing attacks. Cortex XSOAR offers advanced automation and orchestration capabilities to streamline and enhance the efficiency, accuracy, and speed of responding to phishing incidents, thereby mitigating the associated challenges effectively.
+Phishing emails are particularly hazardous as they not only deliver exploits but also direct users to malicious websites and distribute malware. Given these risks, it is crucial to implement robust measures to protect against phishing attacks. Cortex XSOAR offers advanced automation and orchestration capabilities to streamline and enhance the efficiency, accuracy, and speed of responding to phishing incidents, thereby mitigating the associated challenges effectively.  
 
 
-**In this activity you will:**
-     **● Review the setup - email client and phishing email.  
-     ● See how Cortex XSOAR can integrate with Mail clients.  
-     ● Understand and work with Cortex XSOAR.  
-     ● See Cortex XSOAR in action when it comes to Phishing emails and how it can help security team’s response times through powerful automation in the form of XSOAR playbooks.**     
+**In this activity you will:**  
+     **● Review the setup - email client and phishing email.**  
+     **● See how Cortex XSOAR can integrate with Mail clients.**  
+     **● Understand and work with Cortex XSOAR.**  
+     **● See Cortex XSOAR in action when it comes to Phishing emails and how it can help security team’s response times through powerful automation in the form of XSOAR playbooks.**  
 
 **Note:** This Activity is dependent on Activity 0 > Task 4 and Activity 2.  
 
@@ -594,9 +594,9 @@ in the following ways:
 Cortex XSOAR Credentials: (admin/P@lo@lto@123)  
 **Step 4.** Once within the **Application Portal**, select the **Webmail** tile to open the email client.  
 
-<img width="1906" height="802" alt="image" src="https://github.com/user-attachments/assets/6bdd9374-daaf-4087-940b-8dd2db8d034a" />
+<img width="1906" height="802" alt="image" src="https://github.com/user-attachments/assets/6bdd9374-daaf-4087-940b-8dd2db8d034a" />  
 
-#### Windows Client Part1
+#### Windows Client Part1  
 
 **Step 5.** To access the Webmail via Windows Client, navigate **CloudShare > Windows Client > Chrome Browser > Webmail** bookmark.  
 
@@ -608,7 +608,7 @@ Cortex XSOAR Credentials: (admin/P@lo@lto@123)
 
 <img width="1553" height="946" alt="image" src="https://github.com/user-attachments/assets/b10f391e-7199-45ba-9dae-90d26183c8d6" />  
 
-**Step 7.** Once logged in, navigate to **Mail > INBOX** and select the mail to view the email. Select **Dark Mode** for optimal viewing experience. **<font color="#FF0000">Do not click on any links within the email as this is a malicious email.0</font>**  
+**Step 7.** Once logged in, navigate to **Mail > INBOX** and select the mail to view the email. Select **Dark Mode** for optimal viewing experience. **Do not click on any links within the email as this is a malicious email.0**  
 
 <img width="1325" height="941" alt="image" src="https://github.com/user-attachments/assets/393e02ea-0c90-49b8-9db5-00dc4d5b32b8" />
 
