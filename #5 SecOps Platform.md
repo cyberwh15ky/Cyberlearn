@@ -124,7 +124,8 @@ are used in the lab:
 <img width="1612" height="337" alt="image" src="https://github.com/user-attachments/assets/98460bcc-2eb4-412a-970d-d3b41442c3ed" />
 <img width="1583" height="458" alt="image" src="https://github.com/user-attachments/assets/6afd3cc6-075d-429b-83e2-526545e20182" />
 <img width="1417" height="830" alt="image" src="https://github.com/user-attachments/assets/e9c07f0b-4bc4-46ad-918b-cdf9b336b889" />
-![Uploading image.png…]()
+<img width="1443" height="459" alt="image" src="https://github.com/user-attachments/assets/119e46e8-9052-4bed-986c-1c5ee06d5c85" />
+
 
 
 
