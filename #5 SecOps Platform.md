@@ -83,8 +83,8 @@ The SecOps UTD lab environment consists of the following tabs:
 9. **Docker Workstation**: This is a VM that hosts Prisma Cloud Compute Edition and other workloads.
 
 ### Task 2 - Understand UTD Components  
-This UTD environment consists of the following components:
-     - ● Linux Client: This is a Ubuntu virtual machine, on which you will carry out the exercises in our workshop related to Cortex XDR.  
+This UTD environment consists of the following components:  
+     -● Linux Client: This is a Ubuntu virtual machine, on which you will carry out the exercises in our workshop related to Cortex XDR.  
      - ● Windows Client: This is a Windows® 10 virtual machine, on which you will carry out the exercises in our workshop related to Cortex XDR.  
      - ● Attacker: This virtual machine is a Kali Linux system that hosts Metasploit® , a penetration testing tool. You will use this virtual machine to take on the role of the attacker in our workshop exercises.  
      - ● Application Portal: This is a Portal through which some of the other components of the lab can be accessed.  
