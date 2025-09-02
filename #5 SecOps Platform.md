@@ -882,7 +882,7 @@ great deals on Hiking boots and backpacks and concluded that this isn’t a Phis
 <img width="1919" height="1024" alt="image" src="https://github.com/user-attachments/assets/f75c0c82-47d8-481b-b0b4-0a7cef1b1c05" />
 <img width="1919" height="991" alt="image" src="https://github.com/user-attachments/assets/d9e2511e-287b-4871-b047-88d070230150" />  
 
-**Step 12.** If you head back to your mail box, you should see emails from XSOAR. When you reported an email as Phishing, you received a notification from XSOAR acknowledging your action. The second email indicates XSOARs finding of the email that you reported as Phishing, and in this case, it is NOT malicious.
+**Step 12.** If you head back to your **mail box**, you should see emails from XSOAR. When you reported an email as Phishing, you received a notification from XSOAR acknowledging your action. The second email indicates XSOARs finding of the email that you reported as Phishing, and in this case, it is NOT malicious.
 <img width="1919" height="994" alt="image" src="https://github.com/user-attachments/assets/a61fae6a-9b05-4bc2-95f0-49421c71020a" />
 > Re: Phishing Investigation - Gear Up for Your Next Adventure | Spring Collection 2024  
 > From Cortex XSOAR  
