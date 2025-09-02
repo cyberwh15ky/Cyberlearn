@@ -72,8 +72,8 @@ Task 3 - XSIAM
 Ultimate Test Drive - SecOps Platform Workshop
 The SecOps UTD lab environment consists of the following tabs:
 1. **Overview**: A quick overview of lab environment and lab activities
-   a- Workshop Guide**: Click this tab to open the lab guide
-   b- Survey**: A short survey to get your feedback
+     - a. Workshop Guide**: Click this tab to open the lab guide
+     - b. Survey**: A short survey to get your feedback
 2. **Cortex XSOAR (GUI)**: This is a self hosted version of Cortex XSOAR (creds: admin/P@lo@lto@123)
 3. **Cortex XDR (GUI)**: This is the Palo Alto Networks Cortex XDR tenant.
 4. **Cortex XSIAM (GUI)**: This is the Palo Alto Networks Cortex XSIAM tenant.
