@@ -172,6 +172,8 @@ Install Cortex agent in Windows
 > cd C:\Users\root\Desktop  
 > ./Install-Cortex-XDR.ps1  
 <img width="1620" height="759" alt="image" src="https://github.com/user-attachments/assets/eca272f6-2c52-4d28-be0c-e0034e05268b" />
+
+Step 3. The script will rename the current Windows host and download the XDR agent, extract it and install it. During installation, follow through the installation prompts. This process may take a few minutes.  
 <img width="1114" height="750" alt="image" src="https://github.com/user-attachments/assets/1fad8b60-93c9-43ed-bbe6-c7ef753143a0" />
 <img width="1145" height="728" alt="image" src="https://github.com/user-attachments/assets/0ddce1c7-8858-4ca7-8895-1bbd47e869f7" />
 <img width="1047" height="615" alt="image" src="https://github.com/user-attachments/assets/6d6e0332-699b-4be5-bd93-90921c33c01e" />
