@@ -208,7 +208,7 @@ Install Cortex agent in Linux
 **Step 5.** Navigate to Assets > Vulnerability Assessment > Vulnerability Assessment to view the Vulnerability assessment of the current active endpoints. If there are active endpoints connected to the tenant, you will be able to see the data populated in this page. On the top right corner of the screen, you can also toggle between CVEs and Endpoints.
 
 **⚠️Note:**  
-❖ Vulnerabilities are present only if there’s a connected endpoint (XDR Client) that’s been active for some time to undergo a vulnerability assessment. If you do not see CVEs, it is due to an absence of a connected endpoint.  
+- ❖ Vulnerabilities are present only if there’s a connected endpoint (XDR Client) that’s been active for some time to undergo a vulnerability assessment. If you do not see CVEs, it is due to an absence of a connected endpoint.  
 <img width="1852" height="908" alt="image" src="https://github.com/user-attachments/assets/0e9aa774-284e-431f-bb6c-fdcaa3d5d562" />
 <img width="1766" height="1019" alt="image" src="https://github.com/user-attachments/assets/e64e53d3-cde6-409b-a44f-a681b844c958" />
 
@@ -231,18 +231,18 @@ Install Cortex agent in Linux
 <img width="1212" height="382" alt="image" src="https://github.com/user-attachments/assets/486834b9-f7ad-444c-869b-74546510d6a7" />  
 
 
-💡Insights:  
-❖ We have created Metasploit Resource Scripts that contain the commands to launch the exploit with all the necessary configuration for your convenience. You can view the resource scripts for Windows and Linux in the Attacker VM at the following locations respectively:  
+**<ins>💡Insights:</ins>**  
+- ❖ We have created Metasploit Resource Scripts that contain the commands to launch the exploit with all the necessary configuration for your convenience. You can view the resource scripts for Windows and Linux in the Attacker VM at the following locations respectively:  
 
 > /home/sysadmin/Windows-Attacks  
 > /home/sysadmin/Linux-Attacks
 
-❖ The command that you executed at the Browser Exploit terminal tab will start the Metasploit program and configure the Attacker VM to listen for incoming connections and serve the Google Chrome JSCreate Side-effect Type Confusion zero-day exploit to the Victim VM.  
-❖ When configuration is completed, the terminal should display the following prompt:  
+- ❖ The command that you executed at the Browser Exploit terminal tab will start the Metasploit program and configure the Attacker VM to listen for incoming connections and serve the Google Chrome JSCreate Side-effect Type Confusion zero-day exploit to the Victim VM.  
+- ❖ When configuration is completed, the terminal should display the following prompt:  
 
 > $msf6 exploit(multi/browser/chrome_jscreate_sideeffect)>
 
-❖ The Attacker system is now waiting for a reverse connection from the Victim system.  
+- ❖ The Attacker system is now waiting for a reverse connection from the Victim system.  
 
 
 <img width="1333" height="709" alt="image" src="https://github.com/user-attachments/assets/fe95807f-73a6-464e-bcf2-e8eed1b898d5" />  
@@ -257,10 +257,10 @@ Install Cortex agent in Linux
 
 This should open a mailbox and here you should see an email. Ensure to maximize the Chrome browser window in the Windows VM to ensure that all the options are visible/  
 
-**💡Insights:**  
-❖ An email with the subject line **Someone has your password** is displayed in the preview pane.  
-❖ This looks like a legitimate email from Google, informing you that someone is trying to access your device. The email suggests you review the device to ensure your password is safe.  
-❖ This is an email Phishing attack that delivers **Google Chrome JSCreate Side-effect Type Confusion zero-day exploit**  
+****<ins>**<ins></ins>**</ins>****  
+- ❖ An email with the subject line **Someone has your password** is displayed in the preview pane.  
+- ❖ This looks like a legitimate email from Google, informing you that someone is trying to access your device. The email suggests you review the device to ensure your password is safe.  
+- ❖ This is an email Phishing attack that delivers **Google Chrome JSCreate Side-effect Type Confusion zero-day exploit**  
 
 <img width="1540" height="956" alt="image" src="https://github.com/user-attachments/assets/704071b3-2b22-41fc-8256-6eae0dcf860c" />  
 <img width="1563" height="1129" alt="image" src="https://github.com/user-attachments/assets/bc25a7d1-2f3f-4e61-a69e-5417d03ebd15" />  
@@ -286,8 +286,8 @@ This should open a mailbox and here you should see an email. Ensure to maximize 
 **Step 10.** Head back to the **Cortex XDR** tab in CloudShare. **Refresh** the incident page and now you should see incidents related to the exploit which we just performed. Be sure to note down the **Incident ID** as you’ll be using this to identify and locate the right incident for the rest of the steps in this activity. In the below screenshot, the **Incident ID is 15**. In your case, it will differ from the screenshots.  
 
 **⚠️Notes:**  
-❖ If you have trouble locating the incident associated with your endpoint, please refer to **Activity 2 > Task 2 > Step 7** for instructions on locating incidents associated with your incident.  
-❖ Alternatively, within the Incidents page, you can use the filters from the top right corner of your page to set the Hostname to that of your corresponding Windows Client’s hostname to see the relevant incidents.  
+- ❖ If you have trouble locating the incident associated with your endpoint, please refer to **Activity 2 > Task 2 > Step 7** for instructions on locating incidents associated with your incident.  
+- ❖ Alternatively, within the Incidents page, you can use the filters from the top right corner of your page to set the Hostname to that of your corresponding Windows Client’s hostname to see the relevant incidents.  
 
 <img width="1866" height="862" alt="image" src="https://github.com/user-attachments/assets/3d060ea3-6828-47c5-be08-f6db3e9e0f18" />
 <img width="1861" height="1030" alt="image" src="https://github.com/user-attachments/assets/78d3f435-9710-4650-885c-b0eba1b1fcdc" />
@@ -297,14 +297,14 @@ This should open a mailbox and here you should see an email. Ensure to maximize 
 <img width="1917" height="1191" alt="image" src="https://github.com/user-attachments/assets/f27a0d8c-507e-4381-8204-61ae78053fad" />
 
 **⚠️Notes:**  
-❖ You may see multiple Hosts as part of the same incident. You can also expect to see that an Alert that was created for your Windows Host as part of the attack that you performed may get added to an existing incident. This happens because XDR associates alerts to an incident based on different criteria such:  
+- ❖ You may see multiple Hosts as part of the same incident. You can also expect to see that an Alert that was created for your Windows Host as part of the attack that you performed may get added to an existing incident. This happens because XDR associates alerts to an incident based on different criteria such:  
 ➢ Alert source, type and time period  
 ➢ Alerts on the same causality chain are grouped with the same incident if an open incident already exists.  
 ➢ Alerts involving the same Windows/Linux username.  
 ➢ Alerts involving the same malware file SHA256 hash.  
 ➢ Alerts involving the same command line processes.  
-❖ This is expected behavior because an attack can affect several hosts or users and raises different alert types stemming from a single event. All artifacts, assets, and alerts from a threat event are gathered into an Incident.  
-❖ In the lab, since we are performing the same kind of attacks on multiple Windows/Linux VMs, you can expect to see alerts being grouped in different incidents.  
+- ❖ This is expected behavior because an attack can affect several hosts or users and raises different alert types stemming from a single event. All artifacts, assets, and alerts from a threat event are gathered into an Incident.  
+- ❖ In the lab, since we are performing the same kind of attacks on multiple Windows/Linux VMs, you can expect to see alerts being grouped in different incidents.  
 
 **Step 12.** To filter alerts associated with your specific VM within the incident, navigate to Alerts and Insights and click on the filter icon. Select Host field for the Select Field and for Value, use your Windows Hostname.  
 
@@ -346,9 +346,9 @@ Key takeaways:
 
 <img width="1309" height="572" alt="image" src="https://github.com/user-attachments/assets/0ac4296c-ace6-48c8-b72f-993c8b2e613e" />
 
-**💡Insights:**  
-❖ The command will start the Metasploit program and configure the Attacker VM to listen for incoming connections and serve the **Apache ActiveMQ Unauthenticated Remote Code Execution exploit** to the **Windows Client**  
-❖ Once the exploit execution is complete, you should see a Meterpreter session open. This indicates that the exploit was completed successfully and we have obtained the reverse shell on the Windows Client  
+**<ins>💡Insights:</ins>**  
+- ❖ The command will start the Metasploit program and configure the Attacker VM to listen for incoming connections and serve the **Apache ActiveMQ Unauthenticated Remote Code Execution exploit** to the **Windows Client**  
+- ❖ Once the exploit execution is complete, you should see a Meterpreter session open. This indicates that the exploit was completed successfully and we have obtained the reverse shell on the Windows Client  
 
 **Step 4**. Once the command executes successfully, you will after you see a message that says **Meterpreter Session 1 opened…**. At this point, the terminal may appear stuck without a prompt when you see the message **Server Stopped**. At this point, hit return on your keyboard a couple of times to bring up a prompt. We will not be interacting with this session just yet and the current Meterpreter session will be running in the background. You can run the following command to confirm:
 > sessions  
@@ -408,10 +408,10 @@ Investigate Causality Chain > Open Card in same tab.
 
 **Step 2.** Execute the following command and hit return:  
 
-**💡Insights:**  
-❖ The command will use the previous Meterpreter session that was opened as part of the RCE exploit that we performed in the previous task to deliver a privilege escalation exploit  
-❖ Once the second exploit is executed, that will open additional Meterpreter reverse connection with elevated permissions.  
-❖ We will use that session to perform Post Exploitation things.  
+**<ins>💡Insights:</ins>**  
+- ❖ The command will use the previous Meterpreter session that was opened as part of the RCE exploit that we performed in the previous task to deliver a privilege escalation exploit  
+- ❖ Once the second exploit is executed, that will open additional Meterpreter reverse connection with elevated permissions.  
+- ❖ We will use that session to perform Post Exploitation things.  
 
 > resource 03-priv-escalation.rc  
 
@@ -492,10 +492,10 @@ XDR Services are running.
 > hostname
 <img width="1032" height="677" alt="image" src="https://github.com/user-attachments/assets/2acc34e9-d6aa-4124-a973-37c838b5866c" />
 
-**💡Insights:**  
-❖ Palo Alto Networks WildFire is a cloud-delivered malware analysis service that uses data and threat intelligence from the industry’s largest global community.  
-❖ This incident is triggered by the malware test file, and you will be able to get more details on this threat. You can use the download button on the upper left to download a copy of this report.  
-❖ Close the WildFire Analysis Report. Close the WildFire Analysis Report.  
+**<ins>💡Insights:</ins>**  
+- ❖ Palo Alto Networks WildFire is a cloud-delivered malware analysis service that uses data and threat intelligence from the industry’s largest global community.  
+- ❖ This incident is triggered by the malware test file, and you will be able to get more details on this threat. You can use the download button on the upper left to download a copy of this report.  
+- ❖ Close the WildFire Analysis Report. Close the WildFire Analysis Report.  
 
 **Step 6.** Run the following command to determine your Linux Hostname.  
 
@@ -520,9 +520,9 @@ XDR Services are running.
 
 <img width="1286" height="735" alt="image" src="https://github.com/user-attachments/assets/746e5b4c-4da3-43d7-89f9-e0d697810266" />
 
-**💡Insights:**  
-❖ The command will start the Metasploit program and configure the Attacker VM to listen for incoming connections and serve the **Spring Cloud Function SpEL Injection (CVE-2022-22963) exploit** to the Linux Client  
-❖ Once the exploit execution is complete, you should see a Meterpreter session open. This indicates that the exploit was completed successfully and we have obtained the reverse shell on the Linux Client  
+**<ins>💡Insights:</ins>**  
+- ❖ The command will start the Metasploit program and configure the Attacker VM to listen for incoming connections and serve the **Spring Cloud Function SpEL Injection (CVE-2022-22963) exploit** to the Linux Client  
+- ❖ Once the exploit execution is complete, you should see a Meterpreter session open. This indicates that the exploit was completed successfully and we have obtained the reverse shell on the Linux Client  
 
 **Step 10.** Within the Meterpreter prompt, run the following command to execute post exploitation steps.  
 
@@ -621,10 +621,10 @@ Cortex XSOAR Credentials: (admin/P@lo@lto@123)
 **Step 9.** Once logged in, navigate to **Settings > Integrations > Instances** and search for **Mail Listener**. Within the search results you can see that there’s an integration by the name **Mail Listener V2** configured. **Click on the settings icon** to review it.  
 <img width="1486" height="771" alt="image" src="https://github.com/user-attachments/assets/47a1e3e1-2ad4-4366-acf8-50067d7751fb" />
 
-**💡Insights:**  
-❖ Mail Listener V2 content pack is used to listen to mailboxes and trigger incidents. Each content pack can have multiple instances.  
-❖ Each instance can be customized to work with a different email address and according to different rules. For example, you can define the integration instance to fetch emails from specific sender addresses and for specific periods of time.  
-❖ In our case, we have already preconfigured an instance of this content pack: **Mail Listener v2_UTD** for your convenience. In the next steps, you’ll be reviewing the configuration  
+**<ins>💡Insights:</ins>**  
+- ❖ Mail Listener V2 content pack is used to listen to mailboxes and trigger incidents. Each content pack can have multiple instances.  
+- ❖ Each instance can be customized to work with a different email address and according to different rules. For example, you can define the integration instance to fetch emails from specific sender addresses and for specific periods of time.  
+- ❖ In our case, we have already preconfigured an instance of this content pack: **Mail Listener v2_UTD** for your convenience. In the next steps, you’ll be reviewing the configuration  
 
 **Step 1**. This instance is configured to create incidents in XSOAR based on emails received to a specific mailbox (the email account that we looked at earlier in this task). Let's configure the instance to fetch instances. Click on the radio button: **Fetches Incidents**  
 <img width="1489" height="776" alt="image" src="https://github.com/user-attachments/assets/1fe622b7-2952-485c-9cf4-e89b180de465" />  
@@ -641,16 +641,27 @@ Cortex XSOAR Credentials: (admin/P@lo@lto@123)
  - f) **<ins>First Fetch Time:</ins>** This corresponds to the oldest email that will be fetched. For example, if it’s set to 1 year, all emails within the past year from the current date, will be fetched.  
  - g) **<ins>Incidents Fetch Interval:</ins>** The frequency at which XSOAR queries the configured mailbox and folder for emails.  
 
+**Step 4.** **Do not change any of the settings other than what's mentioned in steps 1 and 2 .** Click **Test** to validate that the tests are successful. Click **Save & Exit.**  
 <img width="1508" height="1041" alt="image" src="https://github.com/user-attachments/assets/bad9ffc7-74a9-4922-be4c-930addc3aadd" />
 <img width="1508" height="1045" alt="image" src="https://github.com/user-attachments/assets/2e0a0c38-978c-41a0-a2d1-3b43fcf46e4f" />
+
+**Step 5.** After you click **Save and Exit**, click on the **history** for Mail Listener V2 integration to view the **Mail Fetch history**.
 <img width="1675" height="890" alt="image" src="https://github.com/user-attachments/assets/28d732dc-3c9b-4af1-ac7f-86b83b17c6f3" />
+
+**Step 6.** If you do not see any fetch history yet, click on **refresh** icon. The fetch interval is set to **1 minute**. If you do not see one yet, **wait for 1 minute** and click on the **refresh** button. Once you see a mail fetch entry, proceed to the next step.
 <img width="1511" height="749" alt="image" src="https://github.com/user-attachments/assets/04c59ead-633a-4f76-b3a1-11f5ba2c3a5b" />
 <img width="1540" height="698" alt="image" src="https://github.com/user-attachments/assets/715b670b-bbb5-43ef-b4e0-2509f6ab3b62" />
 
+**<ins>💡Insights:</ins>**  
+- ❖ Mail Listener V2 instance is used to listen to our student mailboxes and trigger incidents if any email appears in the Phishing folder.  
+- ❖ Once an incident is created by the Mail Listener based on emails in the mailbox, XSOAR executes playbook in response to that, which performs predetermined steps and takes actions based on outcomes of steps within the playbook.  
+- ❖ In most organizations, within Mailbox, typically the user gets an option to report an email as Phishing if they suspect it as Phishing. The existing setup is designed to mimic that situation and setup within a lab environment to demonstrate how XSOAR can help solve the use case of Phishing emails.  
+- ❖ In the previous Activity, we saw how, through a Phishing email, a browser exploit can be delivered (which was blocked by Cortex XDR). That is one example of the damaging effects of a Phishing email and there are countless more in the real world, which is why XSOAR can help you automate many of the incidents that arise due to Phishing emails.  
+
 ### Task 2 - Report Phishing Email and see Cortex XSOAR in action
-Complexity: Easy  
-Product(s): Cortex XSOAR  
-Scenario:  
+**<ins>Complexity:</ins>** Easy  
+**<ins>Product(s):</ins>** Cortex XSOAR  
+**<ins>Scenario:</ins>**  
  - As an end user, you have determined that you have received a Phishing email and decided to report it
 as phishing.  
  - Your organization has Cortex XSOAR that monitors phishing emails and immediately springs into action
@@ -658,38 +669,72 @@ when a phishing email is reported and performs automation via Playbooks.
  - Understand the playbook that gets executed in response to the incident and the steps within that
 playbook.  
  - Review the information and artifacts that it gathers from the email.
-Key takeaways:  
+ - 
+**<ins>Key takeaways:</ins>**  
  - Cortex XSOAR incidents via Mail Listener content pack  
  - Cortex XSOAR Phishing playbook  
  - Cortex XSOAR indicators, Artifacts and more.  
 
+
 #### Cortex XSOAR Part2.1
 <img width="1913" height="955" alt="image" src="https://github.com/user-attachments/assets/c8e93de8-234d-44a1-aab1-5bd36cb0fc89" />
 
-#### Windows Client Part2.1
-<img width="1326" height="949" alt="image" src="https://github.com/user-attachments/assets/9ff81bc0-e38d-4b77-a4eb-fd462657975a" />
+**Step 01.** Head back to the **Webmail** (you may need to login to Webmail again as you would be logged out due to inactivity).
+**<ins>💡Insights:</ins>** 
+ - ❖ After reviewing the email, you have determined that this is a Phishing email and decided to report this as Phishing.
+**Step 02.** Open the Email in the INBOX. Click on **More > Move to > Phishing.**
+#### Windows Client Part2.1  
+<img width="1326" height="949" alt="image" src="https://github.com/user-attachments/assets/9ff81bc0-e38d-4b77-a4eb-fd462657975a" />  
 
 #### Windows Client Part2.2
 <img width="1362" height="956" alt="image" src="https://github.com/user-attachments/assets/20c9dd15-e60b-45f5-81ba-ecf9a7572e05" />
 
-#### Cortex XSOAR Part2.2
-<img width="1908" height="949" alt="image" src="https://github.com/user-attachments/assets/575ee399-fb84-4f34-b100-4d1f8723f57e" />
+**Step 3.** Once you do this, head back to Cortex XSOAR as we are expected XSOAR to scan this mailbox and Phishing folder every minute and to create an incident for every email that exists within the Phishing folder.  
+**Step 4.** Navigate to CloudShare > Cortex XSOAR > Incidents. Here, you should see an incident already pulled in. If you do not, you can change the refresh setting from the top of the screen to refresh every minute. Additionally, you can Hide Chart Panel to give you more room in the UI.  
+**Step 5.** You can click on the Incident ID #1 to view the incident . In the next task, we will review the incident and the actions performed by XSOAR.  
+#### Cortex XSOAR Part2.2  
+<img width="1908" height="949" alt="image" src="https://github.com/user-attachments/assets/575ee399-fb84-4f34-b100-4d1f8723f57e" />  
+
+**<ins>⚠️Notes:</ins>**   
+❖ If you do not see an Incident created in 2-3 mins after you moved the email to Phishing, (Task 2 > Step 2), move the email out of the Phishing and into INBOX (**Webmail > Phishing** category from the left pane **> click on email > Click More > Move to > INBOX**). Wait 2-3 mins and move it back to the Phishing inbox again (Task 2 > Step 2)  
+❖ If the above step didn’t help, complete the steps in **Troubleshooting Activity > Mailbox Redeployment** to deploy the mailbox setup.  
+❖ Once done, to test the setup, run **Task 1 > Step 9 - 12**  
+❖ Finally, perform **Task 2 > Step 2 - 4**  
 
 ### Task 3 - Investigate a Phishing Incident in XSOAR - I
-Complexity: Easy  
-Product(s): Cortex XSOAR  
-Scenario:  
+**<ins>Complexity:</ins>** Easy  
+**<ins>Product(s):</ins>** Cortex XSOAR  
+**<ins>Scenario:</ins>**  
  - Cortex XSOAR creates an incident. Understand the playbook that gets executed in response to the incident and the steps within that playbook.  
  - Review the information and artifacts that it gathers from the email.  
-Key takeaways:  
+**<ins>Key takeaways:</ins>**  
  - Cortex XSOAR Phishing playbook.  
- - Cortex XSOAR indicators, Artifacts and more.  
-<img width="1908" height="949" alt="image" src="https://github.com/user-attachments/assets/e4fd32c5-86aa-4397-99ce-28ed8962e265" />
+ - Cortex XSOAR indicators, Artifacts and more.
 
+**Step 1.** Within the **Case Info** tab, you will be able to see the incident details. Some of the sections within the **case Info** will not be populated at this point and this is expected. This will change as the Playbook executes through all the steps (which we will look at in just a bit). In the meantime, let's understand the various sections within this tab and also look at other tabs.
+<img width="1908" height="949" alt="image" src="https://github.com/user-attachments/assets/e4fd32c5-86aa-4397-99ce-28ed8962e265" />
 #### Cortex XSOAR Part3
 ###### 1 Someone has your password - **Case info**
 <img width="1918" height="951" alt="image" src="https://github.com/user-attachments/assets/634cb9a1-3680-4cb6-a395-685cec0650d4" />
 
+
+
+**<ins>💡Insights:</ins>**  
+ - ❖ **<ins>Case Basic Details:</ins>** Contains information about Email addresses  
+ - ❖ **<ins>URL Screenshots:</ins>** XSOAR parses the email and gets a screenshot of all the hyperlinks within the email and these are displayed and attached in this section  
+ - ❖ **<ins>Work Plan:</ins>** As the XSOAR Playbook is executing, there might be a few manual actions that the user may need to perform. If there are any such actions that need users input, they will show up in this section.  
+ - ❖ **<ins>Incident SLAs:</ins>** SLA of this incident.  
+ - ❖ **<ins>Email Attachments:</ins>** If there are any files attached in the email, they will be available in this section. Images can also be found as attachments.  
+ - ❖ **<ins>Response Action:</ins>** An action that you can take in response to this incident.  
+ - ❖ **<ins>Indicators:</ins>** These are all the key pieces of information (Links, domains, IPs, mail addresses) that XSOAR was able to extract from the email. The reputation of these indicators are checked. In this lab, Virus Total, Wildfire and Unit 42 have been configured as sources  
+ - ❖ **<ins>Malicious or Suspicious Indicators:</ins>** The indicators that XSOAR determines as malicious  
+ - ❖ **<ins>Incident Files:</ins>** All the files related to this incident.  
+ - ❖ **<ins>Email Body:</ins>** The email will be rendered in this section and this will give the analyst an idea as to how the email looks  
+
+
+Step 2. Within the Investigation tab, you can see that XSOAR has extracted all the Email Headers from the
+email and also parsed the raw email HTML. Some of the sections at this point will not be populated
+yet.
 ###### 1 Someone has your password - **Investigation**
 <img width="1919" height="945" alt="image" src="https://github.com/user-attachments/assets/993881ae-9e07-44bc-9f46-6529a9746408" />
 <img width="1917" height="954" alt="image" src="https://github.com/user-attachments/assets/acfdc436-dc53-4b7d-abc0-0c0869bdd1a7" />
