@@ -838,53 +838,72 @@ This will help you understand which specific step is currently being executed.
 
 **Step 4.** Wait for a minute or two for XSOAR to pull the email from the mailbox and create the incident. Then navigate to **CloudShare > Cortex XSOAR > Incidents**. You can click on the Incident ID **#2** to view the incident.  
 #### Cortex XSOAR Part5  
-<img width="1919" height="999" alt="image" src="https://github.com/user-attachments/assets/f939b14b-93a3-49ad-b2cc-c2499d045603" />                                   
+<img width="1919" height="999" alt="image" src="https://github.com/user-attachments/assets/f939b14b-93a3-49ad-b2cc-c2499d045603" />  
+
+**Step 5.** Immediately head over to the **Work Plan** tab to see the playbook execution in action. You may need to **scroll down** to find the current execution step. Review the steps that are being executed. Eventually, the playbook will pause execution and wait for user input when it reaches the step **Manually review the incident**. You can also tell if the playbook is waiting for user input by a small **user icon right next to the Work Plan tab**.  
+<img width="1391" height="919" alt="image" src="https://github.com/user-attachments/assets/5f8d320a-a71f-49c5-b1cf-0c5fa2295758" />
+
 
 ################################################
 ################################################
 ################################################
 ################################################
 #2 Gear Up for Your Next Adventure | Spring Collection 2024 - **Case info**
-<img width="1919" height="1041" alt="image" src="https://github.com/user-attachments/assets/00fdab9f-77b7-4b6d-a1e2-5bd1d01ecfa6" />
 
+**Step 6.** Before responding to XSOAR user input prompt, head back to the Case Info tab and scroll down to the Indicators section and review the finding of XSOAR against each indicator. XSOAR has received verdicts from various sources for the detected indicators. Here you can see that the majority of the verdicts are Benign and some of the indicators are marked as Unknown, meaning that there is no data about that indicator. Also review the URL Screenshots section to see the screenshots of URLs from the email.  
+
+<img width="1919" height="1041" alt="image" src="https://github.com/user-attachments/assets/00fdab9f-77b7-4b6d-a1e2-5bd1d01ecfa6" />
 <img width="1919" height="1085" alt="image" src="https://github.com/user-attachments/assets/1af06959-fbca-430c-9f2c-ecfad5bddb90" />
 <img width="1919" height="1081" alt="image" src="https://github.com/user-attachments/assets/ddefc7fc-8d39-4b09-9805-c77fa9c8582b" />
 
 
 #### Application Portal Part2
+**Step 7**. Scrolling further down, under the **Malicious or Suspicious Indicators** section, you see that there are no malicious indicators detected for this email. As a SOC analyst, you want to double check and research further. Head over to the **Application Portal > Ultimate Test Drive Home page > Outdoor Store**. You are reviewing the domain/website that is associated with the newsletter email. Optionally, you can visit the website from your laptop browser  
 <img width="1663" height="889" alt="image" src="https://github.com/user-attachments/assets/8b29f553-e190-469c-aab7-4a3f8b316424" />
-<img width="1919" height="1150" alt="image" src="https://github.com/user-attachments/assets/45a37023-20ae-44bc-a2f8-cc1154b2f33e" />
+
+**Step 8.** After reviewing the website, you have determined that this is a legitimate website that currently has
+great deals on Hiking boots and backpacks and concluded that this isn’t a Phishing email.  
+
+⚠️**<ins>Notes:</ins>**  
+ - ❖ This website is for demo purposes only. It is not an actual e-commerce site and has limited functionality.  
+ - ❖ This site is publicly accessible and has a valid SSL certificate  
+<img width="1919" height="1150" alt="image" src="https://github.com/user-attachments/assets/45a37023-20ae-44bc-a2f8-cc1154b2f33e" />  
 
 #### Cortex XSOAR Part6
-<img width="1919" height="929" alt="image" src="https://github.com/user-attachments/assets/4b4b796b-a014-4828-a0c3-ba293384a71f" />
-<img width="1919" height="939" alt="image" src="https://github.com/user-attachments/assets/2006f692-a73a-4432-9e97-7d34f7e3104a" />
-<img width="1919" height="950" alt="image" src="https://github.com/user-attachments/assets/70e8f7aa-5fb4-4e14-8edb-f5a0948583f8" />
-<img width="1919" height="1048" alt="image" src="https://github.com/user-attachments/assets/a3dfef07-fd15-4cbd-bae1-0e4f6643456d" />
+**Step 9.** Head over to the **Cortex XSOAR tab**. Under **Case Basic Details**, you can see that XSOAR has determined the **Severity of the incident as Low**. Under the **Work Plan** within the **Case Info** tab, click on the **Manually review the incident** card and click on **Mark Complete**.  
+<img width="1919" height="929" alt="image" src="https://github.com/user-attachments/assets/4b4b796b-a014-4828-a0c3-ba293384a71f" />  
+<img width="1919" height="939" alt="image" src="https://github.com/user-attachments/assets/2006f692-a73a-4432-9e97-7d34f7e3104a" />  
+<img width="1919" height="950" alt="image" src="https://github.com/user-attachments/assets/70e8f7aa-5fb4-4e14-8edb-f5a0948583f8" />  
+
+**Step 10.** Under the Work Plan section within the Case Info tab, you will be presented with another user prompt - Is the email malicious. Since your findings are inline with XSOAR findings and you’ve concluded that this isn’t a Phishing email, you can safely select No for the prompt and click Mark Completed.
+<img width="1919" height="1048" alt="image" src="https://github.com/user-attachments/assets/a3dfef07-fd15-4cbd-bae1-0e4f6643456d" />  
+
+**Step 11.** After this step, the playbook will continue with the rest of the steps and close the investigation  
 <img width="1919" height="1024" alt="image" src="https://github.com/user-attachments/assets/f75c0c82-47d8-481b-b0b4-0a7cef1b1c05" />
-<img width="1919" height="991" alt="image" src="https://github.com/user-attachments/assets/d9e2511e-287b-4871-b047-88d070230150" />
+<img width="1919" height="991" alt="image" src="https://github.com/user-attachments/assets/d9e2511e-287b-4871-b047-88d070230150" />  
 
+**Step 12.** If you head back to your mail box, you should see emails from XSOAR. When you reported an email as Phishing, you received a notification from XSOAR acknowledging your action. The second email indicates XSOARs finding of the email that you reported as Phishing, and in this case, it is NOT malicious.
 <img width="1919" height="994" alt="image" src="https://github.com/user-attachments/assets/a61fae6a-9b05-4bc2-95f0-49421c71020a" />
-
-Re: Phishing Investigation - Gear Up for Your Next Adventure | Spring Collection 2024  
-From Cortex XSOAR  
-
-Hi student@greenmail.com,  
-We've received your email and are investigating.  
-Do not touch the email until further notice.  
-
-Cordially,  
-Your friendly neighborhood security team  
+> Re: Phishing Investigation - Gear Up for Your Next Adventure | Spring Collection 2024  
+> From Cortex XSOAR  
+> 
+> Hi student@greenmail.com,  
+> We've received your email and are investigating.  
+> Do not touch the email until further notice.  
+> 
+> Cordially,  
+> Your friendly neighborhood security team  
 <img width="1432" height="547" alt="image" src="https://github.com/user-attachments/assets/eb74aabd-07df-432e-99b2-a03ffcbc623c" />
 
-Re: Phishing Investigation - Gear Up for Your Next Adventure | Spring Collection 2024  
-From Cortex XSOAR  
-
-Hi student@greenmail.com,
-We've concluded that the email you forwarded to us is safe. In case you think the verdict is not accurate and the email is suspicious, please contact our SOC team.  
-Thank you for your alertness and your participation in keeping our organization secure.
-
-Cordially,  
-Your security team  
+>Re: Phishing Investigation - Gear Up for Your Next Adventure | Spring Collection 2024  
+> From Cortex XSOAR  
+> 
+> Hi student@greenmail.com,
+> We've concluded that the email you forwarded to us is safe. In case you think the verdict is not accurate and the email is suspicious, > please contact our SOC team.  
+> Thank you for your alertness and your participation in keeping our organization secure.
+>
+> Cordially,  
+> Your security team  
 <img width="1485" height="624" alt="image" src="https://github.com/user-attachments/assets/f8b84d29-dca7-48cd-a921-a1875c6ba1a1" />
 
 <img width="1919" height="934" alt="image" src="https://github.com/user-attachments/assets/8392f6af-efa7-4566-b23a-a0541aaf0570" />
