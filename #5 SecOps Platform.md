@@ -233,11 +233,15 @@ Install Cortex agent in Linux
 
 💡Insights:  
 ❖ We have created Metasploit Resource Scripts that contain the commands to launch the exploit with all the necessary configuration for your convenience. You can view the resource scripts for Windows and Linux in the Attacker VM at the following locations respectively:  
+
 > /home/sysadmin/Windows-Attacks  
-> /home/sysadmin/Linux-Attacks  
+> /home/sysadmin/Linux-Attacks
+
 ❖ The command that you executed at the Browser Exploit terminal tab will start the Metasploit program and configure the Attacker VM to listen for incoming connections and serve the Google Chrome JSCreate Side-effect Type Confusion zero-day exploit to the Victim VM.  
 ❖ When configuration is completed, the terminal should display the following prompt:  
-> $msf6 exploit(multi/browser/chrome_jscreate_sideeffect)>  
+
+> $msf6 exploit(multi/browser/chrome_jscreate_sideeffect)>
+
 ❖ The Attacker system is now waiting for a reverse connection from the Victim system.  
 
 
