@@ -118,13 +118,20 @@ are used in the lab:
 
 ### Task 4 - Enable Internet Access on the ML-Powered Next-Generation Firewall
 <img width="1302" height="631" alt="image" src="https://github.com/user-attachments/assets/498c143f-b840-4cff-9729-4bb9c56e765b" />  
+
+> **Name: student**  
+> **Password: utd135**  
+
 <img width="1189" height="381" alt="image" src="https://github.com/user-attachments/assets/1f760b66-7a47-498d-8f7b-83c252200470" />  
-> Name: student  
-> Password: utd135  
-<img width="1612" height="337" alt="image" src="https://github.com/user-attachments/assets/98460bcc-2eb4-412a-970d-d3b41442c3ed" />
-<img width="1583" height="458" alt="image" src="https://github.com/user-attachments/assets/6afd3cc6-075d-429b-83e2-526545e20182" />
-<img width="1417" height="830" alt="image" src="https://github.com/user-attachments/assets/e9c07f0b-4bc4-46ad-918b-cdf9b336b889" />
-<img width="1443" height="459" alt="image" src="https://github.com/user-attachments/assets/119e46e8-9052-4bed-986c-1c5ee06d5c85" />
+
+<img width="1612" height="337" alt="image" src="https://github.com/user-attachments/assets/98460bcc-2eb4-412a-970d-d3b41442c3ed" />  
+
+<img width="1583" height="458" alt="image" src="https://github.com/user-attachments/assets/6afd3cc6-075d-429b-83e2-526545e20182" />  
+
+<img width="1417" height="830" alt="image" src="https://github.com/user-attachments/assets/e9c07f0b-4bc4-46ad-918b-cdf9b336b889" />  
+
+<img width="1443" height="459" alt="image" src="https://github.com/user-attachments/assets/119e46e8-9052-4bed-986c-1c5ee06d5c85" />  
+
 
 
 
@@ -146,10 +153,24 @@ are used in the lab:
 <img width="1796" height="937" alt="image" src="https://github.com/user-attachments/assets/4ce76032-2498-4bf5-bcec-401391792edd" />
 
 ## Activity 2: Cortex XDR - Phishing Case Study
-#### Windows Client
-Install Cortex agent in Windows
-> cd C:\Users\root\Desktop
-> ./Install-Cortex-XDR.ps1
+**Background:** This activity demonstrates how Cortex XDR can help secure your Windows and Linux VMs against modern exploits such as Browser based exploits as well as 0-day remote exploits.  
+In this activity you will:  
+     ● Install XDR on Windows and Linux clients  
+     ● Attack Windows see XDR in action - how it can detect and prevent attacks browser based attacks  
+
+### Task 1 - Install XDR Agent on Windows and Linux Clients
+Complexity: Easy  
+Product(s): Cortex XDR Agent  
+Scenario:  
+     ● Install XDR Agents on Windows and Linux Clients  
+
+#### Windows Client  
+Step 2. You should see a Powershell window open with a command typed in that installs cortex XDR agent. If it's not present, in the windows search bar, search for powershell to open a new powershell window.  
+Then run the following commands:  
+
+Install Cortex agent in Windows  
+> cd C:\Users\root\Desktop  
+> ./Install-Cortex-XDR.ps1  
 <img width="1620" height="759" alt="image" src="https://github.com/user-attachments/assets/eca272f6-2c52-4d28-be0c-e0034e05268b" />
 <img width="1114" height="750" alt="image" src="https://github.com/user-attachments/assets/1fad8b60-93c9-43ed-bbe6-c7ef753143a0" />
 <img width="1145" height="728" alt="image" src="https://github.com/user-attachments/assets/0ddce1c7-8858-4ca7-8895-1bbd47e869f7" />
