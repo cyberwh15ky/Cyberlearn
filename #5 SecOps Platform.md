@@ -613,8 +613,10 @@ Cortex XSOAR Credentials: (admin/P@lo@lto@123)
 <img width="1325" height="941" alt="image" src="https://github.com/user-attachments/assets/393e02ea-0c90-49b8-9db5-00dc4d5b32b8" />
 
 #### Cortex XSOAR Part1
-username: admin
-password: P@lo@lto@123
+**Step 8.** After reviewing the email, let's take a look at Cortex XSOAR. We will be returning to the email in the next steps. Navigate to **CloudShare > Cortex XSOAR** and login with the following credentials:  
+
+<ins>username</ins>: **admin**
+<ins>password</ins>: **P@lo@lto@123**
 <img width="1474" height="763" alt="image" src="https://github.com/user-attachments/assets/90517476-b892-4993-abdf-26818789c1dc" />
 <img width="1486" height="771" alt="image" src="https://github.com/user-attachments/assets/47a1e3e1-2ad4-4366-acf8-50067d7751fb" />
 <img width="1489" height="776" alt="image" src="https://github.com/user-attachments/assets/1fe622b7-2952-485c-9cf4-e89b180de465" />
