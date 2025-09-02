@@ -84,13 +84,13 @@ The SecOps UTD lab environment consists of the following tabs:
 
 ### Task 2 - Understand UTD Components  
 This UTD environment consists of the following components:  
- - Linux Client: This is a Ubuntu virtual machine, on which you will carry out the exercises in our workshop related to Cortex XDR.  
-     - ● Windows Client: This is a Windows® 10 virtual machine, on which you will carry out the exercises in our workshop related to Cortex XDR.  
-     - ● Attacker: This virtual machine is a Kali Linux system that hosts Metasploit® , a penetration testing tool. You will use this virtual machine to take on the role of the attacker in our workshop exercises.  
-     - ● Application Portal: This is a Portal through which some of the other components of the lab can be accessed.  
-     - ● Cortex XDR (GUI): This is the Palo Alto Networks Cortex XDR tenant.  
-     - ● Cortex XSIAM (GUI): This is the Palo Alto Networks Cortex XSIAM tenant.  
-     - ● Docker Workstation: The Docker workstation hosts Prisma Cloud Compute edition in the form of a self hosted container. Additionally, it has a few other container workloads running such as Nginx, http and DVWA.  
+ - ● Linux Client: This is a Ubuntu virtual machine, on which you will carry out the exercises in our workshop related to Cortex XDR.  
+ - ● Windows Client: This is a Windows® 10 virtual machine, on which you will carry out the exercises in our workshop related to Cortex XDR.  
+ - ● Attacker: This virtual machine is a Kali Linux system that hosts Metasploit® , a penetration testing tool. You will use this virtual machine to take on the role of the attacker in our workshop exercises.  
+ - ● Application Portal: This is a Portal through which some of the other components of the lab can be accessed.  
+ - ● Cortex XDR (GUI): This is the Palo Alto Networks Cortex XDR tenant.  
+ - ● Cortex XSIAM (GUI): This is the Palo Alto Networks Cortex XSIAM tenant.  
+ - ● Docker Workstation: The Docker workstation hosts Prisma Cloud Compute edition in the form of a self hosted container. Additionally, it has a few other container workloads running such as Nginx, http and DVWA.  
 
 ### Task 3 - Application Portal Overview
 The Application Portal is one stop shop for all the applications that are used in this workshop. Under the hood, it utilizes Kasm Workspaces, which is a streaming platform for delivering browser-based access to applications, and web services and this setup is running as a docker container within the Docker workstation. Within this workspace, Chrome browser is preinstalled and it provides a secure and isolated browsing environment.  
