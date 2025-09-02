@@ -165,7 +165,7 @@ Scenario:
      ● Install XDR Agents on Windows and Linux Clients  
 
 #### Windows Client  
-Step 2. You should see a Powershell window open with a command typed in that installs cortex XDR agent. If it's not present, in the windows search bar, search for powershell to open a new powershell window.  
+**Step 2.** You should see a Powershell window open with a command typed in that installs cortex XDR agent. If it's not present, in the windows search bar, search for powershell to open a new powershell window.  
 Then run the following commands:  
 
 Install Cortex agent in Windows  
@@ -173,7 +173,7 @@ Install Cortex agent in Windows
 > ./Install-Cortex-XDR.ps1  
 <img width="1620" height="759" alt="image" src="https://github.com/user-attachments/assets/eca272f6-2c52-4d28-be0c-e0034e05268b" />
 
-Step 3. The script will rename the current Windows host and download the XDR agent, extract it and install it. During installation, follow through the installation prompts. This process may take a few minutes.  
+**Step 3.** The script will rename the current Windows host and download the XDR agent, extract it and install it. During installation, follow through the installation prompts. This process may take a few minutes.  
 <img width="1114" height="750" alt="image" src="https://github.com/user-attachments/assets/1fad8b60-93c9-43ed-bbe6-c7ef753143a0" />
 <img width="1145" height="728" alt="image" src="https://github.com/user-attachments/assets/0ddce1c7-8858-4ca7-8895-1bbd47e869f7" />
 <img width="1047" height="615" alt="image" src="https://github.com/user-attachments/assets/6d6e0332-699b-4be5-bd93-90921c33c01e" />
@@ -190,24 +190,58 @@ Install Cortex agent in Linux
 <img width="1385" height="753" alt="image" src="https://github.com/user-attachments/assets/f7b40ff3-04be-4354-89a4-b71a15a7bc97" />
 <img width="1424" height="738" alt="image" src="https://github.com/user-attachments/assets/ff08bf27-4fe9-4c5d-a79e-b7b5871b78d9" />
 
+### Task 2 - Review Cortex XDR Policies
 #### Cortex XDR
+**Step 1.** Head over to the Cortex XDR CloudShare tab and login to the XDR tenant using the saved credentials. At the login screen, click inside the Password field to use the saved password.  
 <img width="1198" height="739" alt="image" src="https://github.com/user-attachments/assets/dae2605d-707b-44f9-8c62-57c5715993c4" />
+
+**Step 2.** From the left pane, click the Endpoints > Policy Management, then click on Policy Rules on the left node to view the security profiles configured for Windows, macOS, Linux and Android.
 <img width="1865" height="931" alt="image" src="https://github.com/user-attachments/assets/0cb9690a-c74a-4d23-b048-3664bbf16781" />
+
+**Step 3.** From the left pane, click the Endpoints > Policy Management, then click on Profiles on the left node to view the security profiles available to Windows, macOS, Linux and Android.
 <img width="1727" height="878" alt="image" src="https://github.com/user-attachments/assets/d4e15d21-7e9b-4169-b30c-09ac2541a117" />
+
+**Step 4.** Expand Windows to see the configured Policies for Windows OS. Right click on the utd-cortex-win-exploit-ALERT rule and select the View Profile icon to view the configurations. This profile is configured to block browser based exploits (which we will be testing in the later steps) and configured to ALERT on all other types of attacks (which we will be testing in the later steps also).  
 <img width="1559" height="598" alt="image" src="https://github.com/user-attachments/assets/a4e26690-ae14-47e8-893d-0c58f54aacdb" />
 <img width="1831" height="1179" alt="image" src="https://github.com/user-attachments/assets/2c70e492-1458-4df2-abfd-bb151adedfc7" />
+
+**Step 5.** Navigate to Assets > Vulnerability Assessment > Vulnerability Assessment to view the Vulnerability assessment of the current active endpoints. If there are active endpoints connected to the tenant, you will be able to see the data populated in this page. On the top right corner of the screen, you can also toggle between CVEs and Endpoints.
+
+**⚠️Note:**  
+❖ Vulnerabilities are present only if there’s a connected endpoint (XDR Client) that’s been active for some time to undergo a vulnerability assessment. If you do not see CVEs, it is due to an absence of a connected endpoint.  
 <img width="1852" height="908" alt="image" src="https://github.com/user-attachments/assets/0e9aa774-284e-431f-bb6c-fdcaa3d5d562" />
 <img width="1766" height="1019" alt="image" src="https://github.com/user-attachments/assets/e64e53d3-cde6-409b-a44f-a681b844c958" />
+
+**Step 6.** Navigate to Detection Rules > BIOC. Here you can see Behavioral Indicators Of Compromise (BIOC) rules that are currently enabled.  
 <img width="1888" height="839" alt="image" src="https://github.com/user-attachments/assets/39c0bebf-c400-4d2a-b158-84471636225f" />
+
+**Step 7.** Head over to Endpoints > All Endpoints. Here you will see a list of endpoints. Find the endpoint associated with the hostname of your Windows client. Right click on your endpoint in the list > Endpoint Data > View Incidents > See incidents in the same tab. Here, you should see that there are no incidents associated with your endpoint. Do not navigate away from this XDR page within the XDR tab but you can switch back and forth between other CloudShare tabs.
 <img width="1790" height="1134" alt="image" src="https://github.com/user-attachments/assets/bbb1c71d-fe03-4532-9b7a-7aebd0680a33" />
 <img width="1897" height="1194" alt="image" src="https://github.com/user-attachments/assets/08b1cec7-e5e8-4afa-86c1-4e44b4bfe03b" />
 
-#### Attacker
-<img width="1177" height="257" alt="image" src="https://github.com/user-attachments/assets/00522b95-c8db-4952-914a-26a0e331d4f9" />
-> msfconsole -r 01-browser-exploit.rc
-<img width="1212" height="382" alt="image" src="https://github.com/user-attachments/assets/486834b9-f7ad-444c-869b-74546510d6a7" />
 
-<img width="1333" height="709" alt="image" src="https://github.com/user-attachments/assets/fe95807f-73a6-464e-bcf2-e8eed1b898d5" />
+## Task 3 - BrowserBreach: Chrome Vulnerability Triggered by Phishing Email
+#### Attacker
+<img width="1177" height="257" alt="image" src="https://github.com/user-attachments/assets/00522b95-c8db-4952-914a-26a0e331d4f9" />  
+
+**Step 3.** Once you are logged into the Attacker VM, you will see a terminal window open on the desktop. In the open terminal window, click on the Chrome Exploit tab. A command should already be populated. Press Enter or Return at this prompt and the attack will be launched. It will take a few seconds for the Metasploit console to come up.
+
+> msfconsole -r 01-browser-exploit.rc
+
+<img width="1212" height="382" alt="image" src="https://github.com/user-attachments/assets/486834b9-f7ad-444c-869b-74546510d6a7" />  
+
+
+💡Insights:  
+❖ We have created Metasploit Resource Scripts that contain the commands to launch the exploit with all the necessary configuration for your convenience. You can view the resource scripts for Windows and Linux in the Attacker VM at the following locations respectively:  
+> /home/sysadmin/Windows-Attacks  
+> /home/sysadmin/Linux-Attacks  
+❖ The command that you executed at the Browser Exploit terminal tab will start the Metasploit program and configure the Attacker VM to listen for incoming connections and serve the Google Chrome JSCreate Side-effect Type Confusion zero-day exploit to the Victim VM.  
+❖ When configuration is completed, the terminal should display the following prompt:  
+> $msf6 exploit(multi/browser/chrome_jscreate_sideeffect)>  
+❖ The Attacker system is now waiting for a reverse connection from the Victim system.  
+
+
+<img width="1333" height="709" alt="image" src="https://github.com/user-attachments/assets/fe95807f-73a6-464e-bcf2-e8eed1b898d5" />  
 
 
 ## Part 2
