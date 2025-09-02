@@ -84,13 +84,13 @@ The SecOps UTD lab environment consists of the following tabs:
 
 ### Task 2 - Understand UTD Components  
 This UTD environment consists of the following components:  
- - ● Linux Client: This is a Ubuntu virtual machine, on which you will carry out the exercises in our workshop related to Cortex XDR.  
- - ● Windows Client: This is a Windows® 10 virtual machine, on which you will carry out the exercises in our workshop related to Cortex XDR.  
- - ● Attacker: This virtual machine is a Kali Linux system that hosts Metasploit® , a penetration testing tool. You will use this virtual machine to take on the role of the attacker in our workshop exercises.  
- - ● Application Portal: This is a Portal through which some of the other components of the lab can be accessed.  
- - ● Cortex XDR (GUI): This is the Palo Alto Networks Cortex XDR tenant.  
- - ● Cortex XSIAM (GUI): This is the Palo Alto Networks Cortex XSIAM tenant.  
- - ● Docker Workstation: The Docker workstation hosts Prisma Cloud Compute edition in the form of a self hosted container. Additionally, it has a few other container workloads running such as Nginx, http and DVWA.  
+ - Linux Client: This is a Ubuntu virtual machine, on which you will carry out the exercises in our workshop related to Cortex XDR.  
+ - Windows Client: This is a Windows® 10 virtual machine, on which you will carry out the exercises in our workshop related to Cortex XDR.  
+ - Attacker: This virtual machine is a Kali Linux system that hosts Metasploit® , a penetration testing tool. You will use this virtual machine to take on the role of the attacker in our workshop exercises.  
+ - Application Portal: This is a Portal through which some of the other components of the lab can be accessed.  
+ - Cortex XDR (GUI): This is the Palo Alto Networks Cortex XDR tenant.  
+ - Cortex XSIAM (GUI): This is the Palo Alto Networks Cortex XSIAM tenant.  
+ - Docker Workstation: The Docker workstation hosts Prisma Cloud Compute edition in the form of a self hosted container. Additionally, it has a few other container workloads running such as Nginx, http and DVWA.  
 
 ### Task 3 - Application Portal Overview
 The Application Portal is one stop shop for all the applications that are used in this workshop. Under the hood, it utilizes Kasm Workspaces, which is a streaming platform for delivering browser-based access to applications, and web services and this setup is running as a docker container within the Docker workstation. Within this workspace, Chrome browser is preinstalled and it provides a secure and isolated browsing environment.  
@@ -155,14 +155,14 @@ are used in the lab:
 ## Activity 2: Cortex XDR - Phishing Case Study
 **Background:** This activity demonstrates how Cortex XDR can help secure your Windows and Linux VMs against modern exploits such as Browser based exploits as well as 0-day remote exploits.  
 In this activity you will:  
-     - ● Install XDR on Windows and Linux clients  
-     - ● Attack Windows see XDR in action - how it can detect and prevent attacks browser based attacks  
+ - Install XDR on Windows and Linux clients  
+ - Attack Windows see XDR in action - how it can detect and prevent attacks browser based attacks  
 
 ### Task 1 - Install XDR Agent on Windows and Linux Clients
 Complexity: Easy  
 Product(s): Cortex XDR Agent  
 Scenario:  
-     - ● Install XDR Agents on Windows and Linux Clients  
+ - Install XDR Agents on Windows and Linux Clients  
 
 #### Windows Client  
 **Step 2.** You should see a Powershell window open with a command typed in that installs cortex XDR agent. If it's not present, in the windows search bar, search for powershell to open a new powershell window.  
@@ -318,7 +318,7 @@ This should open a mailbox and here you should see an email. Ensure to maximize 
 
 **Background:** This activity demonstrates how Cortex XDR can help secure your Windows and Linux VMs against modern 0-day remote exploits.  
 **In this activity you will:**  
-     - **● Attack Windows and Linux client and see XDR in action - how it can detect and prevent attacks and capture all the MITRE Techniques and Tactics**  
+ - **Attack Windows and Linux client and see XDR in action - how it can detect and prevent attacks and capture all the MITRE Techniques and Tactics**  
 
 **Note:** This Activity is dependent on Activity 0 > Task 4 and Activity 2.  
 
@@ -326,11 +326,11 @@ This should open a mailbox and here you should see an email. Ensure to maximize 
 
 Complexity: Easy  
 Scenario:  
-     - ● You have successfully installed a Cortex XDR agent on Windows and you want to see it in action.  
-     - ● The Victim is running a specific version of Apache Active MQ Message Broker which is vulnerable to Remote Code Exploitation (CVE-2023-46604) without any user interaction.  
-     - ● For this scenario, we have set the XDR protection mode to DETECT AND ALERT. This is done to showcase the capabilities of XDR.   
+ - You have successfully installed a Cortex XDR agent on Windows and you want to see it in action.  
+ - The Victim is running a specific version of Apache Active MQ Message Broker which is vulnerable to Remote Code Exploitation (CVE-2023-46604) without any user interaction.  
+ - For this scenario, we have set the XDR protection mode to DETECT AND ALERT. This is done to showcase the capabilities of XDR.   
 Key takeaways:  
-     - ● Cortex XDR ability to protect from Remote Code Exploitation  
+ - Cortex XDR ability to protect from Remote Code Exploitation  
 
 #### Windows Client Part 1
 **Step 1.** Click the **Windows Client** tab. Open **Chrome** browser via the Desktop shortcut. From the browser bookmarks, **click on ActiveMQ** to ensure that Active MQ service is up and running (the page should load when you click on ActiveMQ bookmark). If the service is running, move to step 3.  
@@ -396,11 +396,11 @@ Investigate Causality Chain > Open Card in same tab.
 **Complexity:** Easy  
 **Product(s):** Cortex XDR Cloud Tenant  
 **Scenario:**  
-     - ● As an attacker, you have successfully infiltrated a Windows Client.  
-     - ● You are looking to perform privilege escalation exploits to elevate your Windows privileges.  
-     - ● Upon escalating your privileges, you will perform credential extraction, lateral movement, executions, setup persistence. sensitive data preparation and exfiltration.  
+ - As an attacker, you have successfully infiltrated a Windows Client.  
+ - You are looking to perform privilege escalation exploits to elevate your Windows privileges.  
+ - Upon escalating your privileges, you will perform credential extraction, lateral movement, executions, setup persistence. sensitive data preparation and exfiltration.  
 **Key takeaways:**
-     - ● See in real time how Cortex XDR is capable of detecting and handling real world threats.
+ - See in real time how Cortex XDR is capable of detecting and handling real world threats.
 
 #### Attacker Part 2  
 
@@ -466,11 +466,11 @@ Investigate Causality Chain > Open Card in same tab.
 
 **Complexity:** Easy  
 **Scenario:**  
-     - ● You have successfully installed a Cortex XDR agent on Linux and you want to see it in action.  
-     - ● The Victim is using a specific version of Spring Cloud Function which is vulnerable to remote code execution (CVE-2022-22963) without any user interaction.  
-     - ● For this scenario, we have set the XDR protection mode to DETECT AND ALERT. This is done to showcase the capabilities of XDR.
+ - You have successfully installed a Cortex XDR agent on Linux and you want to see it in action.  
+ - The Victim is using a specific version of Spring Cloud Function which is vulnerable to remote code execution (CVE-2022-22963) without any user interaction.  
+ - For this scenario, we have set the XDR protection mode to DETECT AND ALERT. This is done to showcase the capabilities of XDR.
 **Key takeaways:**  
-     - ● Cortex XDR ability to protect from Remote Code Exploitation on Linux Servers. 
+ - Cortex XDR ability to protect from Remote Code Exploitation on Linux Servers. 
 
 #### Liunx Clinet Part 1
 
@@ -557,10 +557,10 @@ Phishing emails are particularly hazardous as they not only deliver exploits but
 
 
 **In this activity you will:**  
-     - **● Review the setup - email client and phishing email.**  
-     - **● See how Cortex XSOAR can integrate with Mail clients.**  
-     - **● Understand and work with Cortex XSOAR.**  
-     - **● See Cortex XSOAR in action when it comes to Phishing emails and how it can help security team’s response times through powerful automation in the form of XSOAR playbooks.**  
+ - Review the setup - email client and phishing email.**  
+ - See how Cortex XSOAR can integrate with Mail clients.**  
+ - Understand and work with Cortex XSOAR.**  
+ - See Cortex XSOAR in action when it comes to Phishing emails and how it can help security team’s response times through powerful automation in the form of XSOAR playbooks.**  
 
 **Note:** This Activity is dependent on Activity 0 > Task 4 and Activity 2.  
 
@@ -572,14 +572,14 @@ Phishing emails are particularly hazardous as they not only deliver exploits but
 **Product(s):** Cortex XSOAR  
 
 **Scenario:**  
-     - ● A user in your organization has received a Phishing email (same one from previous activity). Review the phishing email from an end user's perspective.  
-     - ● You, as a SOC analyst, are responsible for setting up Cortex XSOAR to monitor Phishing emails and
+ - A user in your organization has received a Phishing email (same one from previous activity). Review the phishing email from an end user's perspective.  
+ - You, as a SOC analyst, are responsible for setting up Cortex XSOAR to monitor Phishing emails and
 perform automation actions in response to the Phishing emails to protect your employees and
 organization.  
 
 **Key takeaways:**
-     - ● Review Phishing email setup  
-     - ● Configure XSOAR to monitor phishing emails via Mail Listener XSOAR content pack and automate creation of incidents for phishing emails and configure XSOAR to execute a Playbook in response to phishing incidents  
+ - Review Phishing email setup  
+ - Configure XSOAR to monitor phishing emails via Mail Listener XSOAR content pack and automate creation of incidents for phishing emails and configure XSOAR to execute a Playbook in response to phishing incidents  
 
 **Step 1.** We’ll need to work with the Email client in this activity. You can access the Email Client for this activity
 in the following ways:  
@@ -637,17 +637,17 @@ password: P@lo@lto@123
 Complexity: Easy  
 Product(s): Cortex XSOAR  
 Scenario:  
-     - ● As an end user, you have determined that you have received a Phishing email and decided to report it
+ - As an end user, you have determined that you have received a Phishing email and decided to report it
 as phishing.  
-     - ● Your organization has Cortex XSOAR that monitors phishing emails and immediately springs into action
+ - Your organization has Cortex XSOAR that monitors phishing emails and immediately springs into action
 when a phishing email is reported and performs automation via Playbooks.  
-     - ● Understand the playbook that gets executed in response to the incident and the steps within that
+ - Understand the playbook that gets executed in response to the incident and the steps within that
 playbook.  
-     - ● Review the information and artifacts that it gathers from the email.
+ - Review the information and artifacts that it gathers from the email.
 Key takeaways:  
-     - ● Cortex XSOAR incidents via Mail Listener content pack  
-     - ● Cortex XSOAR Phishing playbook  
-     - ● Cortex XSOAR indicators, Artifacts and more.  
+ - Cortex XSOAR incidents via Mail Listener content pack  
+ - Cortex XSOAR Phishing playbook  
+ - Cortex XSOAR indicators, Artifacts and more.  
 
 #### Cortex XSOAR Part2.1
 <img width="1913" height="955" alt="image" src="https://github.com/user-attachments/assets/c8e93de8-234d-44a1-aab1-5bd36cb0fc89" />
@@ -665,11 +665,11 @@ Key takeaways:
 Complexity: Easy  
 Product(s): Cortex XSOAR  
 Scenario:  
-     - ● Cortex XSOAR creates an incident. Understand the playbook that gets executed in response to the incident and the steps within that playbook.  
-     - ● Review the information and artifacts that it gathers from the email.  
+ - Cortex XSOAR creates an incident. Understand the playbook that gets executed in response to the incident and the steps within that playbook.  
+ - Review the information and artifacts that it gathers from the email.  
 Key takeaways:  
-     - ● Cortex XSOAR Phishing playbook.  
-     - ● Cortex XSOAR indicators, Artifacts and more.  
+ - Cortex XSOAR Phishing playbook.  
+ - Cortex XSOAR indicators, Artifacts and more.  
 <img width="1908" height="949" alt="image" src="https://github.com/user-attachments/assets/e4fd32c5-86aa-4397-99ce-28ed8962e265" />
 
 #### Cortex XSOAR Part3
@@ -732,11 +732,11 @@ Cordially,  Your friendly neighborhood security team
 Complexity: Easy  
 Product(s): Cortex XSOAR  
 Scenario:  
-     - ● Simulate a user receiving a sales newsletter which looks suspicious at first glance and as best security practice, the user reports it as Phishing email  
-     - ● Understand how XSOAR can help a SOC analyst easily determine if it’s a legitimate email or a Phishing incident with the help of XSOAR and the Phishing playbook  
+ - Simulate a user receiving a sales newsletter which looks suspicious at first glance and as best security practice, the user reports it as Phishing email  
+ - Understand how XSOAR can help a SOC analyst easily determine if it’s a legitimate email or a Phishing incident with the help of XSOAR and the Phishing playbook  
 Key takeaways:  
-     - ● Cortex XSOAR Phishing playbook  
-     - ● Cortex XSOAR indicators, Artifacts and more.  
+ - Cortex XSOAR Phishing playbook  
+ - Cortex XSOAR indicators, Artifacts and more.  
 
 #### Docker Workstation Part1
 > bash /home/sysadmin/apps/send-mail.sh
@@ -804,24 +804,24 @@ Your security team
 Cortex XSIAM (Extended Security Intelligence and Automation Management) is an AI-Driven Security Platform designed to help organizations manage their security posture by providing comprehensive visibility across all their data sources including network, cloud, and endpoint environments. In this lab, the user will have limited access (read-only) to an XSIAM cloud tenant. XSIAM is currently only available through the SAAS / Cloud model. 
 
 Key features of XSIAM include:  
-     - ● Security Analytics - XSIAM uses AI and ML algorithms for behavioral analysis, identifying patterns and trends in large volumes of data that could indicate an emerging threat.  
-     - ● Threat Intelligence - The platform applies ML algorithms to analyze threat intelligence data, which helps in identifying patterns and trends that may indicate an emerging threat.  
-     - ● Automated Response - Cortex XSIAM uses AI-powered automation to respond to threats in real-time, reducing the need for human intervention.  
-     - ● Predictive Analytics - Cortex XSIAM leverages ML algorithms to analyze historical data and predict potential threats, helping organizations proactively protect against future attacks.  
-     - ● Continuous Learning - The machine learning algorithms in Cortex XSIAM continuously learn from new data and adjust their models, thereby improving the platform’s accuracy and effectiveness over time.  
+ - Security Analytics - XSIAM uses AI and ML algorithms for behavioral analysis, identifying patterns and trends in large volumes of data that could indicate an emerging threat.  
+ - Threat Intelligence - The platform applies ML algorithms to analyze threat intelligence data, which helps in identifying patterns and trends that may indicate an emerging threat.  
+ - Automated Response - Cortex XSIAM uses AI-powered automation to respond to threats in real-time, reducing the need for human intervention.  
+ - Predictive Analytics - Cortex XSIAM leverages ML algorithms to analyze historical data and predict potential threats, helping organizations proactively protect against future attacks.  
+ - Continuous Learning - The machine learning algorithms in Cortex XSIAM continuously learn from new data and adjust their models, thereby improving the platform’s accuracy and effectiveness over time.  
 The Cortex XSIAM technology merges the following security products into a single cohesive experience. It can autonomously handle an enormous number of alerts and allows analysts to perform most of their work from within a single product.  
-     - ● SOAR: The SOAR functionality of Cortex XSIAM helps analysts to automate processes and tedious tasks, perform first touch on alerts, and reduce false positives. It automatically remediates and unifies disparate tools into a single pane of glass.  
-     - ● EDR: The EDR functionality of Cortex XSIAM helps analysts gain visibility into endpoints and other devices within a SOC. This functionality protects endpoints against malware, exploits, ransomware, and more. It also offers real-time ability to isolate infected hosts and perform telemetry to identify root causes.  
-     - ● ASM: The ASM functionality of Cortex XSIAM offers real-time monitoring of attack surfaces.  
-     - ● SIEM: The SIEM functionality of Cortex XSIAM helps analysts to ingest logs, normalize logs, create rules for detection, run rules against logs, stitch logs, and create alerts for third-party systems.  
+ - SOAR: The SOAR functionality of Cortex XSIAM helps analysts to automate processes and tedious tasks, perform first touch on alerts, and reduce false positives. It automatically remediates and unifies disparate tools into a single pane of glass.  
+ - EDR: The EDR functionality of Cortex XSIAM helps analysts gain visibility into endpoints and other devices within a SOC. This functionality protects endpoints against malware, exploits, ransomware, and more. It also offers real-time ability to isolate infected hosts and perform telemetry to identify root causes.  
+ - ASM: The ASM functionality of Cortex XSIAM offers real-time monitoring of attack surfaces.  
+ - SIEM: The SIEM functionality of Cortex XSIAM helps analysts to ingest logs, normalize logs, create rules for detection, run rules against logs, stitch logs, and create alerts for third-party systems.  
 
 ### Task 1 - Cortex XSIAM Command Center  
 Complexity: Easy  
 Scenario: Overview of the Command Center  
 Key Takeaways:  
-     - ● The Command Center gives you a complete overview of security operations.  
-     - ● From this screen, analysts can monitor ingested data sources, track security metrics and see how many alerts have resulted in security incidents.  
-     - ● Analysts can also see how many incidents have been automatically resolved by XSIAM so they can focus on the ones that need attention.  
+ - The Command Center gives you a complete overview of security operations.  
+ - From this screen, analysts can monitor ingested data sources, track security metrics and see how many alerts have resulted in security incidents.  
+ - Analysts can also see how many incidents have been automatically resolved by XSIAM so they can focus on the ones that need attention.  
 
 #### Cortex XSIAM Part1
 <img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/ca951dbe-c414-4082-8a57-8965afa321d0" />
