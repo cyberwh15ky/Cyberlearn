@@ -231,7 +231,7 @@ Install Cortex agent in Linux
 <img width="1212" height="382" alt="image" src="https://github.com/user-attachments/assets/486834b9-f7ad-444c-869b-74546510d6a7" />  
 
 
-**<ins>💡Insights:</ins>**  
+💡**<ins>Insights:</ins>**  
 - ❖ We have created Metasploit Resource Scripts that contain the commands to launch the exploit with all the necessary configuration for your convenience. You can view the resource scripts for Windows and Linux in the Attacker VM at the following locations respectively:  
 
 > /home/sysadmin/Windows-Attacks  
@@ -346,7 +346,7 @@ Key takeaways:
 
 <img width="1309" height="572" alt="image" src="https://github.com/user-attachments/assets/0ac4296c-ace6-48c8-b72f-993c8b2e613e" />
 
-**<ins>💡Insights:</ins>**  
+💡**<ins>Insights:</ins>**  
 - ❖ The command will start the Metasploit program and configure the Attacker VM to listen for incoming connections and serve the **Apache ActiveMQ Unauthenticated Remote Code Execution exploit** to the **Windows Client**  
 - ❖ Once the exploit execution is complete, you should see a Meterpreter session open. This indicates that the exploit was completed successfully and we have obtained the reverse shell on the Windows Client  
 
@@ -408,7 +408,7 @@ Investigate Causality Chain > Open Card in same tab.
 
 **Step 2.** Execute the following command and hit return:  
 
-**<ins>💡Insights:</ins>**  
+💡**<ins>Insights:</ins>**  
 - ❖ The command will use the previous Meterpreter session that was opened as part of the RCE exploit that we performed in the previous task to deliver a privilege escalation exploit  
 - ❖ Once the second exploit is executed, that will open additional Meterpreter reverse connection with elevated permissions.  
 - ❖ We will use that session to perform Post Exploitation things.  
@@ -492,7 +492,7 @@ XDR Services are running.
 > hostname
 <img width="1032" height="677" alt="image" src="https://github.com/user-attachments/assets/2acc34e9-d6aa-4124-a973-37c838b5866c" />
 
-**<ins>💡Insights:</ins>**  
+💡**<ins>Insights:</ins>**  
 - ❖ Palo Alto Networks WildFire is a cloud-delivered malware analysis service that uses data and threat intelligence from the industry’s largest global community.  
 - ❖ This incident is triggered by the malware test file, and you will be able to get more details on this threat. You can use the download button on the upper left to download a copy of this report.  
 - ❖ Close the WildFire Analysis Report. Close the WildFire Analysis Report.  
@@ -520,7 +520,7 @@ XDR Services are running.
 
 <img width="1286" height="735" alt="image" src="https://github.com/user-attachments/assets/746e5b4c-4da3-43d7-89f9-e0d697810266" />
 
-**<ins>💡Insights:</ins>**  
+💡**<ins>Insights:</ins>**  
 - ❖ The command will start the Metasploit program and configure the Attacker VM to listen for incoming connections and serve the **Spring Cloud Function SpEL Injection (CVE-2022-22963) exploit** to the Linux Client  
 - ❖ Once the exploit execution is complete, you should see a Meterpreter session open. This indicates that the exploit was completed successfully and we have obtained the reverse shell on the Linux Client  
 
@@ -621,7 +621,7 @@ Cortex XSOAR Credentials: (admin/P@lo@lto@123)
 **Step 9.** Once logged in, navigate to **Settings > Integrations > Instances** and search for **Mail Listener**. Within the search results you can see that there’s an integration by the name **Mail Listener V2** configured. **Click on the settings icon** to review it.  
 <img width="1486" height="771" alt="image" src="https://github.com/user-attachments/assets/47a1e3e1-2ad4-4366-acf8-50067d7751fb" />
 
-**<ins>💡Insights:</ins>**  
+💡**<ins>Insights:</ins>**  
 - ❖ Mail Listener V2 content pack is used to listen to mailboxes and trigger incidents. Each content pack can have multiple instances.  
 - ❖ Each instance can be customized to work with a different email address and according to different rules. For example, you can define the integration instance to fetch emails from specific sender addresses and for specific periods of time.  
 - ❖ In our case, we have already preconfigured an instance of this content pack: **Mail Listener v2_UTD** for your convenience. In the next steps, you’ll be reviewing the configuration  
@@ -652,7 +652,7 @@ Cortex XSOAR Credentials: (admin/P@lo@lto@123)
 <img width="1511" height="749" alt="image" src="https://github.com/user-attachments/assets/04c59ead-633a-4f76-b3a1-11f5ba2c3a5b" />
 <img width="1540" height="698" alt="image" src="https://github.com/user-attachments/assets/715b670b-bbb5-43ef-b4e0-2509f6ab3b62" />
 
-**<ins>💡Insights:</ins>**  
+💡**<ins>Insights:</ins>**  
 - ❖ Mail Listener V2 instance is used to listen to our student mailboxes and trigger incidents if any email appears in the Phishing folder.  
 - ❖ Once an incident is created by the Mail Listener based on emails in the mailbox, XSOAR executes playbook in response to that, which performs predetermined steps and takes actions based on outcomes of steps within the playbook.  
 - ❖ In most organizations, within Mailbox, typically the user gets an option to report an email as Phishing if they suspect it as Phishing. The existing setup is designed to mimic that situation and setup within a lab environment to demonstrate how XSOAR can help solve the use case of Phishing emails.  
@@ -719,7 +719,7 @@ playbook.
 
 
 
-**<ins>💡Insights:</ins>**  
+💡**<ins>Insights:</ins>**  
  - ❖ **<ins>Case Basic Details:</ins>** Contains information about Email addresses  
  - ❖ **<ins>URL Screenshots:</ins>** XSOAR parses the email and gets a screenshot of all the hyperlinks within the email and these are displayed and attached in this section  
  - ❖ **<ins>Work Plan:</ins>** As the XSOAR Playbook is executing, there might be a few manual actions that the user may need to perform. If there are any such actions that need users input, they will show up in this section.  
@@ -732,89 +732,118 @@ playbook.
  - ❖ **<ins>Email Body:</ins>** The email will be rendered in this section and this will give the analyst an idea as to how the email looks  
 
 
-Step 2. Within the Investigation tab, you can see that XSOAR has extracted all the Email Headers from the
-email and also parsed the raw email HTML. Some of the sections at this point will not be populated
-yet.
+**Step 2.** Within the **Investigation** tab, you can see that XSOAR has extracted all the Email Headers from the email and also parsed the raw email HTML. Some of the sections at this point will not be populated yet.  
 ###### 1 Someone has your password - **Investigation**
 <img width="1919" height="945" alt="image" src="https://github.com/user-attachments/assets/993881ae-9e07-44bc-9f46-6529a9746408" />
 <img width="1917" height="954" alt="image" src="https://github.com/user-attachments/assets/acfdc436-dc53-4b7d-abc0-0c0869bdd1a7" />
 
+**Step 3.** Let’s head over to the **Work Plan** tab. Here you can see the XSOAR playbook that was triggered and executed in response to the Phishing incident. You can also see the steps that this specific XSOAR playbook is made up of.  
+⚠️**<ins>Notes</ins>**:
+ - ❖ In this Activity, we are using a slightly modified version of the Phishing Generic V3 playbook that comes out of the box in Cortex XSOAR.  
 ###### 1 Someone has your password - **Work Plan**
 <img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/c94935fa-eea0-4033-9d25-3d559e672d7e" />
 
-The graph may move around if the Playbook is still executing as we have selected the Follow checkbox.  
+💡**<ins>Insights:</ins>**  
+ - ❖ XSOAR Playbook enables you to automate many of your security processes, including, but not limited to handling your investigations. Check out XSOAR website to know more about Playbooks.  
+ - ❖ Playbook steps can be commands or Sub playbooks, which have their own set of steps.  
+ - ❖ Use the controls above to zoom in/out of the playbook, download the playbook image and interact with the graph.  
+
+**Step 4.** The graph may move around if the Playbook is still executing as we have selected the **Follow** checkbox.  
 This will help you understand which specific step is currently being executed.  
-Green cards indicate that a step has been successfully completed.  
-The orange card indicates that a manual action is needed from the analyst.  
-A bluecard with a gear icon indicates that a particular step is being executed.  
+**Green cards** indicate that a step has been successfully completed.  
+**The orange card** indicates that a manual action is needed from the analyst.  
+**A bluecard with a gear** icon indicates that a particular step is being executed.  
+<img width="1372" height="167" alt="image" src="https://github.com/user-attachments/assets/162c08d1-479e-4f6f-85ff-93cc6b07ec95" />  
 
-<img width="1372" height="167" alt="image" src="https://github.com/user-attachments/assets/162c08d1-479e-4f6f-85ff-93cc6b07ec95" />
-<img width="1918" height="949" alt="image" src="https://github.com/user-attachments/assets/b4f8aed3-3a24-421c-b4f1-6ea188e4dad9" />
-
+**Step 5.** Let’s head back to the Case Info tab and refresh the browser tab. Now you can see that a lot of the sections are populated with information as Playbook execution progresses. Notice that the Severity is set to High by XSOAR during investigation of this incident.  
+<img width="1918" height="949" alt="image" src="https://github.com/user-attachments/assets/b4f8aed3-3a24-421c-b4f1-6ea188e4dad9" />  
 <img width="1918" height="949" alt="image" src="https://github.com/user-attachments/assets/ca13f10c-4893-4b4d-9a41-b095ce8e414c" />
 <img width="1919" height="950" alt="image" src="https://github.com/user-attachments/assets/fa4dd45a-3c50-495e-a7cb-e0114e02cf31" />
 <img width="1918" height="947" alt="image" src="https://github.com/user-attachments/assets/a5846b07-3319-41f4-b83e-10a9bad00245" />
 <img width="1919" height="950" alt="image" src="https://github.com/user-attachments/assets/b65e5b6e-26e6-46ee-b02e-af258e551968" />
 
-o Manually search and delete emails: Click on this box to review and select Mark Completed.  
-o Which Indicators would you like to block: Here the user is prompted for specific indicators to block such as specific IPs, URL, Files, Emails and Domain. Select the following options and clicksubmit Answers  
-
+**Step 6.** Within the **Workplan** in the **Case Info tab**, you can see that there are a couple of actions that are needing your attention.
 <img width="1919" height="945" alt="image" src="https://github.com/user-attachments/assets/f1f9838b-1449-40ca-82fa-fd28f0682073" />
 
-<img width="1919" height="950" alt="image" src="https://github.com/user-attachments/assets/ed78645d-0cf5-4cc0-945b-8c4fcc06d776" />
+ - **<ins>Manually search and delete emails:</ins>** Click on this box to review and select **Mark Completed**.  
+ - **<ins>Which Indicators would you like to block:</ins>** Here the user is prompted for specific indicators to block such as specific IPs, URL, Files, Emails and Domain. Select the following options and click submit Answers  
+  - **<ins>URLs:</ins>** http://10.80.2.150/vnc.exe , http://gmai1.com/ , http://gmail.com12772.key-protector-case14752.support
 
-<img width="1919" height="944" alt="image" src="https://github.com/user-attachments/assets/d729b0d6-380a-48a7-b278-34dc28807c19" />
+**Step 7.** Once you complete the above steps pending your action, the playbook execution should continue. You can close the right side bar and return to the Case Info tab. If you scroll down to the **Selected Indicators to Block** section, you can see the list of indicators that you blocked.  
+**Step 8.** Under the **Response Action**, you have the option to delete the mail. If you choose to do this, the incident will be re-opened.  
+<img width="1919" height="950" alt="image" src="https://github.com/user-attachments/assets/ed78645d-0cf5-4cc0-945b-8c4fcc06d776" />  
 
-#### Windows Client Part3
+<img width="1919" height="944" alt="image" src="https://github.com/user-attachments/assets/d729b0d6-380a-48a7-b278-34dc28807c19" />  
+
+#### Windows Client Part3  
+
+⚠️**<ins>Notes:</ins>**  
+ - ❖ We are using a self hosted email setup via Docker and IMAP in this lab for demonstration purposes and the Delete Mail will not fully work with this setup due to technical limitations of the self hosted Email server.  
+ - ❖ We have added this option to demonstrate the capability of performing an action on the Email right from the XSOAR UI based on the incident investigation.
+
+**Step 9.** If you head back to your **mail box**, you should see a couple of emails from XSOAR. When you reported an email as Phishing, you received a notification from XSOAR acknowledging your action. The second email indicates XSOARs finding of the email that you reported as Phishing, and in this case, it is malicious.  
 <img width="1283" height="885" alt="image" src="https://github.com/user-attachments/assets/03c50e2c-4898-425a-8e21-35e0d49467c9" />
 
-Re: Phishing Investigation - Someone has your password  
-From Cortex XSOAR
 
-Hi student@greenmail.com,  
-We've concluded that the email you forwarded to us is malicious.  
-No further action is required on your part.  
-Good job on detecting and forwarding it to us!All the best,  
-Your security team  
-<img width="1285" height="884" alt="image" src="https://github.com/user-attachments/assets/15ae04aa-e83b-4b5b-9285-84715c97eccc" />  
+> Re: Phishing Investigation - Someone has your password  
+> From Cortex XSOAR  
+> Hi student@greenmail.com,  
+> We've received your email and are investigating.  
+> Do not touch the email until further notice.  
+> 
+> Cordially,  Your friendly neighborhood security team
 
-Re: Phishing Investigation - Someone has your password  
-From Cortex XSOAR  
-Hi student@greenmail.com,  
-We've received your email and are investigating.  
-Do not touch the email until further notice.  
-
-Cordially,  Your friendly neighborhood security team
 <img width="1273" height="882" alt="image" src="https://github.com/user-attachments/assets/d277c175-d810-470c-9c62-8e0cde040008" />  
 
+
+> Re: Phishing Investigation - Someone has your password  
+> From Cortex XSOAR
+> 
+> Hi student@greenmail.com,  
+> We've concluded that the email you forwarded to us is malicious.  
+> No further action is required on your part.  
+> Good job on detecting and forwarding it to us!All the best,  
+> Your security team
+
+<img width="1285" height="884" alt="image" src="https://github.com/user-attachments/assets/15ae04aa-e83b-4b5b-9285-84715c97eccc" /> 
+
 ### Task 4 - Investigate a Phishing Incident in XSOAR - II
-Complexity: Easy  
-Product(s): Cortex XSOAR  
-Scenario:  
+**<ins>Complexity:</ins>** Easy  
+**<ins>Product(s):</ins>** Cortex XSOAR  
+**<ins>Scenario:</ins>**  
  - Simulate a user receiving a sales newsletter which looks suspicious at first glance and as best security practice, the user reports it as Phishing email  
- - Understand how XSOAR can help a SOC analyst easily determine if it’s a legitimate email or a Phishing incident with the help of XSOAR and the Phishing playbook  
-Key takeaways:  
+ - Understand how XSOAR can help a SOC analyst easily determine if it’s a legitimate email or a Phishing incident with the help of XSOAR and the Phishing playbook
+**<ins>Key takeaways:</ins>**  
  - Cortex XSOAR Phishing playbook  
  - Cortex XSOAR indicators, Artifacts and more.  
 
 #### Docker Workstation Part1
-> bash /home/sysadmin/apps/send-mail.sh
-<img width="1455" height="881" alt="image" src="https://github.com/user-attachments/assets/c37e638a-6108-4919-a043-7b4a2d200a2b" />  
-<img width="1743" height="856" alt="image" src="https://github.com/user-attachments/assets/95b4c011-63ae-4a44-9db5-23d59ac1fffa" />
+**Step 1.** Navigate to **CloudShare > Docker Workstation** and run the below command to send a newsletter email to the lab provided email address.  
 
-#### Windows Client Part4
-<img width="1502" height="942" alt="image" src="https://github.com/user-attachments/assets/03a5fdcc-6208-4e9c-99a9-9303aef47162" />
-<img width="1919" height="1147" alt="image" src="https://github.com/user-attachments/assets/6aa7014a-b4d5-4b4a-b5e7-9a5dfb967b94" />
-<img width="1919" height="1136" alt="image" src="https://github.com/user-attachments/assets/0f84ae7c-5905-48a0-b229-2c88ed7656ac" />
-#### Cortex XSOAR Part4
-<img width="1919" height="948" alt="image" src="https://github.com/user-attachments/assets/ac8ceb80-251f-4aed-8231-9b2d09ec57bd" />
-#### Windows Client Part5
-<img width="1919" height="1137" alt="image" src="https://github.com/user-attachments/assets/c6350393-3f52-4525-b94f-d3130a3eee29" />
-<img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/db42aee2-c062-4b35-aedd-4a527a2fb42f" />
+> bash /home/sysadmin/apps/send-mail.sh  
 
-#### Cortex XSOAR Part5
-<img width="1919" height="999" alt="image" src="https://github.com/user-attachments/assets/f939b14b-93a3-49ad-b2cc-c2499d045603" />                                    
-                                          
+<img width="1455" height="881" alt="image" src="https://github.com/user-attachments/assets/c37e638a-6108-4919-a043-7b4a2d200a2b" />   
+<img width="1743" height="856" alt="image" src="https://github.com/user-attachments/assets/95b4c011-63ae-4a44-9db5-23d59ac1fffa" />  
+
+#### Cortex XSOAR Part4  
+<img width="1919" height="948" alt="image" src="https://github.com/user-attachments/assets/ac8ceb80-251f-4aed-8231-9b2d09ec57bd" />  
+
+#### Windows Client Part4  
+**Step 3.** Open the Email within the INBOX. Click on **More > Move to > Phishing**. Once you do this, head back to Cortex XSOAR as we are expected XSOAR to scan this mailbox and Phishing folder every minute and to create an incident for every email that exists within the Phishing folder.  
+<img width="1502" height="942" alt="image" src="https://github.com/user-attachments/assets/03a5fdcc-6208-4e9c-99a9-9303aef47162" />  
+<img width="1919" height="1147" alt="image" src="https://github.com/user-attachments/assets/6aa7014a-b4d5-4b4a-b5e7-9a5dfb967b94" />  
+<img width="1919" height="1136" alt="image" src="https://github.com/user-attachments/assets/0f84ae7c-5905-48a0-b229-2c88ed7656ac" />  
+<img width="1919" height="1137" alt="image" src="https://github.com/user-attachments/assets/c6350393-3f52-4525-b94f-d3130a3eee29" />  
+<img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/db42aee2-c062-4b35-aedd-4a527a2fb42f" />  
+
+**Step 4.** Wait for a minute or two for XSOAR to pull the email from the mailbox and create the incident. Then navigate to **CloudShare > Cortex XSOAR > Incidents**. You can click on the Incident ID **#2** to view the incident.  
+#### Cortex XSOAR Part5  
+<img width="1919" height="999" alt="image" src="https://github.com/user-attachments/assets/f939b14b-93a3-49ad-b2cc-c2499d045603" />                                   
+
+################################################
+################################################
+################################################
+################################################
 #2 Gear Up for Your Next Adventure | Spring Collection 2024 - **Case info**
 <img width="1919" height="1041" alt="image" src="https://github.com/user-attachments/assets/00fdab9f-77b7-4b6d-a1e2-5bd1d01ecfa6" />
 
@@ -858,21 +887,37 @@ Cordially,
 Your security team  
 <img width="1485" height="624" alt="image" src="https://github.com/user-attachments/assets/f8b84d29-dca7-48cd-a921-a1875c6ba1a1" />
 
+<img width="1919" height="934" alt="image" src="https://github.com/user-attachments/assets/8392f6af-efa7-4566-b23a-a0541aaf0570" />
+
+############################################################
+############################################################
+############################################################
+############################################################
+
 ## Activity 5 - Introduction to Cortex XSIAM
 
-Cortex XSIAM (Extended Security Intelligence and Automation Management) is an AI-Driven Security Platform designed to help organizations manage their security posture by providing comprehensive visibility across all their data sources including network, cloud, and endpoint environments. In this lab, the user will have limited access (read-only) to an XSIAM cloud tenant. XSIAM is currently only available through the SAAS / Cloud model. 
+**In this activity, you will get a brief overview of the Cortex XSIAM.**
+Note: This is a standalone activity and is not dependent on other activities.
+
+Cortex XSIAM (Extended Security Intelligence and Automation Management) is an AI-Driven Security Platform designed to help organizations manage their security posture by providing comprehensive visibility across all their data sources including network, cloud, and endpoint environments. In this lab, the user will have limited access (read-only) to an XSIAM cloud tenant. XSIAM is currently only available through the SAAS / Cloud model.  
 
 Key features of XSIAM include:  
- - Security Analytics - XSIAM uses AI and ML algorithms for behavioral analysis, identifying patterns and trends in large volumes of data that could indicate an emerging threat.  
- - Threat Intelligence - The platform applies ML algorithms to analyze threat intelligence data, which helps in identifying patterns and trends that may indicate an emerging threat.  
- - Automated Response - Cortex XSIAM uses AI-powered automation to respond to threats in real-time, reducing the need for human intervention.  
- - Predictive Analytics - Cortex XSIAM leverages ML algorithms to analyze historical data and predict potential threats, helping organizations proactively protect against future attacks.  
- - Continuous Learning - The machine learning algorithms in Cortex XSIAM continuously learn from new data and adjust their models, thereby improving the platform’s accuracy and effectiveness over time.  
+ - **Security Analytics** - XSIAM uses AI and ML algorithms for behavioral analysis, identifying patterns and trends in large volumes of data that could indicate an emerging threat.  
+ - **Threat Intelligence** - The platform applies ML algorithms to analyze threat intelligence data, which helps in identifying patterns and trends that may indicate an emerging threat.  
+ - **Automated Response** - Cortex XSIAM uses AI-powered automation to respond to threats in real-time, reducing the need for human intervention.  
+ - **Predictive Analytics** - Cortex XSIAM leverages ML algorithms to analyze historical data and predict potential threats, helping organizations proactively protect against future attacks.  
+ - **Continuous Learning** - The machine learning algorithms in Cortex XSIAM continuously learn from new data and adjust their models, thereby improving the platform’s accuracy and effectiveness over time.
+   
 The Cortex XSIAM technology merges the following security products into a single cohesive experience. It can autonomously handle an enormous number of alerts and allows analysts to perform most of their work from within a single product.  
- - SOAR: The SOAR functionality of Cortex XSIAM helps analysts to automate processes and tedious tasks, perform first touch on alerts, and reduce false positives. It automatically remediates and unifies disparate tools into a single pane of glass.  
- - EDR: The EDR functionality of Cortex XSIAM helps analysts gain visibility into endpoints and other devices within a SOC. This functionality protects endpoints against malware, exploits, ransomware, and more. It also offers real-time ability to isolate infected hosts and perform telemetry to identify root causes.  
- - ASM: The ASM functionality of Cortex XSIAM offers real-time monitoring of attack surfaces.  
- - SIEM: The SIEM functionality of Cortex XSIAM helps analysts to ingest logs, normalize logs, create rules for detection, run rules against logs, stitch logs, and create alerts for third-party systems.  
+
+ - **<ins>SOAR:</ins>** The SOAR functionality of Cortex XSIAM helps analysts to automate processes and tedious tasks, perform first touch on alerts, and reduce false positives. It automatically remediates and unifies disparate tools into a single pane of glass.
+   
+ - **<ins>EDR:</ins>** The EDR functionality of Cortex XSIAM helps analysts gain visibility into endpoints and other devices within a SOC. This functionality protects endpoints against malware, exploits, ransomware, and more. It also offers real-time ability to isolate infected hosts and perform telemetry to identify root causes.
+   
+ - **<ins>ASM:</ins>** The ASM functionality of Cortex XSIAM offers real-time monitoring of attack surfaces.
+   
+ - **<ins>SIEM:</ins>** The SIEM functionality of Cortex XSIAM helps analysts to ingest logs, normalize logs, create rules for detection, run rules against logs, stitch logs, and create alerts for third-party systems.
+   
 
 ### Task 1 - Cortex XSIAM Command Center  
 Complexity: Easy  
@@ -888,6 +933,5 @@ Key Takeaways:
 <img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/5d4066c4-a05b-4e74-837b-fef45aeaa383" />
 <img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/b10ab49c-c84e-4d35-8d34-46d95d3ff0ec" />
 
-<img width="1919" height="934" alt="image" src="https://github.com/user-attachments/assets/8392f6af-efa7-4566-b23a-a0541aaf0570" />
 
 
