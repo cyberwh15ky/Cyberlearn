@@ -464,5 +464,6 @@ Key Takeaways:
 <img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/5d4066c4-a05b-4e74-837b-fef45aeaa383" />
 <img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/b10ab49c-c84e-4d35-8d34-46d95d3ff0ec" />
 
+<img width="1919" height="934" alt="image" src="https://github.com/user-attachments/assets/8392f6af-efa7-4566-b23a-a0541aaf0570" />
 
 
