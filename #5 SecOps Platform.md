@@ -633,13 +633,13 @@ Cortex XSOAR Credentials: (admin/P@lo@lto@123)
 <img width="1486" height="780" alt="image" src="https://github.com/user-attachments/assets/c0612ef0-d886-478f-acf0-9ec0e1edd914" />  
 
 **Step 3.** Let’s look at specific configurations within this instance:  
-     a) **<ins>Incident type:</ins>** The value is currently set to Phishing. This means that the incidents that are created by this instance are classified as Phishing and in response to Phishing incident type, relevant automations are run by XSOAR  
-     b) **<ins>Mail Server Hostname/IP address:</ins>** This is the IP address of our self hosted mail server in the lab.  
-> c) **<ins>IMAP port:</ins>** This value indicates the IMAP port of our self hosted mail server in lab.  
-> d) **<ins>username/password:</ins>** Credentials for our mailbox.  
-> e) **<ins>Incoming mail folder:</ins>** This is the folder within the student email account (student). This indicates that any emails that end up in the Phishing folder are monitored by XSOAR and a corresponding incident is created for each email in the Phishing folder.  
-> f) **<ins>First Fetch Time:</ins>** This corresponds to the oldest email that will be fetched. For example, if it’s set to 1 year, all emails within the past year from the current date, will be fetched.  
-> g) **<ins>Incidents Fetch Interval:</ins>** The frequency at which XSOAR queries the configured mailbox and folder for emails.  
+ - a) **<ins>Incident type:</ins>** The value is currently set to Phishing. This means that the incidents that are created by this instance are classified as Phishing and in response to Phishing incident type, relevant automations are run by XSOAR  
+ - b) **<ins>Mail Server Hostname/IP address:</ins>** This is the IP address of our self hosted mail server in the lab.  
+ - c) **<ins>IMAP port:</ins>** This value indicates the IMAP port of our self hosted mail server in lab.  
+ - d) **<ins>username/password:</ins>** Credentials for our mailbox.  
+ - e) **<ins>Incoming mail folder:</ins>** This is the folder within the student email account (student). This indicates that any emails that end up in the Phishing folder are monitored by XSOAR and a corresponding incident is created for each email in the Phishing folder.  
+ - f) **<ins>First Fetch Time:</ins>** This corresponds to the oldest email that will be fetched. For example, if it’s set to 1 year, all emails within the past year from the current date, will be fetched.  
+ - g) **<ins>Incidents Fetch Interval:</ins>** The frequency at which XSOAR queries the configured mailbox and folder for emails.  
 
 <img width="1508" height="1041" alt="image" src="https://github.com/user-attachments/assets/bad9ffc7-74a9-4922-be4c-930addc3aadd" />
 <img width="1508" height="1045" alt="image" src="https://github.com/user-attachments/assets/2e0a0c38-978c-41a0-a2d1-3b43fcf46e4f" />
