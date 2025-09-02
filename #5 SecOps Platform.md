@@ -248,107 +248,348 @@ Install Cortex agent in Linux
 <img width="1333" height="709" alt="image" src="https://github.com/user-attachments/assets/fe95807f-73a6-464e-bcf2-e8eed1b898d5" />  
 
 
-## Part 2
-#### Windows Client
-<img width="1540" height="956" alt="image" src="https://github.com/user-attachments/assets/704071b3-2b22-41fc-8256-6eae0dcf860c" />
-<img width="1563" height="1129" alt="image" src="https://github.com/user-attachments/assets/bc25a7d1-2f3f-4e61-a69e-5417d03ebd15" />
-<img width="840" height="462" alt="image" src="https://github.com/user-attachments/assets/4c254288-61e8-4b1a-b74d-e39485b0cd93" />
-<img width="812" height="678" alt="image" src="https://github.com/user-attachments/assets/daec5b87-b92a-47f6-a451-311ffa77b4b0" />
+## Part 2  
+#### Windows Client  
+**Step 4.** Head over to the Windows Client tab. You should already see a browser open (launched as part of the startup scripts). If the browser isn’t open, open it by clicking on the Chrome icon on the desktop. From the browser window, select the Mail bookmark. Use the following credentials to login.  
 
+> username: student
+> password: password
+
+This should open a mailbox and here you should see an email. Ensure to maximize the Chrome browser window in the Windows VM to ensure that all the options are visible/  
+
+**💡Insights:**  
+❖ An email with the subject line **Someone has your password** is displayed in the preview pane.  
+❖ This looks like a legitimate email from Google, informing you that someone is trying to access your device. The email suggests you review the device to ensure your password is safe.  
+❖ This is an email Phishing attack that delivers **Google Chrome JSCreate Side-effect Type Confusion zero-day exploit**  
+
+<img width="1540" height="956" alt="image" src="https://github.com/user-attachments/assets/704071b3-2b22-41fc-8256-6eae0dcf860c" />  
+<img width="1563" height="1129" alt="image" src="https://github.com/user-attachments/assets/bc25a7d1-2f3f-4e61-a69e-5417d03ebd15" />  
+
+**Step 6**. By assuming the role of an unsuspecting user and clicking on Review Your Devices Now link in the email, a new tab will open, and you would be taken to the gmail login page where the Google Chrome browser exploit is triggered. (If the webpage appears to be loading even after you see the gmail webpage, that’s the expected behavior or the exploit)
+
+**Step 7.** You should now see a pop up from XDR Client indicating that it blocked a malicious activity. Review the details in the XDR pop up. Expand the show details to see the process details and additional information. When done reviewing, close the popup.
+
+<img width="840" height="462" alt="image" src="https://github.com/user-attachments/assets/4c254288-61e8-4b1a-b74d-e39485b0cd93" />  
+
+<img width="812" height="678" alt="image" src="https://github.com/user-attachments/assets/daec5b87-b92a-47f6-a451-311ffa77b4b0" />  
 
 #### Attacker
-<img width="1392" height="714" alt="image" src="https://github.com/user-attachments/assets/ae46899f-5f1f-43ac-b986-ddd8f82a0b91" />
+**Step 8.** Head back to the Attacker VM. In the Browser Exploit terminal tab, you should see that the exploit was delivered (but was detected and blocked by XDR) and there was no active session opened.  
+
+**Step 9.** Enter sessions into the prompt to list the active sessions (There should be no active sessions on the Attacker VM):  
+
+> msf6 exploit(multi/browser/chrome_jscreate_sideeffect) > sessions  
+
+<img width="1392" height="714" alt="image" src="https://github.com/user-attachments/assets/ae46899f-5f1f-43ac-b986-ddd8f82a0b91" />  
 
 #### Cortex XDR
+**Step 10.** Head back to the **Cortex XDR** tab in CloudShare. **Refresh** the incident page and now you should see incidents related to the exploit which we just performed. Be sure to note down the **Incident ID** as you’ll be using this to identify and locate the right incident for the rest of the steps in this activity. In the below screenshot, the **Incident ID is 15**. In your case, it will differ from the screenshots.  
+
+**⚠️Notes:**  
+❖ If you have trouble locating the incident associated with your endpoint, please refer to **Activity 2 > Task 2 > Step 7** for instructions on locating incidents associated with your incident.  
+❖ Alternatively, within the Incidents page, you can use the filters from the top right corner of your page to set the Hostname to that of your corresponding Windows Client’s hostname to see the relevant incidents.  
+
 <img width="1866" height="862" alt="image" src="https://github.com/user-attachments/assets/3d060ea3-6828-47c5-be08-f6db3e9e0f18" />
 <img width="1861" height="1030" alt="image" src="https://github.com/user-attachments/assets/78d3f435-9710-4650-885c-b0eba1b1fcdc" />
 
+**Step 11.** Under Incident > Overview > Assets , If you see multiple Hosts listed, it is expected behavior (see note below)  
+
 <img width="1917" height="1191" alt="image" src="https://github.com/user-attachments/assets/f27a0d8c-507e-4381-8204-61ae78053fad" />
+
+**⚠️Notes:**  
+❖ You may see multiple Hosts as part of the same incident. You can also expect to see that an Alert that was created for your Windows Host as part of the attack that you performed may get added to an existing incident. This happens because XDR associates alerts to an incident based on different criteria such:  
+➢ Alert source, type and time period  
+➢ Alerts on the same causality chain are grouped with the same incident if an open incident already exists.  
+➢ Alerts involving the same Windows/Linux username.  
+➢ Alerts involving the same malware file SHA256 hash.  
+➢ Alerts involving the same command line processes.  
+❖ This is expected behavior because an attack can affect several hosts or users and raises different alert types stemming from a single event. All artifacts, assets, and alerts from a threat event are gathered into an Incident.  
+❖ In the lab, since we are performing the same kind of attacks on multiple Windows/Linux VMs, you can expect to see alerts being grouped in different incidents.  
+
+**Step 12.** To filter alerts associated with your specific VM within the incident, navigate to Alerts and Insights and click on the filter icon. Select Host field for the Select Field and for Value, use your Windows Hostname.  
+
 <img width="1913" height="918" alt="image" src="https://github.com/user-attachments/assets/96e8a47e-cb31-48ce-bd5e-ba042ee7be7a" />
+
+**Step 13.** Within **Alerts and Insights** , you can see all the different alerts that belong to this incident. To find the alerts specific to the attack we just performed, you can click on the **Category** tab (if you do not see **Category** option, click on **"+and"** first and select the **Category** option from the dropdown list) to sort by the alerts by Category and you can look for an **Exploit** that was **Prevented (Blocked)**. Optionally, you can use filters to see only Exploits (Filter: **Category Contains Exploit**) and look for **Alert Name - Memory Corruption Exploit**
+
 <img width="1910" height="914" alt="image" src="https://github.com/user-attachments/assets/4d203e64-9be3-4153-a344-3a879f9edbef" />
 
 ## Activity 3: Cortex XDR - Remote Code Exploit Case Study
+
+**Background:** This activity demonstrates how Cortex XDR can help secure your Windows and Linux VMs against modern 0-day remote exploits.  
+**In this activity you will:**  
+     **● Attack Windows and Linux client and see XDR in action - how it can detect and prevent attacks and capture all the MITRE Techniques and Tactics**  
+
+**Note:** This Activity is dependent on Activity 0 > Task 4 and Activity 2.  
+
+### Task 1 - ActivePwn: Windows Remote Code Exploit
+
+Complexity: Easy  
+Scenario:  
+     ● You have successfully installed a Cortex XDR agent on Windows and you want to see it in action.  
+     ● The Victim is running a specific version of Apache Active MQ Message Broker which is vulnerable to Remote Code Exploitation (CVE-2023-46604) without any user interaction.  
+     ● For this scenario, we have set the XDR protection mode to DETECT AND ALERT. This is done to showcase the capabilities of XDR.   
+Key takeaways:  
+     ● Cortex XDR ability to protect from Remote Code Exploitation  
+
 #### Windows Client Part 1
+**Step 1.** Click the **Windows Client** tab. Open **Chrome** browser via the Desktop shortcut. From the browser bookmarks, **click on ActiveMQ** to ensure that Active MQ service is up and running (the page should load when you click on ActiveMQ bookmark). If the service is running, move to step 3.  
+
 <img width="1451" height="616" alt="image" src="https://github.com/user-attachments/assets/f7f8e376-4bbb-4f35-ab20-ac1e3e1d474b" />
 <img width="1723" height="893" alt="image" src="https://github.com/user-attachments/assets/6d933ad6-c283-4f5c-9016-4c112182b0c8" />
 
 #### Attacker Part 1
+**Step 2.** If the page doesn’t load, execute the startup script by doubleclicking on the startup-script shortcut icon on the desktop and repeat step 1. Once you’ve verified that ActiveMQ is running, close the browser window close any powershell windows that are open.  
+**Step 3.** Head back to the Attacker VM. Within the terminal window, click on the Windows Exploit terminal tab. There should already be a command typed up. Hit return to execute it.  
+
 > msfconsole -r 02-activemq-exploit.rc
+
 <img width="1309" height="572" alt="image" src="https://github.com/user-attachments/assets/0ac4296c-ace6-48c8-b72f-993c8b2e613e" />
+
+**💡Insights:**  
+❖ The command will start the Metasploit program and configure the Attacker VM to listen for incoming connections and serve the **Apache ActiveMQ Unauthenticated Remote Code Execution exploit** to the **Windows Client**  
+❖ Once the exploit execution is complete, you should see a Meterpreter session open. This indicates that the exploit was completed successfully and we have obtained the reverse shell on the Windows Client  
+
+**Step 4**. Once the command executes successfully, you will after you see a message that says **Meterpreter Session 1 opened…**. At this point, the terminal may appear stuck without a prompt when you see the message **Server Stopped**. At this point, hit return on your keyboard a couple of times to bring up a prompt. We will not be interacting with this session just yet and the current Meterpreter session will be running in the background. You can run the following command to confirm:
+> sessions  
+
 <img width="1396" height="719" alt="image" src="https://github.com/user-attachments/assets/a945b811-5c3e-4c6a-befb-20ca584bb42f" />
 
 #### Windows Client Part 2
+
+**Step 5.** Head back to the **Windows Client** and you should see a XDR pop up indicating that it detected a malicious activity. Since we have configured XDR to **DETECT and ALERT Only**, the attack was allowed and not blocked. Review the details from the XDR pop up and close it after reviewing.
+
 <img width="1727" height="914" alt="image" src="https://github.com/user-attachments/assets/aa35d52c-d538-4c2a-a3bd-6792c1196a4d" />
 <img width="1575" height="891" alt="image" src="https://github.com/user-attachments/assets/77735bba-e810-42dd-8e42-de74e2b8be33" />
 
 #### Cortex XDR 1
-### Task 1 - ActivePwn: Windows Remote Code Exploit
+
+**Step 6.** Head back to the Cortex XDR tab in CloudShare. Refresh the incident page and now you should see incidents related to the exploit which we just performed.  
+
+**Step 7.** Within the Cortex XDR Cloud Tenant, check the checkbox that says Include Incident Insights. Click
+on Alerts and Insights.  
+
 <img width="1908" height="1194" alt="image" src="https://github.com/user-attachments/assets/1e50f072-c65c-4b85-bb0a-10372977d3db" />
 <img width="1908" height="1194" alt="image" src="https://github.com/user-attachments/assets/23f57e15-cbfd-4aff-9799-92ea09a63727" />
 <img width="1912" height="1192" alt="image" src="https://github.com/user-attachments/assets/e471464c-139f-4601-8750-545cce0625c6" />
+
+**Step 8.** Now, you should be able to see the more recent Active MQ exploit that we ran, which was detected by
+the XDR.  
+
 <img width="1915" height="1191" alt="image" src="https://github.com/user-attachments/assets/1fd85ba9-3d34-4ecb-b636-459505d10d89" />
+
+**Step 9.** Let’s investigate the Causality Chain for this specific Alert. Right click on the highlighted alert >
+Investigate Causality Chain > Open Card in same tab.  
+
 <img width="1916" height="1180" alt="image" src="https://github.com/user-attachments/assets/a980c55b-6e09-4a7a-bdd1-57f2e2304a87" />
+
+**Step 10.** Causality Chain that indicates the chain of events that occurred. This includes both the Chrome exploit that we ran (which was blocked) and also the ActiveMQ exploit that we performed.  
+
 <img width="1919" height="1180" alt="image" src="https://github.com/user-attachments/assets/f736d18c-db3d-4166-a739-462ee2ff7303" />
+
+**Step 11.** Click on the Forensics Highlights to see the highlights and expand each item to explore.  
+
 <img width="1301" height="847" alt="image" src="https://github.com/user-attachments/assets/40066fea-d12e-4770-8132-5a5f35f15983" />
 
-### Task 2 - Windows Privilege Escalation and Post Exploitation
-#### Attacker Part 2
-> resource 03-priv-escalation.rc
-<img width="1392" height="699" alt="image" src="https://github.com/user-attachments/assets/e58bd2b6-8902-4794-b334-4be42ce3fde9" />
+### Task 2 - Windows Privilege Escalation and Post Exploitation  
 
-> resource 04-post-exploitation.rc
-<img width="1394" height="710" alt="image" src="https://github.com/user-attachments/assets/514d6849-1221-4c6b-920f-4b1c2e454cb4" />
+**Complexity:** Easy  
+**Product(s):** Cortex XDR Cloud Tenant  
+**Scenario:**  
+     ● As an attacker, you have successfully infiltrated a Windows Client.  
+     ● You are looking to perform privilege escalation exploits to elevate your Windows privileges.  
+     ● Upon escalating your privileges, you will perform credential extraction, lateral movement, executions, setup persistence. sensitive data preparation and exfiltration.  
+**Key takeaways:**
+     ● See in real time how Cortex XDR is capable of detecting and handling real world threats.
+
+#### Attacker Part 2  
+
+**Step 1.** Head over to the Attacker VM and make sure you are at the Windows Exploit terminal tab.  
+
+**Step 2.** Execute the following command and hit return:  
+
+**💡Insights:**  
+❖ The command will use the previous Meterpreter session that was opened as part of the RCE exploit that we performed in the previous task to deliver a privilege escalation exploit  
+❖ Once the second exploit is executed, that will open additional Meterpreter reverse connection with elevated permissions.  
+❖ We will use that session to perform Post Exploitation things.  
+
+> resource 03-priv-escalation.rc  
+
+<img width="1392" height="699" alt="image" src="https://github.com/user-attachments/assets/e58bd2b6-8902-4794-b334-4be42ce3fde9" />  
+
+**Step 3.** Now we have escalated our privileges on the remote system. Next, let’s run post exploitation attacks by executing:  
+
+> resource 04-post-exploitation.rc  
+
+<img width="1394" height="710" alt="image" src="https://github.com/user-attachments/assets/514d6849-1221-4c6b-920f-4b1c2e454cb4" />  
+
+**Step 4.** This command execution will be rather long as it executes many commands such as the following:  
+     i) Credential Dumping
+     ii) Windows Hash dumping
+     iii) Getting Clipboard data of the Windows Client
+     iv) Uploading psexec and netcat binaries to C:\\windows\\system32
+     v) Run Metasploit persistence modules to set up persistence access to the WIndows Client.
+     vi) Data collection and exfiltration
+     vii) Lateral Movement
+     viii) Setting up Command and Control
+     ix) Adding a secret Local user
+
+**Step 5.** Once the command successfully completes, all the post exploitation steps are complete. You can optionally scroll through the command output to see the steps performed by the resource script and the output of the commands.  
+
+**Step 6.** As part of the Post Exploitation, we executed a persistence shell that connects back to the attacker via Netcat. After the port exploitation is complete, within the Attacker VM Terminal tab, navigate to the netcat listener tab to see that you now have a windows reverse shell.  
 
 > nc -l -p 1337
-<img width="1396" height="719" alt="image" src="https://github.com/user-attachments/assets/46d460ee-7690-43e9-b038-3c115bafb822" />
+
+<img width="1396" height="719" alt="image" src="https://github.com/user-attachments/assets/46d460ee-7690-43e9-b038-3c115bafb822" />  
 
 #### Cortex XDR Part 2
+
+**Step 7.** Head back to the **Cortex XDR tab** in CloudShare. **Refresh** the incident page and now you should see incidents related to the exploit which we just performed. Check the checkbox that says **Include Incident Insights.**  
+
 <img width="1912" height="1191" alt="image" src="https://github.com/user-attachments/assets/b8600779-6947-43b7-b953-0565270e765d" />
 <img width="1915" height="1197" alt="image" src="https://github.com/user-attachments/assets/9ff96aa1-d57d-44f7-b3fe-0dcb404af426" />
+
+**Step 8.** You can see that XDR has detected and categorized various attacks performed by the attacker based on the MITRE attack tactics and techniques. Click on various different MITRE tactics to see the alerts that are under that category. For example, if you clicked on Privilege Escalation, you can see the various alerts that fall under those categories.
+
 <img width="1917" height="1199" alt="image" src="https://github.com/user-attachments/assets/56d95fb8-2c06-4a02-8789-9a5a9fb30b86" />
 <img width="1917" height="1199" alt="image" src="https://github.com/user-attachments/assets/86b30ceb-c50b-45a4-aff7-6329ffe26322" />
+
+**Step 9.** Click on the **Overview tab** to return to the overview section. If you then click on the **Persistence** MITRE tab, you can see the persistence tactics that are used by the attacker.  
+
 <img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/c5cf01d7-f37d-4d0b-96d5-807944530fee" />
+
+**Step 10.** Click on the **Overview tab** to return to the overview section. If you then click on the **Command and Control** MITRE tab, you can see the Command and Control related alert. Similarly, feel free to explore various different MiTRE Tactics and Techniques.
+
 <img width="1919" height="1193" alt="image" src="https://github.com/user-attachments/assets/f33a98dd-141a-46ec-9e8e-2322e76e8381" />
 
 ### Task 3 - CodeInject: Linux Spring Framework Exploit
+
+**Complexity:** Easy  
+**Scenario:**  
+     ● You have successfully installed a Cortex XDR agent on Linux and you want to see it in action.  
+     ● The Victim is using a specific version of Spring Cloud Function which is vulnerable to remote code execution (CVE-2022-22963) without any user interaction.  
+     ● For this scenario, we have set the XDR protection mode to DETECT AND ALERT. This is done to showcase the capabilities of XDR.
+**Key takeaways:**  
+     ● Cortex XDR ability to protect from Remote Code Exploitation on Linux Servers. 
+
 #### Liunx Clinet Part 1
+
+**Step 1.** Click the **Linux Client** tab. Run the following shell script to ensure that all the XDR services are running and the latest contents and configuration are downloaded from the XDR tenant. Since the XDR installation script has changed the hostname of this VM, a reboot is also required, which this script will perform after it runs the necessary checks.  
+
+**Step 2.** Once the script is executed and if all the checks pass and the Linux Client is rebooting, your SSH session will be lost. At this point, switch over from SSH to CON using CloudShare controls.  
+
+**Step 3.** If the checks are unsuccessful, wait for a few minutes before re-running the script to check the status again.  
+
+**Step 4.** Once the Linux Client comes back from reboot, you can switch over from CON back to SSH. Once you do that, you should automatically be logged into the Linux Client. After a reboot, allow a couple of minutes for the services to startup.If you are prompted for login credentials when you switch to SSH, switch to CON and then again to SSH. When on SSH, CloudShare should log you into the VM without needing to enter credentials.  
+
+**Step 5.** Once the Linux Client is rebooted, run the script that you had executed previously to verify that all the
+XDR Services are running.  
+
 > sudo bash xdr-status.sh
+
 <img width="1580" height="768" alt="image" src="https://github.com/user-attachments/assets/9103f77b-956c-4132-8457-d56fe4c14355" />
 
 > hostname
 <img width="1032" height="677" alt="image" src="https://github.com/user-attachments/assets/2acc34e9-d6aa-4124-a973-37c838b5866c" />
 
+**💡Insights:**  
+❖ Palo Alto Networks WildFire is a cloud-delivered malware analysis service that uses data and threat intelligence from the industry’s largest global community.  
+❖ This incident is triggered by the malware test file, and you will be able to get more details on this threat. You can use the download button on the upper left to download a copy of this report.  
+❖ Close the WildFire Analysis Report. Close the WildFire Analysis Report.  
+
+**Step 6.** Run the following command to determine your Linux Hostname.  
+
+> hostname
+
+**Step 7.** Head over to the XDR CloudShare tab. From the left menu, click on Keyboard > Home to navigate back the XDR Home page
+
+
 #### Cortex XDR Part 3
+
+**Step 8.** Head over to **Endpoints > All Endpoints.** Here you will see a list of endpoints. Find the endpoint associated with the hostname of your Linux Client. Right click on your endpoint in the list > **Endpoint Data > View Incidents > See incidents in the same tab.** Here, you should see that there are no incidents associated with your endpoint. Do not navigate away from this XDR page within the XDR tab but you can switch back and forth between other CloudShare tabs.  
+
 <img width="1915" height="1193" alt="image" src="https://github.com/user-attachments/assets/1aff8618-ce45-454f-b7b8-1b904f4bbc7b" />
 <img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/c8b24e60-d0e7-4dc9-9825-69a410344fe4" />
 <img width="1833" height="1171" alt="image" src="https://github.com/user-attachments/assets/bd0dc7b6-d09b-4f3d-913e-d3055052b40b" />
 
 #### Attacker Part 3
+
+**Step 9.** Navigate to the **Attacker VM**. Within the open terminal, click on the **Linux Exploit** tab and hit return.  
+
 > msfconsole -r 01-spring-exploit.rc
+
 <img width="1286" height="735" alt="image" src="https://github.com/user-attachments/assets/746e5b4c-4da3-43d7-89f9-e0d697810266" />
 
+**💡Insights:**  
+❖ The command will start the Metasploit program and configure the Attacker VM to listen for incoming connections and serve the **Spring Cloud Function SpEL Injection (CVE-2022-22963) exploit** to the Linux Client  
+❖ Once the exploit execution is complete, you should see a Meterpreter session open. This indicates that the exploit was completed successfully and we have obtained the reverse shell on the Linux Client  
+
+**Step 10.** Within the Meterpreter prompt, run the following command to execute post exploitation steps.  
+
 > resource 02-post-exploitation.rc
-<img width="1209" height="659" alt="image" src="https://github.com/user-attachments/assets/f569d8e0-50a0-4026-8012-d86340f25598" />
+
+<img width="1209" height="659" alt="image" src="https://github.com/user-attachments/assets/f569d8e0-50a0-4026-8012-d86340f25598" />  
 
 #### Cortex XDR Part 4
+
+**Step 11.** Once this command completes execution, head back to the Cortex XDR tab in CloudShare. Refresh the incident page and now you should see incidents related to the exploit which we just performed.  
+**Step 12.** **Right Click on the Incident > View Incident > View Incident in the Same tab**  
+
 <img width="1911" height="920" alt="image" src="https://github.com/user-attachments/assets/969598dd-12dc-4105-a2dd-6c05570f8401" />
+
+**Step 13.** Click on the **Alert and Insights** to see all the alerts that are part of this Incident. Here you can see that XDR was able to detect and report the exploit.
+
 <img width="1910" height="930" alt="image" src="https://github.com/user-attachments/assets/6b0ff006-63f1-44be-9362-cb3b784eaf76" />
+
+**Step 14.** Click on the **Executions** tab to see the Causality chain.  
+
 <img width="1919" height="1037" alt="image" src="https://github.com/user-attachments/assets/5aefec6b-b19d-4bb9-b9d5-c8d81759d741" />
+
+**Step 15.** Click on **Key Assets and Artifacts** to view the artifacts for this incident.
+
 <img width="1916" height="930" alt="image" src="https://github.com/user-attachments/assets/04de68e5-a8da-4b2d-9315-12cc76474b89" />
 
 ## Activity 4: Cortex XSOAR Phishing Email Case Study
-In this activity you will:
-● Review the setup - email client and phishing email
-● See how Cortex XSOAR can integrate with Mail clients.
-● Understand and work with Cortex XSOAR.
-● See Cortex XSOAR in action when it comes to Phishing emails and how it can help security
-team’s response times through powerful automation in the form of XSOAR playbooks.
-****
+
+**Background:** At the beginning of our previous Cortex XDR activity, we witnessed in real-time the significant threats posed by phishing emails, which can deliver malicious content such as browser exploits and cause substantial damage. In this activity, we will delve into how Cortex XSOAR can enhance your organization's and employees' protection against phishing attacks.  
+
+Phishing emails are particularly hazardous as they not only deliver exploits but also direct users to malicious websites and distribute malware. Given these risks, it is crucial to implement robust measures to protect against phishing attacks. Cortex XSOAR offers advanced automation and orchestration capabilities to streamline and enhance the efficiency, accuracy, and speed of responding to phishing incidents, thereby mitigating the associated challenges effectively.
+
+
+**In this activity you will:**
+     **● Review the setup - email client and phishing email.  
+     ● See how Cortex XSOAR can integrate with Mail clients.  
+     ● Understand and work with Cortex XSOAR.  
+     ● See Cortex XSOAR in action when it comes to Phishing emails and how it can help security team’s response times through powerful automation in the form of XSOAR playbooks.**     
+
+**Note:** This Activity is dependent on Activity 0 > Task 4 and Activity 2.  
+
 
 ### Task 1 - Review the Setup
-Cortex XSOAR Credentials: (admin/P@lo@lto@123)
 
-#### Application Portal Part1 
+**Complexity:** Easy  
+**Product(s):** Cortex XSOAR  
+**Scenario:**  
+● A user in your organization has received a Phishing email (same one from previous activity). Review the phishing email from an end user's perspective.  
+● You, as a SOC analyst, are responsible for setting up Cortex XSOAR to monitor Phishing emails and
+perform automation actions in response to the Phishing emails to protect your employees and
+organization.
+**Key takeaways:**
+     ● Review Phishing email setup  
+     ● Configure XSOAR to monitor phishing emails via Mail Listener XSOAR content pack and automate creation of incidents for phishing emails and configure XSOAR to execute a Playbook in response to phishing incidents
+
+**Step 1.** We’ll need to work with the Email client in this activity. You can access the Email Client for this activity
+in the following ways:  
+     **a)** Via Application Portal  
+     **b)** Via Windows Client  
+**Step 2.** Cortex XSOAR Credentials: admin/P@lo@lto@123  
+
+**Step 3.** To access the Email client via Application Portal, navigate to **CloudShare > Application Portal** and login (refer to **Activity 0 > Task 3 > Step 1** for credentials to application portal). If you had previously logged in to the Application Portal, you can simply connect to it via the **Application Portal > Connect** to log back in.  
+
+#### Application Portal Part1  
+Cortex XSOAR Credentials: (admin/P@lo@lto@123)  
+**Step 4.** Once within the **Application Portal**, select the **Webmail** tile to open the email client.  
+
 <img width="1906" height="802" alt="image" src="https://github.com/user-attachments/assets/6bdd9374-daaf-4087-940b-8dd2db8d034a" />
 
 #### Windows Client Part1
