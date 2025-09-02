@@ -568,20 +568,24 @@ Phishing emails are particularly hazardous as they not only deliver exploits but
 ### Task 1 - Review the Setup
 
 **Complexity:** Easy  
+
 **Product(s):** Cortex XSOAR  
+
 **Scenario:**  
 ● A user in your organization has received a Phishing email (same one from previous activity). Review the phishing email from an end user's perspective.  
 ● You, as a SOC analyst, are responsible for setting up Cortex XSOAR to monitor Phishing emails and
 perform automation actions in response to the Phishing emails to protect your employees and
-organization.
+organization.  
+
 **Key takeaways:**
      ● Review Phishing email setup  
-     ● Configure XSOAR to monitor phishing emails via Mail Listener XSOAR content pack and automate creation of incidents for phishing emails and configure XSOAR to execute a Playbook in response to phishing incidents
+     ● Configure XSOAR to monitor phishing emails via Mail Listener XSOAR content pack and automate creation of incidents for phishing emails and configure XSOAR to execute a Playbook in response to phishing incidents  
 
 **Step 1.** We’ll need to work with the Email client in this activity. You can access the Email Client for this activity
 in the following ways:  
      **a)** Via Application Portal  
      **b)** Via Windows Client  
+     
 **Step 2.** Cortex XSOAR Credentials: admin/P@lo@lto@123  
 
 **Step 3.** To access the Email client via Application Portal, navigate to **CloudShare > Application Portal** and login (refer to **Activity 0 > Task 3 > Step 1** for credentials to application portal). If you had previously logged in to the Application Portal, you can simply connect to it via the **Application Portal > Connect** to log back in.  
@@ -593,9 +597,19 @@ Cortex XSOAR Credentials: (admin/P@lo@lto@123)
 <img width="1906" height="802" alt="image" src="https://github.com/user-attachments/assets/6bdd9374-daaf-4087-940b-8dd2db8d034a" />
 
 #### Windows Client Part1
-username: student
-password: password
-<img width="1553" height="946" alt="image" src="https://github.com/user-attachments/assets/b10f391e-7199-45ba-9dae-90d26183c8d6" />
+
+**Step 5.** To access the Webmail via Windows Client, navigate **CloudShare > Windows Client > Chrome Browser > Webmail** bookmark.  
+
+
+**Step 6.** Use the following credentials to login to the webmail.  
+
+> username: **student**  
+> password: **password**  
+
+<img width="1553" height="946" alt="image" src="https://github.com/user-attachments/assets/b10f391e-7199-45ba-9dae-90d26183c8d6" />  
+
+**Step 7.** Once logged in, navigate to **Mail > INBOX** and select the mail to view the email. Select **Dark Mode** for optimal viewing experience. **<font color="#FF0000">Do not click on any links within the email as this is a malicious email.0</font>**  
+
 <img width="1325" height="941" alt="image" src="https://github.com/user-attachments/assets/393e02ea-0c90-49b8-9db5-00dc4d5b32b8" />
 
 #### Cortex XSOAR Part1
