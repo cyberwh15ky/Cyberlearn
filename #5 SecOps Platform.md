@@ -119,8 +119,8 @@ are used in the lab:
 ### Task 4 - Enable Internet Access on the ML-Powered Next-Generation Firewall
 <img width="1302" height="631" alt="image" src="https://github.com/user-attachments/assets/498c143f-b840-4cff-9729-4bb9c56e765b" />  
 
-> **Name: student**  
-> **Password: utd135**  
+<ins>username:</ins> **student**  
+<ins>password:</ins> **utd135**  
 
 <img width="1189" height="381" alt="image" src="https://github.com/user-attachments/assets/1f760b66-7a47-498d-8f7b-83c252200470" />  
 
@@ -138,14 +138,14 @@ are used in the lab:
 
 ## Activity 1: Overview of the Cortex Product Family
 #### Application Portal
-> **Name: kasm_user**  
-> **Password: p@lo@lto**  
+<ins>username:</ins> **kasm_user**  
+<ins>password:</ins> **p@lo@lto**  
 <img width="1895" height="804" alt="image" src="https://github.com/user-attachments/assets/923b0952-83f3-42e7-a5a4-c4c19e3ed4e9" />  
 <img width="1060" height="609" alt="image" src="https://github.com/user-attachments/assets/0571845c-22ec-48cb-af61-96f05ae49a4c" />  
 
 #### VM-Series Firewall
-> **Name: student**  
-> **Password: utd135**  
+<ins>username:</ins> **student**  
+<ins>password:</ins> **utd135**  
 <img width="1785" height="590" alt="image" src="https://github.com/user-attachments/assets/46c5a1f8-58b5-45c8-bf6a-999ebe9cf14b" />
 <img width="1771" height="868" alt="image" src="https://github.com/user-attachments/assets/5b7b99c9-dc2c-42c9-901e-e655898062f1" />
 <img width="1382" height="882" alt="image" src="https://github.com/user-attachments/assets/1d33378d-4610-489a-8635-52efbb4ac49b" />
@@ -192,7 +192,7 @@ Install Cortex agent in Linux
 
 ### Task 2 - Review Cortex XDR Policies
 #### Cortex XDR
-**Step 1.** Head over to the Cortex XDR CloudShare tab and login to the XDR tenant using the saved credentials. At the login screen, click inside the Password field to use the saved password.  
+**Step 1.** Head over to the Cortex XDR CloudShare tab and login to the XDR tenant using the saved credentials. At the login screen, click inside the password field to use the saved password.  
 <img width="1198" height="739" alt="image" src="https://github.com/user-attachments/assets/dae2605d-707b-44f9-8c62-57c5715993c4" />
 
 **Step 2.** From the left pane, click the Endpoints > Policy Management, then click on Policy Rules on the left node to view the security profiles configured for Windows, macOS, Linux and Android.
@@ -252,8 +252,8 @@ Install Cortex agent in Linux
 #### Windows Client  
 **Step 4.** Head over to the Windows Client tab. You should already see a browser open (launched as part of the startup scripts). If the browser isn’t open, open it by clicking on the Chrome icon on the desktop. From the browser window, select the Mail bookmark. Use the following credentials to login.  
 
-> username: student
-> password: password
+<ins>username:</ins> **student**  
+<ins>password:</ins> **password**  
 
 This should open a mailbox and here you should see an email. Ensure to maximize the Chrome browser window in the Windows VM to ensure that all the options are visible/  
 
@@ -600,11 +600,10 @@ Cortex XSOAR Credentials: (admin/P@lo@lto@123)
 
 **Step 5.** To access the Webmail via Windows Client, navigate **CloudShare > Windows Client > Chrome Browser > Webmail** bookmark.  
 
-
 **Step 6.** Use the following credentials to login to the webmail.  
 
-> username: **student**  
-> password: **password**  
+<ins>username:</ins> **student**  
+<ins>password:</ins> **password**  
 
 <img width="1553" height="946" alt="image" src="https://github.com/user-attachments/assets/b10f391e-7199-45ba-9dae-90d26183c8d6" />  
 
@@ -615,19 +614,32 @@ Cortex XSOAR Credentials: (admin/P@lo@lto@123)
 #### Cortex XSOAR Part1
 **Step 8.** After reviewing the email, let's take a look at Cortex XSOAR. We will be returning to the email in the next steps. Navigate to **CloudShare > Cortex XSOAR** and login with the following credentials:  
 
-<ins>username</ins>: **admin**
-<ins>password</ins>: **P@lo@lto@123**
+<ins>username:</ins> **admin**  
+<ins>password:</ins> **P@lo@lto@123**  
 <img width="1474" height="763" alt="image" src="https://github.com/user-attachments/assets/90517476-b892-4993-abdf-26818789c1dc" />
+
+**Step 9.** Once logged in, navigate to **Settings > Integrations > Instances** and search for **Mail Listener**. Within the search results you can see that there’s an integration by the name **Mail Listener V2** configured. **Click on the settings icon** to review it.  
 <img width="1486" height="771" alt="image" src="https://github.com/user-attachments/assets/47a1e3e1-2ad4-4366-acf8-50067d7751fb" />
-<img width="1489" height="776" alt="image" src="https://github.com/user-attachments/assets/1fe622b7-2952-485c-9cf4-e89b180de465" />
-<img width="1486" height="780" alt="image" src="https://github.com/user-attachments/assets/c0612ef0-d886-478f-acf0-9ec0e1edd914" />
-> a) Incident type: The value is currently set to Phishing. This means that the incidents that are created by this instance are classified as Phishing and in response to Phishing incident type, relevant automations are run by XSOAR  
-> b) Mail Server Hostname/IP address: This is the IP address of our self hosted mail server in the lab.  
-> c) IMAP port: This value indicates the IMAP port of our self hosted mail server in lab.  
-> d) username/password: Credentials for our mailbox.  
-> e) Incoming mail folder: This is the folder within the student email account (student). This indicates that any emails that end up in the Phishing folder are monitored by XSOAR and a corresponding incident is created for each email in the Phishing folder.  
-> f) First Fetch Time: This corresponds to the oldest email that will be fetched. For example, if it’s set to 1 year, all emails within the past year from the current date, will be fetched.  
-> g) Incidents Fetch Interval: The frequency at which XSOAR queries the configured mailbox and folder for emails.  
+
+**💡Insights:**  
+❖ Mail Listener V2 content pack is used to listen to mailboxes and trigger incidents. Each content pack can have multiple instances.  
+❖ Each instance can be customized to work with a different email address and according to different rules. For example, you can define the integration instance to fetch emails from specific sender addresses and for specific periods of time.  
+❖ In our case, we have already preconfigured an instance of this content pack: **Mail Listener v2_UTD** for your convenience. In the next steps, you’ll be reviewing the configuration  
+
+**Step 1**. This instance is configured to create incidents in XSOAR based on emails received to a specific mailbox (the email account that we looked at earlier in this task). Let's configure the instance to fetch instances. Click on the radio button: **Fetches Incidents**  
+<img width="1489" height="776" alt="image" src="https://github.com/user-attachments/assets/1fe622b7-2952-485c-9cf4-e89b180de465" />  
+
+**Step 2.** Change the value of the **First Fetch Time** to **1 year**. The initial value is set to **1 hour**.  
+<img width="1486" height="780" alt="image" src="https://github.com/user-attachments/assets/c0612ef0-d886-478f-acf0-9ec0e1edd914" />  
+
+**Step 3.** Let’s look at specific configurations within this instance:  
+     a) **<ins>Incident type:</ins>** The value is currently set to Phishing. This means that the incidents that are created by this instance are classified as Phishing and in response to Phishing incident type, relevant automations are run by XSOAR  
+     b) **<ins>Mail Server Hostname/IP address:</ins>** This is the IP address of our self hosted mail server in the lab.  
+> c) **<ins>IMAP port:</ins>** This value indicates the IMAP port of our self hosted mail server in lab.  
+> d) **<ins>username/password:</ins>** Credentials for our mailbox.  
+> e) **<ins>Incoming mail folder:</ins>** This is the folder within the student email account (student). This indicates that any emails that end up in the Phishing folder are monitored by XSOAR and a corresponding incident is created for each email in the Phishing folder.  
+> f) **<ins>First Fetch Time:</ins>** This corresponds to the oldest email that will be fetched. For example, if it’s set to 1 year, all emails within the past year from the current date, will be fetched.  
+> g) **<ins>Incidents Fetch Interval:</ins>** The frequency at which XSOAR queries the configured mailbox and folder for emails.  
 
 <img width="1508" height="1041" alt="image" src="https://github.com/user-attachments/assets/bad9ffc7-74a9-4922-be4c-930addc3aadd" />
 <img width="1508" height="1045" alt="image" src="https://github.com/user-attachments/assets/2e0a0c38-978c-41a0-a2d1-3b43fcf46e4f" />
