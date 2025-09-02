@@ -65,7 +65,6 @@ Task 1 - General Troubleshooting
 Task 2 - Mailbox Redeployment  
 Task 3 - XSIAM  
 
-
 ## Activity 0: Log in to the UTD Workshop
 ### Task 1 - Log in to Your Ultimate Test Drive Class Environment
 #### Overview
@@ -82,6 +81,52 @@ The SecOps UTD lab environment consists of the following tabs:
 7. **Windows Client (VM)**: This is a Windows® 10 virtual machine.
 8. **Linux Client (VM)**: Ubuntu Virtual Machine.
 9. **Docker Workstation**: This is a VM that hosts Prisma Cloud Compute Edition and other workloads.
+
+### Task 2 - Understand UTD Components  
+This UTD environment consists of the following components:
+● Linux Client: This is a Ubuntu virtual machine, on which you will carry out the exercises in our workshop related to Cortex XDR.  
+● Windows Client: This is a Windows® 10 virtual machine, on which you will carry out the exercises in our workshop related to Cortex XDR.  
+● Attacker: This virtual machine is a Kali Linux system that hosts Metasploit® , a penetration testing tool. You will use this virtual machine to take on the role of the attacker in our workshop exercises.  
+● Application Portal: This is a Portal through which some of the other components of the lab can be accessed.  
+● Cortex XDR (GUI): This is the Palo Alto Networks Cortex XDR tenant.  
+● Cortex XSIAM (GUI): This is the Palo Alto Networks Cortex XSIAM tenant.  
+● Docker Workstation: The Docker workstation hosts Prisma Cloud Compute edition in the form of a self hosted container. Additionally, it has a few other container workloads running such as Nginx, http and DVWA.  
+
+### Task 3 - Application Portal Overview
+The Application Portal is one stop shop for all the applications that are used in this workshop. Under the hood, it utilizes Kasm Workspaces, which is a streaming platform for delivering browser-based access to applications, and web services and this setup is running as a docker container within the Docker workstation. Within this workspace, Chrome browser is preinstalled and it provides a secure and isolated browsing environment.  
+Below are some key points to note:  
+1. Credentials: kasm_user/p@lo@lto  
+2. Homepage: http://homepage:3000 (henceforth referred to as Homepage).  
+3. The Application Portal, upon startup, opens the webpage: If Homepage is not loaded, please refresh the browser tab or open a new browser tab and navigate to aforementioned URL.  
+4. Homepage provides you access to the various applications used within this workshop.  
+5. These applications are all running as Docker containers and they are accessible via their internal IPs only via the Application portal.  
+6. This ensures that the traffic doesn’t go out the internet, making the setup a bit more secure and reduces latency.  
+
+Below are the list of applications that are accessible via Application Portal and the respective tracks where these
+are used in the lab:  
+1. VM-Series NGFW: VM Series Next Generation Firewall  
+     - ➢ Credentials: student/utd135  
+2. Prisma Cloud Compute Edition: Click this tab to login on the Prisma Cloud Compute Edition (PCCE) console.  
+     - ➢ Credentials: admin/p@lo@lto  
+2. Cortex XSOAR: Click this tab to login on Cortex XSOAR console  
+     - ➢ Credentials: admin/P@lo@lto@123  
+3. Webmail: Click this tab to login on to a self hosted Mail server that is used in this lab.  
+     - ➢ Credentials: student/password  
+4. The Outdoor Store: A functional website hosted for demo purposes that will be used in Cortex XSOAR related activity.  
+5. httpd: Apache HTTPd server  
+6. DVWA: Damn Vulnerable Web Application docker container is a PHP/MySQL web application  
+
+### Task 4 - Enable Internet Access on the ML-Powered Next-Generation Firewall
+<img width="1302" height="631" alt="image" src="https://github.com/user-attachments/assets/498c143f-b840-4cff-9729-4bb9c56e765b" />  
+<img width="1189" height="381" alt="image" src="https://github.com/user-attachments/assets/1f760b66-7a47-498d-8f7b-83c252200470" />  
+> Name: student  
+> Password: utd135  
+<img width="1612" height="337" alt="image" src="https://github.com/user-attachments/assets/98460bcc-2eb4-412a-970d-d3b41442c3ed" />
+<img width="1583" height="458" alt="image" src="https://github.com/user-attachments/assets/6afd3cc6-075d-429b-83e2-526545e20182" />
+<img width="1417" height="830" alt="image" src="https://github.com/user-attachments/assets/e9c07f0b-4bc4-46ad-918b-cdf9b336b889" />
+![Uploading image.png…]()
+
+
 
 ## Activity 1: Overview of the Cortex Product Family
 #### Application Portal (kasm_user/p@lo@lto)
