@@ -1,6 +1,6 @@
 Prisma AIRS
 
-<img width="667" height="356" alt="#Pm2 #1" src="https://github.com/user-attachments/assets/43abc3e8-b514-41dd-840d-8699ca158a71" />
+<img width="1336" height="761" alt="#Pm2 #1" src="https://github.com/user-attachments/assets/43abc3e8-b514-41dd-840d-8699ca158a71" />
 <img width="663" height="332" alt="#Pm2 #2" src="https://github.com/user-attachments/assets/ade8e963-9c3d-4365-8382-bf2b0b12712c" />
 <img width="658" height="344" alt="#Pm2 #3" src="https://github.com/user-attachments/assets/59be393a-d6c3-4fcf-9158-430318eba339" />
 <img width="671" height="340" alt="#Pm2 #4" src="https://github.com/user-attachments/assets/1bccdf5d-ff11-4a15-bd64-946665096546" />
