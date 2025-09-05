@@ -314,12 +314,13 @@ Although antivirus solutions protect nearly every endpoint and server in the wor
 The following are the ten requirements for effective protection for systems, users, and endpoints. (以下為有效保護系統、用戶及終端點的十項要求。)  
 
 <img width="198" height="200" alt="image" src="https://github.com/user-attachments/assets/ddc4d705-b034-4577-8ac5-1165457e7298" />
-**Pre-Emptively Block Known and Unknown Threats**
-To prevent security breaches, a shift must occur—from detecting and responding to incidents after they have already occurred to preventing security breaches from occurring in the first place. Endpoints must be protected from known, unknown, and zero-day threats delivered through malware and exploits, whether a machine is online or offline, on-premises or off-premises, or connected or disconnected to the organization’s network. Security solutions must incorporate local and cloud-based threat analysis to detect and prevent unknown and evasive threats.
 
+**Pre-Emptively Block Known and Unknown Threats**  
+To prevent security breaches, a shift must occur—from detecting and responding to incidents after they have already occurred to preventing security breaches from occurring in the first place. Endpoints must be protected from known, unknown, and zero-day threats delivered through malware and exploits, whether a machine is online or offline, on-premises or off-premises, or connected or disconnected to the organization’s network. Security solutions must incorporate local and cloud-based threat analysis to detect and prevent unknown and evasive threats.  
 
-**Does Not Impact User Productivity**
-An advanced endpoint security product must enable end users to conduct daily business and use mobile- and cloud-based technologies without fear of unknown cyberthreats. Users should be able to focus on their responsibilities rather than worry about security patches and updates. They must be confident that they are protected from accidentally running malware or exploits that may compromise their systems.
+<img width="198" height="200" alt="image" src="https://github.com/user-attachments/assets/66161818-7b2d-419e-b21d-c0beadc4da5d" />  
+**Does Not Impact User Productivity**  
+An advanced endpoint security product must enable end users to conduct daily business and use mobile- and cloud-based technologies without fear of unknown cyberthreats. Users should be able to focus on their responsibilities rather than worry about security patches and updates. They must be confident that they are protected from accidentally running malware or exploits that may compromise their systems.  
 
 
 **Automatically Turn Threat Intelligence Into Prevention**
