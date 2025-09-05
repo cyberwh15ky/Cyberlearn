@@ -172,12 +172,16 @@ Due to the different types of cyberattacks and the weaknesses of traditional ant
 
 **When did the attack happen?** (攻擊是什麼時候發生的？)  
 Exact date and time of the incident. (事件的確切日期和時間。)  
+
 **Which attack methods were used?** (使用了哪些攻擊方法？)  
 Web-based, email-based, external devices (USB), network-based, etc. (網基的、電子郵件基的、外部設備（USB）、網絡基的等。)  
+
 **Why was the attack successful?** (為什麼攻擊會成功？)  
 Missing updates, wrong or missing configurations, outdated application usage, etc. (缺少更新、錯誤或缺失的設定、過時的應用程序使用等。)  
+
 **What was the attack type?** (這是攻擊的類型嗎？)  
 Local, remote, malware, ransomware, zero day, etc. (本地、遠端、惡意軟體、勒索軟體、零日漏洞等。)  
+
 **What/Who were the affected systems or organizations?** (受影響的系統或組織是什麼/誰？)  
 Administrative group, finance users, CRM servers, database systems, etc. (行政團隊、財務用戶、CRM伺服器、數據庫系統等。)  
 
