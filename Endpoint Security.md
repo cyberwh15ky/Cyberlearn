@@ -311,44 +311,94 @@ Traditional antivirus programs have been the de facto solution to protect endpoi
 **Ten Requirements for Endpoint Security** (終端安全之十項要求)  
 Although antivirus solutions protect nearly every endpoint and server in the world, security breaches continue at an alarming rate. This is largely because traditional antivirus systems are signature-based security tools that focus on detecting and responding to known threats after they have already entered a network. Experienced attackers can bypass antivirus systems with inexpensive, automated online tools that produce countless unique, unknown attacks. Ultimately, traditional antivirus systems are inadequate for protecting systems against security breaches. (儘管防毒軟體保護了世界上幾乎所有的終端和伺服器，但安全漏洞的發生仍然以令人擔憂的速度持續。這主要是因為傳統的防毒系統是基於簽名的方法，屬於安全工具，它們專注於在威脅已經進入網絡後進行偵測和反應。經驗豐富的攻擊者可以使用廉價的、自動化的網絡工具來避開防毒系統，這些工具能夠產生無數獨特、未知的新型攻擊。最終，傳統的防毒系統對於保護系統免受安全漏洞的侵襲是不夠的。)  
 
+
+
+
+
 The following are the ten requirements for effective protection for systems, users, and endpoints. (以下為有效保護系統、用戶及終端點的十項要求。)  
 
-<img width="198" height="200" alt="image" src="https://github.com/user-attachments/assets/ddc4d705-b034-4577-8ac5-1165457e7298" />
+<img width="198" height="200" alt="image" src="https://github.com/user-attachments/assets/ddc4d705-b034-4577-8ac5-1165457e7298" />  
+
 **Pre-Emptively Block Known and Unknown Threats**  
 To prevent security breaches, a shift must occur—from detecting and responding to incidents after they have already occurred to preventing security breaches from occurring in the first place. Endpoints must be protected from known, unknown, and zero-day threats delivered through malware and exploits, whether a machine is online or offline, on-premises or off-premises, or connected or disconnected to the organization’s network. Security solutions must incorporate local and cloud-based threat analysis to detect and prevent unknown and evasive threats.  
 
+
+
+
+
 <img width="198" height="200" alt="image" src="https://github.com/user-attachments/assets/66161818-7b2d-419e-b21d-c0beadc4da5d" />  
+
 **Does Not Impact User Productivity**  
 An advanced endpoint security product must enable end users to conduct daily business and use mobile- and cloud-based technologies without fear of unknown cyberthreats. Users should be able to focus on their responsibilities rather than worry about security patches and updates. They must be confident that they are protected from accidentally running malware or exploits that may compromise their systems.  
 
-<img width="171" height="200" alt="image" src="https://github.com/user-attachments/assets/8498e7e6-7637-4bed-9c0c-38bff2009df2" />
+
+
+
+
+<img width="171" height="200" alt="image" src="https://github.com/user-attachments/assets/8498e7e6-7637-4bed-9c0c-38bff2009df2" />  
+
 **Automatically Turn Threat Intelligence Into Prevention**
 Threat intelligence gained through encounters with new and unique attacks, such as third-party intelligence service providers and public intelligence-sharing organization, must enable endpoint agents to instantly prevent known malware, identify and block unknown malware, and stop both from infecting endpoints. Threat data must also be gathered from within the organization—from the network, cloud, and endpoint. Automation must be used to correlate the data, identify indicators of compromise, create protections, and push protection out across the organization.
 
+
+
+
+
 <img width="210" height="248" alt="image" src="https://github.com/user-attachments/assets/a6c6bb1d-a5e5-491d-931b-348f3a9118d8" />
+
 **Protect All Applications**
 Applications are at the core of any organization’s ability to function effectively. Unfortunately, security flaws, or bugs, in applications give threat actors a large attack surface that traditional antivirus systems fail to protect. An organization’s security infrastructure should provide full protection against exploits for all applications, including third-party and proprietary applications. It should also be able to expedite the approval process for new applications as they are introduced into the environment by returning quick security verdicts.
 
+
+
+
+
 <img width="323" height="200" alt="image" src="https://github.com/user-attachments/assets/e496d3b2-8c9e-4d8f-9cee-0cff7d2c2fd1" />
+
 **Ensure Security Does Not Impact System Performance**
 Security products should not burden system resources, such as random access memory (RAM), central processing unit (CPU), or disk storage. Prevention of security breaches must never jeopardize the user experience. Endpoint protection—or any security tool, for that matter—must not require significant system resources, or it will strain system performance and degrade the user experience.
 
+
+
+
+
 <img width="171" height="200" alt="image" src="https://github.com/user-attachments/assets/ac21fbad-ecf1-4373-86f3-3abb550de329" />
+
 **Keep Legacy Systems Secure**
 Organizations may not always deploy system updates and security patches immediately. They may delay because deploying updates might interfere with, diminish, or eliminate critical operational capabilities, or because patches may not be available for legacy systems and software that have reached their end of life. A complete endpoint security solution must support unpatchable systems by preventing the exploitation of software vulnerabilities, known or unknown, regardless of the availability or application of security patches.
 
+
+
+
+
 <img width="282" height="200" alt="image" src="https://github.com/user-attachments/assets/ff3bf44b-ca12-44cb-a98c-e5f716f3d070" />
+
 **Be Enterprise-Ready**
 Any security solution intended to replace an antivirus system should be scalable, flexible, and manageable enough for deployment in an enterprise environment. Endpoint security should support and integrate with the way an enterprise deploys its computing resources, scale to as many endpoints as needed, and support deployments that cover geographically dispersed environments. It must also be flexible in its ability to provide ample protection while still supporting business needs and not overly restricting the business. This flexibility is critical, as the needs of one part of the organization may be entirely different from those of another. Additionally, the solution must be able to be easily managed by the same group that manages security in other parts of the organization. It must be designed with enterprise management in mind, without adding operational burden.
 
+
+
+
+
 <img width="186" height="210" alt="image" src="https://github.com/user-attachments/assets/a979f679-00dd-4822-82e0-f54f7b2c9e66" />
+
 **Provide Independent Verification for Industry Compliance Requirements**
 Regulatory compliance often requires that organizations implement an antivirus system to secure their endpoints. To proactively protect endpoints while meeting compliance requirements, endpoint security vendors that replace existing antivirus solutions should provide an audit report from an independent third-party compliance and audit services organization to help customers achieve and maintain compliance.
 
+
+
+
+
 <img width="283" height="200" alt="image" src="https://github.com/user-attachments/assets/9bc6cacb-ed8a-4ebd-ba0f-ceea32240d46" />
+
 **Provide Independent Verification as an Antivirus Replacement**
 Any security product intended to replace a legacy antivirus system should have its performance reviewed and validated by an independent third-party security testing and evaluation services organization. Independent reviews offer an essential check beyond what an organization is capable of conducting.
 
+
+
+
+
 <img width="250" height="200" alt="image" src="https://github.com/user-attachments/assets/1e981158-37c8-4de2-bc83-7c5724f0aeb1" />
+
 **Receive Recognition of Efficacy From Top-Tier Researchers**
 Any organization looking to move away from a traditional antivirus system should ensure that the replacement is recognized as a key player in the endpoint security space by a respected analyst or research firm, such as Gartner. This recognition will ensure that the solution and its vendor meet standard viability requirements as an endpoint security provider.
