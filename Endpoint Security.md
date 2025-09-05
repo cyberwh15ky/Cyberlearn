@@ -103,8 +103,11 @@ What is the primary objective of application allow listing in traditional endpoi
  - Analyzing network traffic for malicious activity  
 
 #####################################################
-
-Modern Endpoint Security  
+#####################################################
+#####################################################
+#####################################################
+#####################################################
+## Modern Endpoint Security  
 Endpoint detection and response (EDR)  
 Extended detection and response (XDR)  
 Endpoint protection platform (EPP)  
@@ -259,3 +262,93 @@ After establishing this baseline, UEBA solutions apply analytics methods (e.g., 
 
 **Network-Centric Solutions** (網絡中心解決方案)  
 NTA solutions use machine learning, advanced analytics, and rule-based detection to monitor and analyze all traffic and flow records on enterprise networks. NTA solutions use this information to identify potential attacks, insider abuse, suspicious activity, and malware. These solutions monitor and analyze all north-south traffic across the enterprise perimeter and all east-west communications from network sensors. (NTA解決方案使用機器學習、先進分析法和基於規則的偵測來監控和分析企業網絡上所有的流量和流量記錄。NTA解決方案利用這些資訊來識別潛在攻擊、內部人員濫用、可疑活動和惡意軟體。這些解決方案監控和分析企業周邊所有的南北流量以及從網絡感應器來的所有東西通訊。)  
+
+
+#### Modern Endpoint Security - Assessment (現代終端安全評估)  
+What are the three common objectives for targeting endpoints? (Choose three.) (目標端點的三個常見目標是什麼？(請選擇三個。))  
+ - **Use as an Entry/Exit Point (作為進出點使用)**  
+ - **Access Assets (存取資產)**  
+ - **Take Control (掌握控制權)**  
+ - Improve Network Efficiency (提升網路效率)  
+ - Manage Data Storage (管理資料儲存)  
+
+Which two components are essential for an effective Endpoint Protection Platform (EPP)? (Choose two.) (哪兩個元件對有效的終端保護平台（EPP）是必要的？（請選兩個。）)  
+ - **Cloud-based sandboxing (雲端沙盒技術)**  <<
+ - Network traffic analysis (網絡流量分析)  
+ - Signature-based malware detection only (僅基於簽名之惡意軟體偵測)  
+ - **Lightweight agent (輕量級代理)**  <<
+
+What is the main difference between Endpoint Detection and Response (EDR) and Extended Detection and Response (XDR)? (端點偵測與反應（EDR）與擴展偵測與反應（XDR）之間的主要差別是什麼？)  
+ - **EDR focuses on endpoint data, while XDR includes any data source like network, cloud, and endpoint sensors (EDR重點在端點數據，而XDR涵蓋任何數據來源，如網絡、雲端和端點感應器)**  
+ - EDR is primarily for small businesses, while XDR targets large enterprises (EDR主要面向小型企業，而XDR則針對大型企業)  
+ - EDR is an outdated technology, while XDR is an emerging technology (EDR是一種過時的技術，而XDR則是一種新興技術)  
+ - EDR is a part of XDR (EDR是XDR的一部分)  
+
+Which device is considered a network endpoint? (哪個裝置被認為是網絡終端？)  
+ - Firewall (防火牆)  
+ - **Smartphone (智能型手機)**  
+ - Router (路由器)  
+ - Network switch (網路交換機)  
+
+Which three capabilities are essential for an effective User and Entity Behavior Analytics (UEBA) solution? (Choose three.)  (對一個有效的用戶與實體行為分析（UEBA）解決方案來說，哪些三項功能是必要的？（請選擇三項。）)  
+ - **Live and historical data analysis (實時與歷史數據分析)**  
+ - **Machine learning for developing a baseline of standard activity (用機器學習發展標準活動的基準)**  
+ - Signature-based threat detection (基於簽名之威脅偵測)  
+ - **Anomaly detection in traffic patterns (交通模式異常偵測)**  
+ - Integrated dataset for analytics (整合數據集用於分析)  
+
+
+#####################################################
+#####################################################
+#####################################################
+#####################################################
+#####################################################
+
+## **Endpoint Security Requirements​** (終端安全要求)
+
+Traditional antivirus programs have been the de facto solution to protect endpoints for decades. Antivirus programs check all the boxes for regulatory, governance, and compliance audits but provide organizations with few real security benefits. This course outlines the ten security requirements for effective protection of systems, users, and endpoints. (傳統防毒軟件已經是過去數十年來保護終端設備的實際解決方案。防毒軟件在法規、治理和合規性檢查方面都打勾，但對組織來說，提供的真正安全效益卻不多。本課程概述了有效保護系統、用戶和終端設備所需的十項安全要求。)  
+
+**Ten Requirements for Endpoint Security** (終端安全之十項要求)  
+Although antivirus solutions protect nearly every endpoint and server in the world, security breaches continue at an alarming rate. This is largely because traditional antivirus systems are signature-based security tools that focus on detecting and responding to known threats after they have already entered a network. Experienced attackers can bypass antivirus systems with inexpensive, automated online tools that produce countless unique, unknown attacks. Ultimately, traditional antivirus systems are inadequate for protecting systems against security breaches. (儘管防毒軟體保護了世界上幾乎所有的終端和伺服器，但安全漏洞的發生仍然以令人擔憂的速度持續。這主要是因為傳統的防毒系統是基於簽名的方法，屬於安全工具，它們專注於在威脅已經進入網絡後進行偵測和反應。經驗豐富的攻擊者可以使用廉價的、自動化的網絡工具來避開防毒系統，這些工具能夠產生無數獨特、未知的新型攻擊。最終，傳統的防毒系統對於保護系統免受安全漏洞的侵襲是不夠的。)  
+
+The following are the ten requirements for effective protection for systems, users, and endpoints. (以下為有效保護系統、用戶及終端點的十項要求。)  
+
+<img width="198" height="200" alt="image" src="https://github.com/user-attachments/assets/ddc4d705-b034-4577-8ac5-1165457e7298" />
+**Pre-Emptively Block Known and Unknown Threats**
+To prevent security breaches, a shift must occur—from detecting and responding to incidents after they have already occurred to preventing security breaches from occurring in the first place. Endpoints must be protected from known, unknown, and zero-day threats delivered through malware and exploits, whether a machine is online or offline, on-premises or off-premises, or connected or disconnected to the organization’s network. Security solutions must incorporate local and cloud-based threat analysis to detect and prevent unknown and evasive threats.
+
+
+**Does Not Impact User Productivity**
+An advanced endpoint security product must enable end users to conduct daily business and use mobile- and cloud-based technologies without fear of unknown cyberthreats. Users should be able to focus on their responsibilities rather than worry about security patches and updates. They must be confident that they are protected from accidentally running malware or exploits that may compromise their systems.
+
+
+**Automatically Turn Threat Intelligence Into Prevention**
+Threat intelligence gained through encounters with new and unique attacks, such as third-party intelligence service providers and public intelligence-sharing organization, must enable endpoint agents to instantly prevent known malware, identify and block unknown malware, and stop both from infecting endpoints. Threat data must also be gathered from within the organization—from the network, cloud, and endpoint. Automation must be used to correlate the data, identify indicators of compromise, create protections, and push protection out across the organization.
+
+
+**Protect All Applications**
+Applications are at the core of any organization’s ability to function effectively. Unfortunately, security flaws, or bugs, in applications give threat actors a large attack surface that traditional antivirus systems fail to protect. An organization’s security infrastructure should provide full protection against exploits for all applications, including third-party and proprietary applications. It should also be able to expedite the approval process for new applications as they are introduced into the environment by returning quick security verdicts.
+
+
+**Ensure Security Does Not Impact System Performance**
+Security products should not burden system resources, such as random access memory (RAM), central processing unit (CPU), or disk storage. Prevention of security breaches must never jeopardize the user experience. Endpoint protection—or any security tool, for that matter—must not require significant system resources, or it will strain system performance and degrade the user experience.
+
+
+**Keep Legacy Systems Secure**
+Organizations may not always deploy system updates and security patches immediately. They may delay because deploying updates might interfere with, diminish, or eliminate critical operational capabilities, or because patches may not be available for legacy systems and software that have reached their end of life. A complete endpoint security solution must support unpatchable systems by preventing the exploitation of software vulnerabilities, known or unknown, regardless of the availability or application of security patches.
+
+
+**Be Enterprise-Ready**
+Any security solution intended to replace an antivirus system should be scalable, flexible, and manageable enough for deployment in an enterprise environment. Endpoint security should support and integrate with the way an enterprise deploys its computing resources, scale to as many endpoints as needed, and support deployments that cover geographically dispersed environments. It must also be flexible in its ability to provide ample protection while still supporting business needs and not overly restricting the business. This flexibility is critical, as the needs of one part of the organization may be entirely different from those of another. Additionally, the solution must be able to be easily managed by the same group that manages security in other parts of the organization. It must be designed with enterprise management in mind, without adding operational burden.
+
+
+**Provide Independent Verification for Industry Compliance Requirements**
+Regulatory compliance often requires that organizations implement an antivirus system to secure their endpoints. To proactively protect endpoints while meeting compliance requirements, endpoint security vendors that replace existing antivirus solutions should provide an audit report from an independent third-party compliance and audit services organization to help customers achieve and maintain compliance.
+
+
+**Provide Independent Verification as an Antivirus Replacement**
+Any security product intended to replace a legacy antivirus system should have its performance reviewed and validated by an independent third-party security testing and evaluation services organization. Independent reviews offer an essential check beyond what an organization is capable of conducting.
+
+
+**Receive Recognition of Efficacy From Top-Tier Researchers**
+Any organization looking to move away from a traditional antivirus system should ensure that the replacement is recognized as a key player in the endpoint security space by a respected analyst or research firm, such as Gartner. This recognition will ensure that the solution and its vendor meet standard viability requirements as an endpoint security provider.
