@@ -1,8 +1,14 @@
-Windows 11 離線強制無需建立Microsoft Account:  
+### For Vm
+> Shift+F10 
+> REG ADD HKLM\SYSTEM\Setup\LabConfig /v BypassTPMCheck /t REG_DWORD /d 1
+
+
+# Windows 11 離線強制無需建立Microsoft Account:  
 
 ### Call CMD  
 > shift + F10  
-> oobe\bypassnro  
+> oobe\bypassnro
+>
 
 ### Set-up local user  
 
