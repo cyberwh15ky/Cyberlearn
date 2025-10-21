@@ -7,7 +7,7 @@ vault.centos.org 的 7.9.2009 路徑已下線並轉到 archives。請把 baseurl
 - RHEL（含 RHEL for dev/free subscription）
 
 ##### 可用兩個來源：
-CentOS Archives（官方最終存檔）：https://archive.kernel.org/centos-vault/7.9.2009/
+CentOS Archives（官方最終存檔）：https://archive.kernel.org/centos-vault/7.9.2009/  
 Fedora 檔案館（EPEL 等）：https://archives.fedoraproject.org/
 
 ##### 數據庫目前狀態：
