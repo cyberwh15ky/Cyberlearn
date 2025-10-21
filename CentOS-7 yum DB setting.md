@@ -1,3 +1,8 @@
+CentOS-7 install 方式:
+- 
+https://ftp.kh.edu.tw/APPL/2016_CentOS/docs/02.CentOS7%E7%9A%84%E5%AE%89%E8%A3%9D.pdf  
+
+
 官方 mirror 多數下架或移到 vault。  
 vault.centos.org 的 7.9.2009 路徑已下線並轉到 archives  
 。請把 baseurl 改指向 archives 庫存站點。  
