@@ -63,6 +63,21 @@ https://medium.com/@mertala/installing-wazuh-server-on-centos-7-61eb53c99ef8
 
 操作第二部: (Install Wazuh)
 ###### Let’s update the packages.  
-> yum update -y  
+> [admin@localhost ~]$ sudo yum update -y
+
 ###### Install the necessary packages for the installation.  
-> yum install curl unzip wget libcap  
+> [admin@localhost ~]$ sudo yum install curl unzip wget libcap
+
+###### Import the GPG key  
+> [admin@localhost ~]$ sudo rpm --import https://packages.wazuh.com/key/GPG-KEY-WAZUH
+
+###### Add the repository  
+> [admin@localhost ~]$ cat > /etc/yum.repos.d/wazuh.repo << EOF
+> [wazuh]
+> gpgcheck=1
+> gpgkey=https://packages.wazuh.com/key/GPG-KEY-WAZUH
+> enabled=1
+> name=EL-\$releasever - Wazuh
+> baseurl=https://packages.wazuh.com/4.x/yum/
+> protect=1
+> EOF
