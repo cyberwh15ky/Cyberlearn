@@ -63,6 +63,6 @@ https://medium.com/@mertala/installing-wazuh-server-on-centos-7-61eb53c99ef8
 
 操作第二部: (Install Wazuh)
 ###### Let’s update the packages.  
-> # yum update -y  
+> yum update -y  
 ###### Install the necessary packages for the installation.  
-> # yum install curl unzip wget libcap  
+> yum install curl unzip wget libcap  
