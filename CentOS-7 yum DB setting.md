@@ -19,6 +19,8 @@ Fedora 檔案館（EPEL 等）：https://archives.fedoraproject.org/
 已失效 database "https://vault.centos.org/8.5.2111"  
 已失效 database "https://vault.centos.org/8.5.2111"  
 現存可用 database "https://archive.kernel.org/centos-vault/7.9.2009/"  
+<img width="895" height="633" alt="image" src="https://github.com/user-attachments/assets/64922893-e9b2-4fc2-9c96-2ba13053b51b" />
+
 
 
 操作第一步:
