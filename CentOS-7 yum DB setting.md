@@ -2,6 +2,9 @@ CentOS-7 install 方式:
 - 
 https://ftp.kh.edu.tw/APPL/2016_CentOS/docs/02.CentOS7%E7%9A%84%E5%AE%89%E8%A3%9D.pdf  
 
+CentOS-7 忘記Root：
+- 
+https://openfind.zendesk.com/hc/zh-tw/articles/5337453431695-CentOS-7-%E5%BF%98%E8%A8%98-root-%E5%AF%86%E7%A2%BC%E5%A6%82%E4%BD%95%E9%87%8D%E8%A8%AD
 
 官方 mirror 多數下架或移到 vault。  
 vault.centos.org 的 7.9.2009 路徑已下線並轉到 archives  
