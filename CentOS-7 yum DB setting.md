@@ -1,5 +1,6 @@
 官方 mirror 多數下架或移到 vault。  
-vault.centos.org 的 7.9.2009 路徑已下線並轉到 archives。請把 baseurl 改指向 archives 庫存站點。
+vault.centos.org 的 7.9.2009 路徑已下線並轉到 archives  
+。請把 baseurl 改指向 archives 庫存站點。  
 -
 以 Rocky/Alma 替代來源（需要測試）企業生產環境可考慮：  
 - AlmaLinux 8/9  
