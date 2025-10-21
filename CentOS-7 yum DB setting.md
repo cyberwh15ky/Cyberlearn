@@ -80,4 +80,44 @@ https://medium.com/@mertala/installing-wazuh-server-on-centos-7-61eb53c99ef8
 > name=EL-\$releasever - Wazuh  
 > baseurl=https://packages.wazuh.com/4.x/yum/  
 > protect=1  
-> EOF  
+> EOF
+<img width="806" height="288" alt="image" src="https://github.com/user-attachments/assets/790b138e-17c7-4a7c-8f90-73be3ce4406e" />  
+
+###### Install the Wazuh manager  
+> [admin@localhost ~]$ sudo yum install wazuh-manager
+
+#### 如果出現無法 “sudo yum install wazuh-manager” 可以采用如下操作
+###### 步驟一：匯入 Wazuh GPG 金鑰  
+> [admin@localhost ~]$ sudo rpm --import https://packages.wazuh.com/key/GPG-KEY-WAZUH  
+###### 步驟二：建立 Wazuh YUM 套件庫設定  
+> [admin@localhost ~]$ sudo tee /etc/yum.repos.d/wazuh.repo > /dev/null <<EOF  
+[wazuh]  
+gpgcheck=1  
+gpgkey=https://packages.wazuh.com/key/GPG-KEY-WAZUH  
+enabled=1  
+name=Wazuh repository  
+baseurl=https://packages.wazuh.com/4.x/yum/  
+EOF  
+###### 步驟三：清除快取並更新 YUM  
+> [admin@localhost ~]$ sudo yum clean all
+> [admin@localhost ~]$ sudo yum makecache
+###### 步驟四：安裝 Wazuh Manager
+> [admin@localhost ~]$ sudo yum install wazuh-manager -y
+<img width="827" height="966" alt="image" src="https://github.com/user-attachments/assets/fbdb9b3b-1afa-4224-8159-bb05fd60bfda" />
+
+**如果你還需要 Wazuh API：**  
+> [admin@localhost ~]$ sudo yum install wazuh-api -y  
+**驗證 API 是否啟動**  
+你可以檢查 Wazuh API 是否正在運行：  
+> curl -X GET "http://localhost:55000"  
+如果你看到 JSON 回應（例如版本資訊），表示 API 正常運作。  
+
+###### 步驟五：啟動服務
+> [admin@localhost ~]$ sudo systemctl enable wazuh-manager
+> <img width="804" height="107" alt="image" src="https://github.com/user-attachments/assets/4ae10120-db69-4d1d-837a-95e88e3f3fa7" />  
+
+> [admin@localhost ~]$ sudo systemctl start wazuh-manager
+
+> [admin@localhost ~]$ sudo systemctl status wazuh-manager
+> <img width="830" height="914" alt="image" src="https://github.com/user-attachments/assets/1951c001-6344-4b1c-9af7-4e51962ec719" />  
+
