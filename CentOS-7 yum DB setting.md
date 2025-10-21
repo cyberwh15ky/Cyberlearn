@@ -1,25 +1,27 @@
 官方 mirror 多數下架或移到 vault。  
 vault.centos.org 的 7.9.2009 路徑已下線並轉到 archives。請把 baseurl 改指向 archives 庫存站點。
 -
-
-已失效 database ""  
-現存可用 database "https://archive.kernel.org/centos-vault/7.9.2009/"  
--
-
 以 Rocky/Alma 替代來源（需要測試）企業生產環境可考慮：  
 - AlmaLinux 8/9  
 - Rocky Linux 8/9  
 - RHEL（含 RHEL for dev/free subscription）
 
-可用兩個來源：
-
+##### 可用兩個來源：
 CentOS Archives（官方最終存檔）：https://archive.kernel.org/centos-vault/7.9.2009/
 Fedora 檔案館（EPEL 等）：https://archives.fedoraproject.org/
 
-
+##### 數據庫目前狀態：
+已失效 [os] http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os&infra=$infra
+已失效 [updates] http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=updates&infra=$infra
+已失效 [extras] http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=extras&infra=$infra
+已失效 [centosplus] http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=centosplus&infra=$infra
+已失效 database "https://vault.centos.org/8.5.2111"
+已失效 database "https://vault.centos.org/8.5.2111"
+現存可用 database "https://archive.kernel.org/centos-vault/7.9.2009/"  
 
 
 操作第一步:
+- 
 > sudo vi /etc/yum.repos.d/CentOS-Base.repo
 
 > [base]
