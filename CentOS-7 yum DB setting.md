@@ -31,7 +31,7 @@ Fedora 檔案館（EPEL 等）：https://archives.fedoraproject.org/
 
 
 
-操作第一步:
+操作第一步:(SetUP yum database)
 - 
 > sudo vi /etc/yum.repos.d/CentOS-Base.repo
 
@@ -60,3 +60,9 @@ Fedora 檔案館（EPEL 等）：https://archives.fedoraproject.org/
 Install Wazuh 方式：
 - 
 https://medium.com/@mertala/installing-wazuh-server-on-centos-7-61eb53c99ef8  
+
+操作第二部: (Install Wazuh)
+###### Let’s update the packages.  
+> # yum update -y  
+###### Install the necessary packages for the installation.  
+> # yum install curl unzip wget libcap  
