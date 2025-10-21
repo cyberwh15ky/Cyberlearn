@@ -56,3 +56,7 @@ Fedora 檔案館（EPEL 等）：https://archives.fedoraproject.org/
 > gpgcheck=1
 > gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
 
+
+Install Wazuh 方式：
+- 
+https://medium.com/@mertala/installing-wazuh-server-on-centos-7-61eb53c99ef8  
