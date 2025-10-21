@@ -11,12 +11,12 @@ CentOS Archives（官方最終存檔）：https://archive.kernel.org/centos-vaul
 Fedora 檔案館（EPEL 等）：https://archives.fedoraproject.org/
 
 ##### 數據庫目前狀態：
-已失效 [os] http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os&infra=$infra
-已失效 [updates] http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=updates&infra=$infra
-已失效 [extras] http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=extras&infra=$infra
-已失效 [centosplus] http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=centosplus&infra=$infra
-已失效 database "https://vault.centos.org/8.5.2111"
-已失效 database "https://vault.centos.org/8.5.2111"
+已失效 [os] http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os&infra=$infra  
+已失效 [updates] http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=updates&infra=$infra  
+已失效 [extras] http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=extras&infra=$infra  
+已失效 [centosplus] http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=centosplus&infra=$infra  
+已失效 database "https://vault.centos.org/8.5.2111"  
+已失效 database "https://vault.centos.org/8.5.2111"  
 現存可用 database "https://archive.kernel.org/centos-vault/7.9.2009/"  
 
 
