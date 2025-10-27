@@ -185,6 +185,136 @@ nodes:
 > [admin@localhost ~]$ ls ~ | grep config.yml  
 <img width="705" height="60" alt="image" src="https://github.com/user-attachments/assets/63217e4d-ecf2-46c2-aba8-e99f66bd3595" />  
 
-###### 目錄建立好 config.yml 就可以執行 "sudo bash ~/wazuh-cert-tool.sh"  
-> [admin@localhost ~]$ sudo bash ~/wazuh-cert-tool.sh
+###### 目錄建立好 config.yml 就可以執行 "sudo bash ~/wazuh-cert-tool.sh"   
+> [admin@localhost ~]$ sudo bash ~/wazuh-cert-tool.sh  
+ <img width="812" height="60" alt="image" src="https://github.com/user-attachments/assets/c39c7c50-059f-4d51-aea4-51ad8dd66580" />  
+ 
+###### 驗證檔案  
+> [admin@localhost ~]$ head -n 5 wazuh-certs-tool.sh  
+<img width="707" height="63" alt="image" src="https://github.com/user-attachments/assets/de086a04-9f30-479e-8f38-c8479ca263ee" />  
+
+⚠️ 注意：檔名在新版叫 wazuh-certs-tool.sh，不是 wazuh-cert-tool.sh（多了一個 s）。  
+- Wazuh 在 4.x 版本之後，已經不再單獨維護 wazuh-cert-tool.sh 這個檔案在 GitHub 的 wazuh-installation-assistant 專案裡。  
+- 官方現在把憑證工具放在 packages.wazuh.com 的套件倉庫裡，而不是 GitHub raw。  
+使用 wazuh-cert-tool.sh 會 顯示“404: Not Found”   
+
+##### 解決方法  
+
+###### 下載最新 wazuh-certs-tool.sh  
+> [admin@localhost ~]$ curl -O https://packages.wazuh.com/4.8/wazuh-certs-tool.sh  
+> [admin@localhost ~]$ chmod +x wazuh-certs-tool.sh  
+<img width="930" height="311" alt="image" src="https://github.com/user-attachments/assets/cedec9bd-41fc-4017-905d-36ea66cce850" />  
+
+###### 驗證檔案  
+> [admin@localhost ~]$ head -n 5 wazuh-certs-tool.sh  
+> <img width="820" height="167" alt="image" src="https://github.com/user-attachments/assets/f969ad50-81d3-4182-97d8-cbfdfa0d5773" />  
+
+###### 如何操作  
+目錄裡已經有 instances.yml，直接執行  
+這樣它會自動讀取當前目錄下的 instances.yml，一次產生所有憑證。  
+> [admin@localhost ~]$ sudo ./wazuh-certs-tool.sh -A  
+> <img width="935" height="286" alt="image" src="https://github.com/user-attachments/assets/823aa93d-e6aa-480b-839b-e2b599a88fea" />  
+
+檢查憑證 被存放 在 “wazuh-certificates” 的目錄  
+> [admin@localhost ~]$ sudo ls ./wazuh-certificates/  
+> <img width="773" height="150" alt="image" src="https://github.com/user-attachments/assets/8b287dc8-274a-418f-baef-c0aba1c9697d" />
+
+建立目錄並複製憑證到對應服務
+
+新版的 Wazuh 裡，Elasticsearch 已經被替換成 Wazuh Indexer，  
+所以工具不會再產生 elasticsearch* 這樣命名的檔案，  
+而是用 node-1.pem / node-1-key.pem 來代表 Indexer 節點。  
+
+- node-1.pem / node-1-key.pem → 就是 Indexer (Elasticsearch) 的憑證  
+- admin.pem / admin-key.pem → Admin 憑證  
+- root-ca.pem / root-ca.key → 根憑證  
+
+###### 在elasticsearch建立wazuh-certif 文件
+> [admin@localhost etc]$ sudo mkdir /etc/elasticsearch/wazuh-certif
+> [admin@localhost etc]$ sudo ls elasticsearch/
+<img width="932" height="166" alt="image" src="https://github.com/user-attachments/assets/a1c9a199-cc7b-4088-b695-0dfd09f9f40f" />
+
+
+###### Move Elasticsearch file  
+> [admin@localhost ~]$ mkdir /etc/elasticsearch/wazuh-certificates/  
+> [admin@localhost ~]$ sudo mv ~/wazuh-certificates/node-1* /etc/elasticsearch/wazuh-certificates/  
+> <img width="920" height="58" alt="image" src="https://github.com/user-attachments/assets/44b9ad07-68a4-40cd-b9bf-0e4d628370c3" />  
+
+> [admin@localhost ~]$ sudo mv ~/wazuh-certificates/admin* /etc/elasticsearch/wazuh-certificates/  
+> <img width="927" height="60" alt="image" src="https://github.com/user-attachments/assets/c2fa0168-74bd-424f-9784-662dd58b902f" />  
+ 
+> [admin@localhost ~]$ sudo cp ~/wazuh-certificates/root-ca* /etc/elasticsearch/wazuh-certificates/    
+<img width="925" height="60" alt="image" src="https://github.com/user-attachments/assets/5e4a1e4f-be83-4500-bb7e-cf26e61e24ae" />  
+
+###### 檢查 Move Elasticsearch file 操作是否成功
+> [admin@localhost etc]$ sudo ls elasticsearch/wazuh-certificates
+<img width="898" height="79" alt="image" src="https://github.com/user-attachments/assets/a6104fd9-228b-4269-812d-b86971c9e548" />
+
+###### Start elasticsearch
+> [admin@localhost ~]$ systemctl daemon-reload
+> <img width="933" height="194" alt="image" src="https://github.com/user-attachments/assets/b8d0f547-ec9b-4c7e-8353-82badc432505" />
+
+> [admin@localhost ~]$ sudo systemctl enable elasticsearch
+> <img width="937" height="482" alt="image" src="https://github.com/user-attachments/assets/4ad3f431-29f0-4a4b-97db-8ea66353f64f" />
+
+###### Elasticsearch啓動失敗
+> [admin@localhost ~]$ sudo systemctl start elasticsearch
+> <img width="929" height="254" alt="image" src="https://github.com/user-attachments/assets/bde049f8-7679-4087-b91e-c9bd9f05c95d" />
+
+###### 如何解決Elasticsearch啓動失敗
+
+修改設定檔（更乾淨）
+如果你不想改檔名，可以直接在 /etc/elasticsearch/elasticsearch.yml 裡改成：
+
+#### 如果檢查狀態后發現狀態失敗，一下是解決方案
+> [admin@localhost ~]$ sudo vi /etc/elasticsearch/elasticsearch.yml
+<img width="912" height="96" alt="image" src="https://github.com/user-attachments/assets/a784032f-addb-4813-9afa-f5be48cafb3b" />
+
+
+###### 修改前
+opendistro_security.ssl.transport.pemcert_filepath: esnode.pem
+opendistro_security.ssl.transport.pemkey_filepath: esnode-key.pem
+opendistro_security.ssl.transport.pemtrustedcas_filepath: root-ca.pem
+<img width="903" height="493" alt="image" src="https://github.com/user-attachments/assets/23655505-9fd1-4787-8b60-466a4a23a7a3" />
+
+
+opendistro_security.ssl.http.pemcert_filepath: esnode.pem
+opendistro_security.ssl.http.pemkey_filepath: esnode-key.pem
+opendistro_security.ssl.http.pemtrustedcas_filepath: root-ca.pem
+<img width="915" height="503" alt="image" src="https://github.com/user-attachments/assets/1ce922ef-f1be-44da-9a6c-07ae555a5463" />
+
+
+#### 修改后
+opendistro_security.ssl.transport.pemcert_filepath: /etc/elasticsearch/wazuh-certificates/node-1.pem
+opendistro_security.ssl.transport.pemkey_filepath: /etc/elasticsearch/wazuh-certificates/node-1-key.pem
+opendistro_security.ssl.transport.pemtrustedcas_filepath: /etc/elasticsearch/wazuh-certificates/root-ca.pem
+<img width="909" height="412" alt="image" src="https://github.com/user-attachments/assets/8e7eba66-d22f-4d1f-b3c6-0a2a6604e3b4" />
+
+
+opendistro_security.ssl.http.pemcert_filepath: /etc/elasticsearch/wazuh-certificates/node-1.pem
+opendistro_security.ssl.http.pemkey_filepath: /etc/elasticsearch/wazuh-certificates/node-1-key.pem
+opendistro_security.ssl.http.pemtrustedcas_filepath: /etc/elasticsearch/wazuh-certificates/root-ca.pem
+<img width="907" height="467" alt="image" src="https://github.com/user-attachments/assets/adf4b81d-356d-43e0-9934-2f77479c9fa6" />
+
+
+⚠️ 檔案權限
+無論用哪個方案，記得要讓 elasticsearch 使用者能讀取檔案：
+sudo chown -R elasticsearch:elasticsearch /etc/elasticsearch/wazuh-certificates
+sudo chmod 640 /etc/elasticsearch/wazuh-certificates/*
+
+重新載入 systemd 和 啓動Elasticsearch 和檢查狀態
+sudo systemctl daemon-reload
+sudo systemctl restart elasticsearch
+sudo systemctl status elasticsearch -l
+
+
+
+
+
+
+
+
+
+
+
 
