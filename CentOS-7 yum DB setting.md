@@ -76,7 +76,7 @@ https://medium.com/@mertala/installing-wazuh-server-on-centos-7-61eb53c99ef8
 <img width="842" height="539" alt="image" src="https://github.com/user-attachments/assets/3cbae6c5-50e4-49f9-b1fd-15f6908da059" />  
 
 ###### Add the repository  
-> [admin@localhost ~]$ cat > /etc/yum.repos.d/wazuh.repo << EOF  
+> [admin@localhost ~]$ sudo cat > /etc/yum.repos.d/wazuh.repo << EOF  
 > [wazuh]  
 > gpgcheck=1  
 > gpgkey=https://packages.wazuh.com/key/GPG-KEY-WAZUH  
