@@ -103,11 +103,11 @@ name=Wazuh repository
 baseurl=https://packages.wazuh.com/4.x/yum/  
 EOF  
 ###### 步驟三：清除快取並更新 YUM  
-> [admin@localhost ~]$ sudo yum clean all
-> [admin@localhost ~]$ sudo yum makecache
-###### 步驟四：安裝 Wazuh Manager
-> [admin@localhost ~]$ sudo yum install wazuh-manager -y
-<img width="827" height="966" alt="image" src="https://github.com/user-attachments/assets/fbdb9b3b-1afa-4224-8159-bb05fd60bfda" />
+> [admin@localhost ~]$ sudo yum clean all  
+> [admin@localhost ~]$ sudo yum makecache  
+###### 步驟四：安裝 Wazuh Manager  
+> [admin@localhost ~]$ sudo yum install wazuh-manager -y  
+<img width="827" height="966" alt="image" src="https://github.com/user-attachments/assets/fbdb9b3b-1afa-4224-8159-bb05fd60bfda" />  
 
 **如果你還需要 Wazuh API：**  
 > [admin@localhost ~]$ sudo yum install wazuh-api -y  
