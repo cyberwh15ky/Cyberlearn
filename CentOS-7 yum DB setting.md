@@ -101,28 +101,28 @@ Fedora 檔案館（EPEL 等）：https://archives.fedoraproject.org/
 
 操作第一步:(SetUP yum database)
 - 
-> sudo vi /etc/yum.repos.d/CentOS-Base.repo
+> sudo vi /etc/yum.repos.d/CentOS-Base.repo  
 
-> [base]
-> name=CentOS-7 - Base
-> baseurl=https://archive.kernel.org/centos-vault/7.9.2009/os/$basearch/
-> enabled=1
-> gpgcheck=1
-> gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+> [base]  
+> name=CentOS-7 - Base  
+> baseurl=https://archive.kernel.org/centos-vault/7.9.2009/os/$basearch/  
+> enabled=1  
+> gpgcheck=1  
+> gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7  
 
-> [updates]
-> name=CentOS-7 - Updates
-> baseurl=https://archive.kernel.org/centos-vault/7.9.2009/updates/$basearch/
-> enabled=1
-> gpgcheck=1
-> gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+> [updates]  
+> name=CentOS-7 - Updates  
+> baseurl=https://archive.kernel.org/centos-vault/7.9.2009/updates/$basearch/  
+> enabled=1  
+> gpgcheck=1  
+> gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7  
 
-> [extras]
-> name=CentOS-7 - Extras
-> baseurl=https://archive.kernel.org/centos-vault/7.9.2009/extras/$basearch/
-> enabled=1
-> gpgcheck=1
-> gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+> [extras]  
+> name=CentOS-7 - Extras  
+> baseurl=https://archive.kernel.org/centos-vault/7.9.2009/extras/$basearch/  
+> enabled=1  
+> gpgcheck=1  
+> gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7  
 
 ### 整體架構簡化
 <img width="914" height="322" alt="image" src="https://github.com/user-attachments/assets/5fdcab71-11d3-4b69-be22-d0ae45968261" />
