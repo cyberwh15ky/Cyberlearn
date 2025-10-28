@@ -1,4 +1,4 @@
-<img width="920" height="90" alt="image" src="https://github.com/user-attachments/assets/96b188b1-0a83-4be9-b3f7-9e40a7fe8e23" />CentOS-7 install 方式:
+CentOS-7 install 方式:
 - 
 https://ftp.kh.edu.tw/APPL/2016_CentOS/docs/02.CentOS7%E7%9A%84%E5%AE%89%E8%A3%9D.pdf  
 
