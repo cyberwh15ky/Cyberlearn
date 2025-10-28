@@ -43,17 +43,36 @@ CentOS-7 Server 版本檢查網絡
 ###### 檢查端口是否監聽  
 > ss -tuln | grep 22  
 
-###### 檢查防火墻狀態
-> systemctl status firewalld
+###### 檢查防火墻狀態  
+> systemctl status firewalld  
 
-###### 查看已允許的服務/端口
-> firewall-cmd --list-all
-<img width="923" height="210" alt="image" src="https://github.com/user-attachments/assets/269fa682-05f2-47c9-8a3a-bc18e4362562" />
+###### 查看已允許的服務/端口  
+> firewall-cmd --list-all  
+<img width="923" height="210" alt="image" src="https://github.com/user-attachments/assets/269fa682-05f2-47c9-8a3a-bc18e4362562" />  
 
-###### 放行 SSH 服務：
-> firewall-cmd --permanent --add-service=ssh
-> firewall-cmd --reload
+###### 放行 SSH 服務：  
+> firewall-cmd --permanent --add-service=ssh  
+> firewall-cmd --reload  
 
+CentOS Linux 靜態 IP 位址網路設定教學  
+- 
+https://blog.gtwang.org/linux/centos-linux-static-network-configuration-tutorial/  
+> su -  
+> cd /etc/sysconfig/network-scripts/  
+> ls  
+<img width="923" height="158" alt="image" src="https://github.com/user-attachments/assets/53545586-0c5b-4e07-bb9e-f66b939988da" />  
+
+####### 修改Eth 前  
+> vi ifcfg-ens192  
+<img width="428" height="413" alt="image" src="https://github.com/user-attachments/assets/7589faff-f4d8-445e-91f4-7c7b37092e1f" />  
+
+####### 修改Eth 后  
+<img width="436" height="453" alt="image" src="https://github.com/user-attachments/assets/491e4981-9a15-4e13-a32c-9c47fb65e785" />  
+
+####### 啟動網路介面  
+ifup enp0s3  
+####### 停用網路介面  
+ifdown enp0s3  
 
 官方 mirror 多數下架或移到 vault。  
 vault.centos.org 的 7.9.2009 路徑已下線並轉到 archives  
