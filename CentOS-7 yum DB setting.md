@@ -6,6 +6,55 @@ CentOS-7 忘記Root：
 - 
 https://openfind.zendesk.com/hc/zh-tw/articles/5337453431695-CentOS-7-%E5%BF%98%E8%A8%98-root-%E5%AF%86%E7%A2%BC%E5%A6%82%E4%BD%95%E9%87%8D%E8%A8%AD
 
+CentOS-7 Server 版本檢查網絡
+- 
+###### 查看網卡列表與狀態
+> [admin@localhost ~]$ ip link show
+<img width="953" height="138" alt="image" src="https://github.com/user-attachments/assets/59c46a37-b9f6-4998-a5f2-eac9166ef4f8" />
+
+###### 查看 IP 配置
+> [admin@localhost ~]$ ip addr show
+<img width="931" height="176" alt="image" src="https://github.com/user-attachments/assets/b25a3b71-176f-46a5-bfdb-1c772c525f82" />
+
+###### 檢查網卡物理連線
+> [admin@localhost ~]$ ethtool eth0
+<img width="670" height="406" alt="image" src="https://github.com/user-attachments/assets/3fd166cf-910b-429a-bb5a-fbbf1a893959" />
+
+###### 檢查網路服務
+> [admin@localhost ~]$ systemctl status network
+<img width="908" height="516" alt="image" src="https://github.com/user-attachments/assets/7f3e95d4-17a9-418a-9eb3-9b9ca3771830" />
+
+#### 檢查 SSH 服務  
+###### 檢查服務是否安裝  
+> rpm -qa | grep openssh-server  
+- 有輸出 → 已安裝。  
+- 無輸出 → 需安裝：  
+  <img width="545" height="39" alt="image" src="https://github.com/user-attachments/assets/49a59f58-4884-4728-b936-abf5c73cad4a" />  
+
+> yum install -y openssh-server  
+######  檢查 SSH 服務狀態  
+> systemctl status sshd  
+- active (running) → SSH 服務已啟動。  
+- 如果未啟動，執行：  
+  <img width="860" height="168" alt="image" src="https://github.com/user-attachments/assets/532e12d8-ee94-4b0f-a898-79e522d60386" />  
+  
+> systemctl start sshd  
+> systemctl enable sshd  
+###### 檢查端口是否監聽  
+> ss -tuln | grep 22  
+
+###### 檢查防火墻狀態
+> systemctl status firewalld
+
+###### 查看已允許的服務/端口
+> firewall-cmd --list-all
+<img width="923" height="210" alt="image" src="https://github.com/user-attachments/assets/269fa682-05f2-47c9-8a3a-bc18e4362562" />
+
+###### 放行 SSH 服務：
+> firewall-cmd --permanent --add-service=ssh
+> firewall-cmd --reload
+
+
 官方 mirror 多數下架或移到 vault。  
 vault.centos.org 的 7.9.2009 路徑已下線並轉到 archives  
 。請把 baseurl 改指向 archives 庫存站點。  
@@ -15,11 +64,11 @@ vault.centos.org 的 7.9.2009 路徑已下線並轉到 archives
 - Rocky Linux 8/9  
 - RHEL（含 RHEL for dev/free subscription）
 
-##### 可用兩個來源：
+##### 可用兩個來源：  
 CentOS Archives（官方最終存檔）：https://archive.kernel.org/centos-vault/7.9.2009/  
-Fedora 檔案館（EPEL 等）：https://archives.fedoraproject.org/
+Fedora 檔案館（EPEL 等）：https://archives.fedoraproject.org/  
 
-##### 數據庫目前狀態：
+##### 數據庫目前狀態：pin  
 已失效 [os] http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=os&infra=$infra  
 已失效 [updates] http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=updates&infra=$infra  
 已失效 [extras] http://mirrorlist.centos.org/?release=$releasever&arch=$basearch&repo=extras&infra=$infra  
