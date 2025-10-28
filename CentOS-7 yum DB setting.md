@@ -300,12 +300,16 @@ opendistro_security.ssl.http.pemtrustedcas_filepath: /etc/elasticsearch/wazuh-ce
 ⚠️ 檔案權限  
 無論用哪個方案，記得要讓 elasticsearch 使用者能讀取檔案：  
 > [admin@localhost ~]$ sudo chown -R elasticsearch:elasticsearch /etc/elasticsearch/wazuh-certificates  
-<img width="914" height="58" alt="image" src="https://github.com/user-attachments/assets/e02a712e-a591-4641-b673-32f23ba9d217" />  
-
-> [admin@localhost ~]$ sudo cd /etc/elasticsearch/wazuh-certificates sudo chmod 640 *  
-<img width="918" height="60" alt="image" src="https://github.com/user-attachments/assets/1c8ab1ef-009e-447e-9f00-df7c1ba3ed00" />  
-> ls -l /etc/elasticsearch/wazuh-certificates  
-<img width="915" height="425" alt="image" src="https://github.com/user-attachments/assets/5a91e1aa-8c14-4742-a074-d0fdeccc395c" />  
+<img width="914" height="58" alt="image" src="https://github.com/user-attachments/assets/e02a712e-a591-4641-b673-32f23ba9d217" />
+查看文件權限  
+> [admin@localhost ~]$ sudo ls -l /etc/sysconfig/elasticsearch
+<img width="910" height="89" alt="image" src="https://github.com/user-attachments/assets/4a49f900-619c-42ec-9ee6-38c689d6caa7" />
+> [admin@localhost ~]$ sudo chown root:root /etc/sysconfig/elasticsearch
+<img width="909" height="59" alt="image" src="https://github.com/user-attachments/assets/ab35e047-c87e-4efe-a535-3780c31040fb" />
+> [admin@localhost ~]$ sudo cd /etc/elasticsearch/wazuh-certificates sudo chmod 644 *  
+<img width="908" height="59" alt="image" src="https://github.com/user-attachments/assets/286433a2-a37d-4ae9-bd17-59d9c4c08e4c" />
+> [admin@localhost ~]$ sudo ls -l /etc/elasticsearch/wazuh-certificates  
+<img width="918" height="426" alt="image" src="https://github.com/user-attachments/assets/94f2a2a7-a6af-4cf0-9a68-42288d99692e" />
 
 
 重新載入 systemd 和 啓動Elasticsearch 和檢查狀態  
