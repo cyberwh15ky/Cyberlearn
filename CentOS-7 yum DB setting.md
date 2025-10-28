@@ -95,7 +95,8 @@ https://medium.com/@mertala/installing-wazuh-server-on-centos-7-61eb53c99ef8
 ###### 步驟一：匯入 Wazuh GPG 金鑰  
 > [admin@localhost ~]$ sudo rpm --import https://packages.wazuh.com/key/GPG-KEY-WAZUH  
 ###### 步驟二：建立 Wazuh YUM 套件庫設定  
-> [admin@localhost ~]$ sudo tee /etc/yum.repos.d/wazuh.repo > /dev/null <<EOF  
+> [admin@localhost ~]$ sudo tee /etc/yum.repos.d/wazuh.repo > /dev/null
+<<EOF  
 [wazuh]  
 gpgcheck=1  
 gpgkey=https://packages.wazuh.com/key/GPG-KEY-WAZUH  
