@@ -271,43 +271,52 @@ nodes:
 <img width="912" height="96" alt="image" src="https://github.com/user-attachments/assets/a784032f-addb-4813-9afa-f5be48cafb3b" />
 
 
-###### 修改前
-opendistro_security.ssl.transport.pemcert_filepath: esnode.pem
-opendistro_security.ssl.transport.pemkey_filepath: esnode-key.pem
-opendistro_security.ssl.transport.pemtrustedcas_filepath: root-ca.pem
-<img width="903" height="493" alt="image" src="https://github.com/user-attachments/assets/23655505-9fd1-4787-8b60-466a4a23a7a3" />
+###### 修改前  
+opendistro_security.ssl.transport.pemcert_filepath: esnode.pem  
+opendistro_security.ssl.transport.pemkey_filepath: esnode-key.pem  
+opendistro_security.ssl.transport.pemtrustedcas_filepath: root-ca.pem  
+<img width="903" height="493" alt="image" src="https://github.com/user-attachments/assets/23655505-9fd1-4787-8b60-466a4a23a7a3" />  
 
 
-opendistro_security.ssl.http.pemcert_filepath: esnode.pem
-opendistro_security.ssl.http.pemkey_filepath: esnode-key.pem
-opendistro_security.ssl.http.pemtrustedcas_filepath: root-ca.pem
-<img width="915" height="503" alt="image" src="https://github.com/user-attachments/assets/1ce922ef-f1be-44da-9a6c-07ae555a5463" />
+opendistro_security.ssl.http.pemcert_filepath: esnode.pem  
+opendistro_security.ssl.http.pemkey_filepath: esnode-key.pem  
+opendistro_security.ssl.http.pemtrustedcas_filepath: root-ca.pem  
+<img width="915" height="503" alt="image" src="https://github.com/user-attachments/assets/1ce922ef-f1be-44da-9a6c-07ae555a5463" />  
 
 
-#### 修改后
-opendistro_security.ssl.transport.pemcert_filepath: /etc/elasticsearch/wazuh-certificates/node-1.pem
-opendistro_security.ssl.transport.pemkey_filepath: /etc/elasticsearch/wazuh-certificates/node-1-key.pem
-opendistro_security.ssl.transport.pemtrustedcas_filepath: /etc/elasticsearch/wazuh-certificates/root-ca.pem
-<img width="909" height="412" alt="image" src="https://github.com/user-attachments/assets/8e7eba66-d22f-4d1f-b3c6-0a2a6604e3b4" />
+#### 修改后  
+opendistro_security.ssl.transport.pemcert_filepath: /etc/elasticsearch/wazuh-certificates/node-1.pem  
+opendistro_security.ssl.transport.pemkey_filepath: /etc/elasticsearch/wazuh-certificates/node-1-key.pem  
+opendistro_security.ssl.transport.pemtrustedcas_filepath: /etc/elasticsearch/wazuh-certificates/root-ca.pem  
+<img width="909" height="412" alt="image" src="https://github.com/user-attachments/assets/8e7eba66-d22f-4d1f-b3c6-0a2a6604e3b4" />  
 
 
-opendistro_security.ssl.http.pemcert_filepath: /etc/elasticsearch/wazuh-certificates/node-1.pem
-opendistro_security.ssl.http.pemkey_filepath: /etc/elasticsearch/wazuh-certificates/node-1-key.pem
-opendistro_security.ssl.http.pemtrustedcas_filepath: /etc/elasticsearch/wazuh-certificates/root-ca.pem
-<img width="907" height="467" alt="image" src="https://github.com/user-attachments/assets/adf4b81d-356d-43e0-9934-2f77479c9fa6" />
+opendistro_security.ssl.http.pemcert_filepath: /etc/elasticsearch/wazuh-certificates/node-1.pem  
+opendistro_security.ssl.http.pemkey_filepath: /etc/elasticsearch/wazuh-certificates/node-1-key.pem  
+opendistro_security.ssl.http.pemtrustedcas_filepath: /etc/elasticsearch/wazuh-certificates/root-ca.pem  
+<img width="907" height="467" alt="image" src="https://github.com/user-attachments/assets/adf4b81d-356d-43e0-9934-2f77479c9fa6" />  
 
 
-⚠️ 檔案權限
-無論用哪個方案，記得要讓 elasticsearch 使用者能讀取檔案：
-sudo chown -R elasticsearch:elasticsearch /etc/elasticsearch/wazuh-certificates
-sudo chmod 640 /etc/elasticsearch/wazuh-certificates/*
+⚠️ 檔案權限  
+無論用哪個方案，記得要讓 elasticsearch 使用者能讀取檔案：  
+> [admin@localhost ~]$ sudo chown -R elasticsearch:elasticsearch /etc/elasticsearch/wazuh-certificates  
+<img width="914" height="58" alt="image" src="https://github.com/user-attachments/assets/e02a712e-a591-4641-b673-32f23ba9d217" />  
 
-重新載入 systemd 和 啓動Elasticsearch 和檢查狀態
-sudo systemctl daemon-reload
-sudo systemctl restart elasticsearch
-sudo systemctl status elasticsearch -l
+> [admin@localhost ~]$ sudo cd /etc/elasticsearch/wazuh-certificates sudo chmod 640 *  
+<img width="918" height="60" alt="image" src="https://github.com/user-attachments/assets/1c8ab1ef-009e-447e-9f00-df7c1ba3ed00" />  
+> ls -l /etc/elasticsearch/wazuh-certificates  
+<img width="915" height="425" alt="image" src="https://github.com/user-attachments/assets/5a91e1aa-8c14-4742-a074-d0fdeccc395c" />  
 
 
+重新載入 systemd 和 啓動Elasticsearch 和檢查狀態  
+> [admin@localhost ~]$ sudo systemctl daemon-reload  
+> [admin@localhost ~]$ sudo systemctl restart elasticsearch  
+> [admin@localhost ~]$ sudo systemctl status elasticsearch -l  
+<img width="916" height="556" alt="image" src="https://github.com/user-attachments/assets/105caf04-4689-4143-91b0-49a37a9e08de" />  
+
+
+###### Run the Elasticsearch scripts  
+> [admin@localhost ~]$ > # sudo export JAVA_HOME=/usr/share/elasticsearch/jdk/ && /usr/share/elasticsearch/plugins/opendistro_security/tools/securityadmin.sh -cd /usr/share/elasticsearch/plugins/opendistro_security/securityconfig/ -nhnv -cacert /etc/elasticsearch/certs/root-ca.pem -cert /etc/elasticsearch/certs/admin.pem -key /etc/elasticsearch/certs/admin-key.pem
 
 
 
