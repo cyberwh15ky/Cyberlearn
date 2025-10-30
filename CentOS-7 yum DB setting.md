@@ -234,20 +234,20 @@ EOF
 
 📁 範例 config.yml 結構 Yaml
 - 
-nodes:
-  indexer:
-    - name: node-1
-      ip: 127.0.0.1
-  server:
-    - name: wazuh-1
-      ip: 127.0.0.1
-  dashboard:
-    - name: dashboard-1
-      ip: 127.0.0.1
+nodes:  
+  indexer:  
+    - name: node-1  
+      ip: 127.0.0.1  
+  server:  
+    - name: wazuh-1  
+      ip: 127.0.0.1  
+  dashboard:  
+    - name: dashboard-1  
+      ip: 127.0.0.1  
 
 ###### 建立設定檔：  
-> [admin@localhost ~]$ sudo vi /root/config.yml
-<img width="710" height="78" alt="image" src="https://github.com/user-attachments/assets/3291fab4-1a4f-4b8d-a462-51bef4a10fa3" />
+> [admin@localhost ~]$ sudo vi /root/config.yml  
+<img width="710" height="78" alt="image" src="https://github.com/user-attachments/assets/3291fab4-1a4f-4b8d-a462-51bef4a10fa3" />  
 
 
 ###### 確認檔案存在：  
