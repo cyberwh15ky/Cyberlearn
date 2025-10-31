@@ -4,11 +4,10 @@
 
 
 # Windows 11 離線強制，無需建立Microsoft Account:  
-<img width="933" height="688" alt="image" src="https://github.com/user-attachments/assets/47686c72-a858-4584-acc3-fb2859a58f40" />
-
 > Keyboard: Shift + F10  
 > Command:oobe\bypassnro
 <img width="917" height="630" alt="image" src="https://github.com/user-attachments/assets/e88f2bfe-097a-40ec-a056-f4b38821c88e" />
+<img width="919" height="682" alt="image" src="https://github.com/user-attachments/assets/4b69b9b3-484b-4a20-a2e7-973d16466ba7" />
 
 
 ### Set-up local user  
