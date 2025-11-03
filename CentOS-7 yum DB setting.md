@@ -397,6 +397,6 @@ opendistro_security.ssl.http.pemtrustedcas_filepath: /etc/elasticsearch/wazuh-ce
 
 
 
-## Windows server 2025 setup DNS
-https://www.server-world.info/en/note?os=Windows_Server_2025&p=dns&f=1
+## Windows server 2025 setup DNS  
+https://www.server-world.info/en/note?os=Windows_Server_2025&p=dns&f=1  
 - 
