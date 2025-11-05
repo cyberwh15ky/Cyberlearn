@@ -39,3 +39,17 @@ Access PA in the browser
 <img width="1911" height="933" alt="image" src="https://github.com/user-attachments/assets/a75b6fed-80b0-425b-8850-712bd1ece55f" />  
 
 
+
+## Monitor  
+Logs > Traffic  
+<img width="1109" height="481" alt="image" src="https://github.com/user-attachments/assets/fc080384-daf1-4c32-9e43-ee80c8a265cc" />  
+TYPE:  
+- end 表示 session 結束，會包含統計資訊（bytes、packets、原因）  
+- start 表示一個新的 session 建立  
+- deny 流量被安全規則拒絕  
+
+ACTION:  
+- allow  表示流量符合安全規則 (Security Policy) 並被允許。
+- reset-both 防火牆同時向 client 與 server 發送 TCP Reset (RST) 封包。 這會立即終止雙方的 TCP session，避免進一步的資料交換。  
+
+
