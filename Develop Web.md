@@ -71,4 +71,19 @@
 👉 總結：  
 你的網站可以用 **React/Vue 前端 + Node.js/Django 後端 + PostgreSQL 資料庫**，登入門口用 **JWT + Google OAuth**，支付用 **Stripe**。這樣既能自建、又能擴展，未來還能把 API 拓展到手機 App。
 
-Vincent，要不要我幫你畫一個 **簡單的架構圖（前端、後端、資料庫、登入門口、支付流程）**，讓你更直觀地看到整體設計？
+簡單的架構圖（前端、後端、資料庫、登入門口、支付流程）
+-
+<img width="1536" height="1024" alt="一個簡單的網站架構圖，包含前端（Reac" src="https://github.com/user-attachments/assets/0217295b-3a98-44dc-8d3a-6a479ea6e7f0" />
+
+簡單的架構圖 展示了整個網站的主要組成部分：  
+- **前端 (React/Vue + Tailwind/Bootstrap)** → 公開頁面、登入頁面、商品展示、學習記錄  
+- **登入門口 (Authentication Gateway)** → JWT Token 管理、Google OAuth 登入  
+- **後端 (Node.js/Express 或 Django)** → 提供 API、處理帳號、商品與學習記錄  
+- **資料庫 (PostgreSQL/MySQL + Redis 選用)** → 儲存使用者、商品、訂單、學習記錄  
+- **支付流程 (Stripe/PayPal)** → 處理金流  
+
+這樣的設計能讓訪客自由瀏覽公開內容，同時透過登入門口進入會員專區，完成購物與學習記錄。  
+
+資料流程圖（例如：使用者從前端操作 → 經過登入門口 → 後端 API → 資料庫 → 返回前端）
+- 
+
