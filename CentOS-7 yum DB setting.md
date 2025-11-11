@@ -400,3 +400,8 @@ opendistro_security.ssl.http.pemtrustedcas_filepath: /etc/elasticsearch/wazuh-ce
 ## Windows server 2025 setup DNS  
 https://www.server-world.info/en/note?os=Windows_Server_2025&p=dns&f=1  
 - 
+
+
+## Disk size or Partition size
+> df -h
+> <img width="943" height="310" alt="image" src="https://github.com/user-attachments/assets/30a167b0-e8dc-4756-bb43-930ac5cba364" />
