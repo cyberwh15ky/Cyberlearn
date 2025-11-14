@@ -1,4 +1,4 @@
-PA-Information
+PA-Information  
  <img width="900" height="413" alt="image" src="https://github.com/user-attachments/assets/b36270ef-898a-407a-933a-3a2567cfade1" />
 
 Network > Interfaces > Ethernet
