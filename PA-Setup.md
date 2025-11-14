@@ -1,4 +1,4 @@
-<img width="900" height="412" alt="image" src="https://github.com/user-attachments/assets/7b4639a3-6fb9-43f4-84aa-b1e5db92b974" /><img width="900" height="411" alt="image" src="https://github.com/user-attachments/assets/726eed89-ccd1-4a94-862a-5b0d19b91523" /><img width="900" height="411" alt="image" src="https://github.com/user-attachments/assets/97efaa9d-fa5f-41fd-a0d4-6630149c5a36" />PA-Information
+PA-Information
  <img width="900" height="413" alt="image" src="https://github.com/user-attachments/assets/b36270ef-898a-407a-933a-3a2567cfade1" />
 
 Network > Interfaces > Ethernet
