@@ -1,0 +1,18 @@
+name: CI
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build Frontend
+        run: docker build -t ghcr.io/cyberwh15ky/frontend:latest ./frontend
+      - name: Build API
+        run: docker build -t ghcr.io/cyberwh15ky/api:latest ./api
+      - name: Push Images
+        run: |
+          echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u cyberwh15ky --password-stdin
+          docker push ghcr.io/cyberwh15ky/frontend:latest
+          docker push ghcr.io/cyberwh15ky/api:latest
