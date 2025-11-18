@@ -1,0 +1,36 @@
+Cyberlearn/
+├─ docs/
+│  ├─ architecture.md
+│  ├─ k8s-deployment.md
+│  └─ security.md
+├─ helm/
+│  ├─ Chart.yaml
+│  ├─ values.yaml
+│  └─ templates/
+│     ├─ ingress.yaml
+│     ├─ deployment-frontend.yaml
+│     ├─ deployment-api.yaml
+│     ├─ service-frontend.yaml
+│     ├─ service-api.yaml
+│     ├─ postgres.yaml
+│     ├─ redis.yaml
+│     ├─ secrets.yaml
+│     └─ networkpolicy.yaml
+├─ k8s/
+│  ├─ namespaces.yaml
+│  ├─ issuer.yaml
+│  └─ storageclass.yaml
+├─ frontend/
+│  ├─ Dockerfile
+│  └─ src/...
+├─ api/
+│  ├─ Dockerfile
+│  └─ src/...
+├─ mobile/
+│  ├─ android/
+│  └─ ios/
+├─ .github/
+│  └─ workflows/
+│     ├─ ci.yml
+│     └─ cd.yml
+└─ Makefile
