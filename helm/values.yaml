@@ -1,0 +1,15 @@
+frontend:
+  image: ghcr.io/cyberwh15ky/frontend:latest
+  replicas: 2
+
+api:
+  image: ghcr.io/cyberwh15ky/api:latest
+  replicas: 3
+
+postgres:
+  user: cyberlearn
+  password: changeme
+  database: shopdb
+
+redis:
+  enabled: true
