@@ -1,0 +1,42 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: postgres-init
+  namespace: cyberlearn
+spec:
+  backoffLimit: 3
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: db-init
+          image: postgres:16
+          envFrom:
+            - secretRef:
+                name: postgres-secrets
+          env:
+            - name: PGHOST
+              value: "postgres"
+            - name: PGPORT
+              value: "5432"
+          volumeMounts:
+            - name: schema-volume
+              mountPath: /init
+          command: ["/bin/sh","-c"]
+          args:
+            - |
+              until pg_isready -h "$PGHOST" -p "$PGPORT"; do echo "waiting for postgres..."; sleep 3; done
+              psql "postgresql://$(echo $POSTGRES_USER):$(echo $POSTGRES_PASSWORD)@$PGHOST:$PGPORT/$(echo $POSTGRES_DB)" -f /init/schema.sql
+      volumes:
+        - name: schema-volume
+          configMap:
+            name: postgres-schema
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-schema
+  namespace: cyberlearn
+data:
+  schema.sql: |
+    {{PASTE_SCHEMA_SQL_HERE}}
