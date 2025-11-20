@@ -1,0 +1,155 @@
+ **Database 生產環境表格 (PostgreSQL 為例)**，涵蓋你提到的功能：帳號系統 (含 Google OAuth / Email 註冊)、2FA、產品瀏覽/收藏/點讚、購物車、訂單、付款、物流，以及未來 POS 擴充。這份表格是 **生產環境設計藍本**，你可以直接放進 GitHub 的 `docs/database-schema.md`。
+
+---
+
+# 📑 Database Schema (Production)
+
+## 1. Users (帳號系統)
+| Column              | Type              | Constraints                          | Notes |
+|---------------------|------------------|--------------------------------------|-------|
+| user_id             | UUID             | PK, default gen_random_uuid()        | 使用者唯一識別 |
+| name                | VARCHAR(100)     | NOT NULL                             | 姓名 |
+| email               | VARCHAR(255)     | UNIQUE, NOT NULL                     | 郵件 |
+| phone_number        | VARCHAR(20)      | UNIQUE                               | 手機號碼 |
+| birth_date          | DATE             |                                      | 出生年月日 |
+| password_hash       | TEXT             | NULLABLE (Google OAuth 可不需密碼)   | 密碼雜湊 |
+| google_oauth_id     | VARCHAR(255)     | UNIQUE                               | Google 帳號綁定 |
+| is_active           | BOOLEAN          | DEFAULT TRUE                         | 帳號狀態 |
+| created_at          | TIMESTAMP        | DEFAULT now()                        | 建立時間 |
+| updated_at          | TIMESTAMP        | DEFAULT now()                        | 更新時間 |
+
+---
+
+## 2. TwoFactorAuth (2FA)
+| Column              | Type              | Constraints                          | Notes |
+|---------------------|------------------|--------------------------------------|-------|
+| user_id             | UUID             | PK, FK → Users(user_id)              | 對應使用者 |
+| totp_secret         | VARCHAR(64)      | NOT NULL                             | Google Authenticator 秘鑰 |
+| sms_code_last       | VARCHAR(6)       |                                      | 最近一次 SMS 驗證碼 |
+| sms_verified        | BOOLEAN          | DEFAULT FALSE                        | 是否完成 SMS 驗證 |
+| last_verified_at    | TIMESTAMP        |                                      | 最近驗證時間 |
+
+---
+
+## 3. Products (產品)
+| Column              | Type              | Constraints                          | Notes |
+|---------------------|------------------|--------------------------------------|-------|
+| product_id          | UUID             | PK                                   | 產品唯一識別 |
+| name                | VARCHAR(255)     | NOT NULL                             | 產品名稱 |
+| description         | TEXT             |                                      | 產品描述 |
+| price               | DECIMAL(10,2)    | NOT NULL                             | 價格 |
+| stock_quantity      | INT              | DEFAULT 0                            | 庫存數量 |
+| like_count          | INT              | DEFAULT 0                            | 點讚數 (公開顯示) |
+| created_at          | TIMESTAMP        | DEFAULT now()                        | 建立時間 |
+| updated_at          | TIMESTAMP        | DEFAULT now()                        | 更新時間 |
+
+---
+
+## 4. Favorites & Likes (收藏與點讚)
+### Favorites
+| Column              | Type              | Constraints                          | Notes |
+|---------------------|------------------|--------------------------------------|-------|
+| favorite_id         | UUID             | PK                                   | 收藏唯一識別 |
+| user_id             | UUID             | FK → Users(user_id)                  | 使用者 |
+| product_id          | UUID             | FK → Products(product_id)            | 產品 |
+| created_at          | TIMESTAMP        | DEFAULT now()                        | 收藏時間 |
+
+### Likes
+| Column              | Type              | Constraints                          | Notes |
+|---------------------|------------------|--------------------------------------|-------|
+| like_id             | UUID             | PK                                   | 點讚唯一識別 |
+| user_id             | UUID             | FK → Users(user_id)                  | 使用者 |
+| product_id          | UUID             | FK → Products(product_id)            | 產品 |
+| created_at          | TIMESTAMP        | DEFAULT now()                        | 點讚時間 |
+
+---
+
+## 5. Cart (購物車)
+| Column              | Type              | Constraints                          | Notes |
+|---------------------|------------------|--------------------------------------|-------|
+| cart_id             | UUID             | PK                                   | 購物車唯一識別 |
+| user_id             | UUID             | FK → Users(user_id)                  | 使用者 |
+| created_at          | TIMESTAMP        | DEFAULT now()                        | 建立時間 |
+
+### CartItems
+| Column              | Type              | Constraints                          | Notes |
+|---------------------|------------------|--------------------------------------|-------|
+| cart_item_id        | UUID             | PK                                   | 購物車項目唯一識別 |
+| cart_id             | UUID             | FK → Cart(cart_id)                   | 購物車 |
+| product_id          | UUID             | FK → Products(product_id)            | 產品 |
+| quantity            | INT              | DEFAULT 1                            | 數量 |
+| reserved_at         | TIMESTAMP        | DEFAULT now()                        | 預定時間 |
+
+---
+
+## 6. Orders (訂單)
+| Column              | Type              | Constraints                          | Notes |
+|---------------------|------------------|--------------------------------------|-------|
+| order_id            | UUID             | PK                                   | 訂單唯一識別 |
+| user_id             | UUID             | FK → Users(user_id)                  | 使用者 |
+| status              | VARCHAR(50)      | DEFAULT 'pending'                    | 訂單狀態 (pending/paid/shipped/completed/cancelled) |
+| total_amount        | DECIMAL(10,2)    | NOT NULL                             | 總金額 |
+| payment_method      | VARCHAR(50)      | NOT NULL                             | CreditCard / Alipay / PayMe / FPS |
+| shipping_method     | VARCHAR(50)      | NOT NULL                             | COD / Postal |
+| created_at          | TIMESTAMP        | DEFAULT now()                        | 建立時間 |
+| updated_at          | TIMESTAMP        | DEFAULT now()                        | 更新時間 |
+
+### OrderItems
+| Column              | Type              | Constraints                          | Notes |
+|---------------------|------------------|--------------------------------------|-------|
+| order_item_id       | UUID             | PK                                   | 訂單項目唯一識別 |
+| order_id            | UUID             | FK → Orders(order_id)                | 訂單 |
+| product_id          | UUID             | FK → Products(product_id)            | 產品 |
+| quantity            | INT              | NOT NULL                             | 數量 |
+| price               | DECIMAL(10,2)    | NOT NULL                             | 單價 |
+
+---
+
+## 7. Payments (付款)
+| Column              | Type              | Constraints                          | Notes |
+|---------------------|------------------|--------------------------------------|-------|
+| payment_id          | UUID             | PK                                   | 付款唯一識別 |
+| order_id            | UUID             | FK → Orders(order_id)                | 對應訂單 |
+| provider            | VARCHAR(50)      | NOT NULL                             | Stripe / Alipay / PayMe / FPS |
+| transaction_id      | VARCHAR(255)     | UNIQUE                               | 第三方交易編號 |
+| status              | VARCHAR(50)      | DEFAULT 'initiated'                  | initiated/success/failed/refunded |
+| paid_at             | TIMESTAMP        |                                      | 付款時間 |
+
+---
+
+## 8. Shipping (物流)
+| Column              | Type              | Constraints                          | Notes |
+|---------------------|------------------|--------------------------------------|-------|
+| shipping_id         | UUID             | PK                                   | 物流唯一識別 |
+| order_id            | UUID             | FK → Orders(order_id)                | 對應訂單 |
+| provider            | VARCHAR(100)     | NOT NULL                             | SF Express / HK Post / Custom |
+| tracking_number     | VARCHAR(255)     | UNIQUE                               | 物流追蹤號碼 |
+| status              | VARCHAR(50)      | DEFAULT 'pending'                    | pending/shipped/delivered |
+| shipped_at          | TIMESTAMP        |                                      | 出貨時間 |
+| delivered_at        | TIMESTAMP        |                                      | 完成時間 |
+
+---
+
+## 9. POS (未來擴充)
+| Column              | Type              | Constraints                          | Notes |
+|---------------------|------------------|--------------------------------------|-------|
+| pos_id              | UUID             | PK                                   | POS 唯一識別 |
+| store_location      | VARCHAR(255)     |                                      | 店舖位置 |
+| terminal_id         | VARCHAR(100)     | UNIQUE                               | 終端機編號 |
+| synced_at           | TIMESTAMP        |                                      | 與線上系統同步時間 |
+
+---
+
+## 10. AI Logs (免費 AI 功能)
+| Column              | Type              | Constraints                          | Notes |
+|---------------------|------------------|--------------------------------------|-------|
+| ai_log_id           | UUID             | PK                                   | AI 諮詢唯一識別 |
+| user_id             | UUID             | FK → Users(user_id)                  | 使用者 |
+| query_text          | TEXT             | NOT NULL                             | 使用者輸入 |
+| response_text       | TEXT             | NOT NULL                             | AI 回覆 |
+| created_at          | TIMESTAMP        | DEFAULT now()                        | 建立時間 |
+
+---
+
+## 🔐 安全與備份建議
+- **Palo Alto Firewall + SIEM**：保護 API 與流量，集中
